@@ -1,0 +1,409 @@
+:root {
+    --background: #0b0d0c;
+    --surface: #121614;
+    --surface-light: #1a1f1c;
+    --text: #f2f1eb;
+    --muted: #a6aaa3;
+    --accent: #c9a66b;
+    --accent-light: #dfc18b;
+    --border: rgba(255, 255, 255, 0.09);
+
+    --max-width: 1150px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.container {
+    width: min(90%, var(--max-width));
+    margin: 0 auto;
+}
+
+
+/* -------------------------
+   NAVIGATION
+------------------------- */
+
+.site-header {
+    border-bottom: 1px solid var(--border);
+    background: rgba(11, 13, 12, 0.92);
+}
+
+
+.nav-container {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+	font-family: Rockwell, "Roboto Slab", "Courier New", serif;
+	font-size: 3.65rem;
+	font-weight: 800;
+	letter-spacing: -0.8px;
+	text-transform: uppercase;
+}
+
+
+.logo span {
+    color: var(--accent);
+    margin-left: 5px;
+}
+
+
+.navigation {
+    display: flex;
+    gap: 30px;
+}
+
+
+.navigation a {
+    color: var(--muted);
+    transition: color 0.2s ease;
+}
+
+
+.navigation a:hover {
+    color: var(--text);
+}
+
+
+/* -------------------------
+   HERO
+------------------------- */
+
+.hero {
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 80% 30%, rgba(201, 166, 107, 0.14), transparent 30%),
+        linear-gradient(180deg, #101311 0%, #0b0d0c 100%);
+}
+
+
+.hero-content {
+    max-width: 850px;
+}
+
+
+.eyebrow,
+.section-label,
+.project-tag {
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.eyebrow {
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    max-width: 850px;
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 0.98;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+}
+
+
+.hero-text {
+    max-width: 650px;
+    color: var(--muted);
+    font-size: 1.2rem;
+    margin-bottom: 36px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* -------------------------
+   BUTTONS
+------------------------- */
+
+.button {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+
+.button-primary {
+    background: var(--accent);
+    color: #111;
+}
+
+
+.button-primary:hover {
+    background: var(--accent-light);
+}
+
+
+.button-secondary {
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+
+.button-secondary:hover {
+    background: var(--surface-light);
+}
+
+
+/* -------------------------
+   GENERAL SECTIONS
+------------------------- */
+
+.section {
+    padding: 110px 0;
+}
+
+
+.section-dark {
+    background: #0f1210;
+}
+
+
+.section-label {
+    margin-bottom: 12px;
+}
+
+
+.section h2 {
+    max-width: 750px;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 55px;
+}
+
+
+/* -------------------------
+   SERVICE CARDS
+------------------------- */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 32px;
+    min-height: 270px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(201, 166, 107, 0.45);
+}
+
+
+.card-number {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 55px;
+}
+
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+
+.card p {
+    color: var(--muted);
+}
+
+
+/* -------------------------
+   PROJECTS
+------------------------- */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.project-card {
+    min-height: 330px;
+    padding: 35px;
+    background: #151916;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.project-tag {
+    margin-bottom: 20px;
+    font-size: 0.7rem;
+}
+
+
+.project-card h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+
+.project-card p {
+    color: var(--muted);
+    max-width: 500px;
+}
+
+
+.project-link {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+
+/* -------------------------
+   CONTACT
+------------------------- */
+
+.contact-section {
+    padding: 120px 0;
+    border-top: 1px solid var(--border);
+}
+
+
+.contact-content {
+    max-width: 750px;
+}
+
+
+.contact-content h2 {
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -3px;
+    margin: 15px 0 25px;
+}
+
+
+.contact-content > p:not(.section-label) {
+    color: var(--muted);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+.site-footer {
+    border-top: 1px solid var(--border);
+    padding: 25px 0;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+
+/* -------------------------
+   MOBILE
+------------------------- */
+
+@media (max-width: 800px) {
+
+    .navigation {
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 580px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .cards,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .navigation {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+}
