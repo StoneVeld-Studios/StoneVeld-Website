@@ -164,6 +164,26 @@ a {
 
 
 /* -------------------------
+   WORKSPACE HERO IMAGE
+------------------------- */
+
+.workspace-hero {
+    width: 100%;
+    height: min(52vw, 620px);
+    min-height: 320px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+}
+
+.workspace-hero img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* -------------------------
    HERO
 ------------------------- */
 
