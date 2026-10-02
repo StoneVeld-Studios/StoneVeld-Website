@@ -290,10 +290,10 @@ a {
 
 
 .section h2 {
-    max-width: 750px;
-    font-size: clamp(2rem, 5vw, 3.4rem);
+    max-width: 1050px;
+    font-size: clamp(2rem, 5vw, 3.2rem);
     line-height: 1.05;
-    letter-spacing: -2px;
+    letter-spacing: -4px;
     margin-bottom: 55px;
 }
 
@@ -529,3 +529,211 @@ a {
  .hero-content .eyebrow {
  color: var(--accent);
  }
+/* -------------------------
+EXPLORE STONEVELD PORTAL
+------------------------- */
+
+.explore-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+margin-top: 55px;
+}
+
+.explore-card {
+position: relative;
+min-height: 360px;
+overflow: hidden;
+background: var(--surface-light);
+border: 1px solid var(--border);
+transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.explore-card:hover {
+transform: translateY(-6px);
+border-color: rgba(208, 138, 62, 0.45);
+}
+
+.explore-card-studio {
+display: flex;
+align-items: flex-end;
+}
+
+.explore-card-studio::before {
+content: "";
+position: absolute;
+inset: 0;
+background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(0,0,0,0.22));
+}
+
+.explore-card-content {
+position: relative;
+z-index: 2;
+padding: 35px;
+}
+
+.explore-card h3 {
+font-size: 2rem;
+margin-bottom: 15px;
+}
+
+.explore-card p {
+color: var(--muted);
+max-width: 520px;
+}
+
+.explore-status {
+display: inline-block;
+margin-top: 25px;
+color: var(--accent);
+font-size: 0.7rem;
+font-weight: 700;
+letter-spacing: 0.08em;
+}
+
+.explore-card-workspace {
+grid-column: 1 / -1;
+min-height: 460px;
+display: grid;
+grid-template-columns: 1.35fr 1fr;
+}
+
+.explore-card-image {
+min-height: 460px;
+overflow: hidden;
+}
+
+.explore-card-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+transition: transform 0.5s ease;
+}
+
+.explore-card-workspace:hover .explore-card-image img {
+transform: scale(1.03);
+}
+
+@media (max-width: 800px) {
+.explore-grid {
+grid-template-columns: 1fr;
+}
+
+.explore-card-workspace {
+grid-column: auto;
+grid-template-columns: 1fr;
+}
+
+.explore-card-image {
+min-height: 300px;
+}
+}
+
+.explore-card-bianca {
+ align-items: flex-start;
+background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.68)), url("assets/Bianc_face.webp");
+background-size: cover;
+background-position: center 90%;
+}
+
+.explore-card-bianca .explore-card-content { align-self: flex-start; padding: 32px 35px; max-width: 48%; }
+.explore-card-bianca { border-radius: 26px; }
+.explore-card-bianca h3 { color: #c77dff; text-shadow: 0 0 6px rgba(199, 125, 255, 0.75), 0 0 14px rgba(199, 125, 255, 0.45), 0 0 24px rgba(199, 125, 255, 0.25); }
+
+
+`.bianca-page {
+min-height: 100vh;
+padding: 120px 7vw 80px;
+}
+
+.bianca-hero {
+max-width: 1200px;
+margin: 0 auto;
+min-height: 620px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+overflow: hidden;
+border: 1px solid var(--border);
+border-radius: 26px;
+background: var(--surface-light);
+}
+
+.bianca-hero-image {
+min-height: 620px;
+overflow: hidden;
+}
+
+.bianca-hero-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center 20%;
+}
+
+.bianca-hero-content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 60px;
+}
+
+.bianca-hero-content h1 {
+color: #c77dff;
+text-shadow:
+0 0 6px rgba(199, 125, 255, 0.75),
+0 0 14px rgba(199, 125, 255, 0.45),
+0 0 24px rgba(199, 125, 255, 0.25);
+margin-bottom: 25px;
+}
+
+.bianca-intro {
+font-size: 1.2rem;
+line-height: 1.7;
+color: var(--text-muted);
+max-width: 520px;
+}
+
+.bianca-content {
+max-width: 900px;
+margin: 100px auto 0;
+}
+
+.bianca-content h2 {
+font-size: 2.2rem;
+margin-bottom: 20px;
+}
+
+.bianca-content p:last-child {
+color: var(--text-muted);
+font-size: 1.1rem;
+line-height: 1.8;
+}
+
+.back-link {
+color: var(--text-muted);
+text-decoration: none;
+}
+
+.back-link:hover {
+color: #c77dff;
+}
+
+@media (max-width: 800px) {
+.bianca-page {
+padding: 100px 5vw 60px;
+}
+
+.bianca-hero {
+grid-template-columns: 1fr;
+}
+
+.bianca-hero-image {
+min-height: 450px;
+}
+
+.bianca-hero-content {
+padding: 40px 30px;
+}
+}`
+.explore-card-link { display: block; text-decoration: none; color: inherit; }
