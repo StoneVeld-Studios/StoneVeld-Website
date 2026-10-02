@@ -168,21 +168,18 @@ a {
 ------------------------- */
 
 .hero {
-    position: relative;
+ position: relative;
     min-height: 680px;
     display: flex;
     align-items: center;
     overflow: hidden;
-    background:
-        linear-gradient(rgba(21, 23, 25, 0.58), rgba(21, 23, 25, 0.72)),
-        url("assets/Worskpace_desk.jpg") center center / cover no-repeat;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 850px;
-}
+ .hero-content {
+     position: relative;
+     z-index: 1;
+     max-width: 850px;
+ }
 
 
 .eyebrow,
@@ -515,3 +512,20 @@ a {
         font-size: 1rem;
     }
 }
+
+ .hero-video {
+ position: absolute;
+ inset: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ z-index: 0;
+ }
+
+ .hero-content {
+ transform: translate(-190px, -190px);
+ }
+
+ .hero-content .eyebrow {
+ color: var(--accent);
+ }
