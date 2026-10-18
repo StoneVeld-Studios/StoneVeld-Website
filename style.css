@@ -737,3 +737,25 @@ padding: 40px 30px;
 }
 }`
 .explore-card-link { display: block; text-decoration: none; color: inherit; }
+
+/* Leon's Studio — restrained, static cyan digital rain. */
+.explore-card-leon, .leon-hero {
+  background-color: #03080d;
+  background-image: linear-gradient(180deg, rgba(2,7,12,.15), rgba(2,7,12,.88)), url("assets/leon-digital-rain.png");
+  background-position: center;
+  background-size: cover;
+}
+.explore-card-leon { border-color: rgba(55,180,212,.26); }
+.explore-card-leon h3, .leon-hero h1 { color: #d8faff; text-shadow: 0 0 16px rgba(38,179,223,.35); }
+.explore-card-leon p, .leon-hero p { color: #c5dae3; }
+.explore-card-link:focus-visible { outline: 2px solid #70d9f5; outline-offset: 4px; }
+.leon-page { background: #040a10; min-height: 100vh; }
+.studio-subheader { display: flex; align-items: center; justify-content: space-between; }
+.leon-hero { min-height: 65vh; display: flex; align-items: end; padding: 90px max(24px, 8vw) 70px; }
+.leon-hero-content { max-width: 760px; }
+.leon-hero h1 { font-size: clamp(2.6rem, 6vw, 5rem); margin: 14px 0; }
+.leon-hero p { line-height: 1.7; }
+.leon-content { max-width: 950px; margin: 0 auto; padding: 70px 24px 110px; }
+.leon-content h2 { margin: 18px 0; }
+.leon-content > p { line-height: 1.8; }
+@media (max-width: 600px) { .leon-hero { min-height: 52vh; padding: 80px 22px 45px; } }
