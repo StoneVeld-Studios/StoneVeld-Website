@@ -847,3 +847,16 @@ padding: 40px 30px;
   .explore-card-wolfbytes .wolfbyte-name{font-size:2rem;}
   .explore-card-wolfbytes .wolfbyte-studio{font-size:1.5rem;}
 }
+
+/* Wolfbyte Studio landing page: approved artwork and two-tier red glow. */
+.wolfbyte-page{min-height:100vh;background:#121518;}
+.wolfbyte-hero{min-height:72vh;display:flex;align-items:flex-start;padding:145px max(30px,7vw) 75px;background-color:#17191b;background-image:linear-gradient(90deg,rgba(9,10,12,.83) 0%,rgba(9,10,12,.53) 37%,rgba(9,10,12,.07) 75%),url("assets/wolfbytes-volcanic-wolf.webp");background-size:cover;background-position:center;}
+.wolfbyte-hero-content{max-width:450px;}
+.wolfbyte-hero h1{display:flex;flex-direction:column;line-height:1.02;gap:6px;margin:17px 0 30px;font-size:clamp(2.5rem,6vw,5rem);color:#080607;text-shadow:0 0 5px #ff4545,0 0 13px #e42734,0 0 32px rgba(255,23,34,.75);}
+.wolfbyte-hero h1 span+span{font-size:.7em;text-shadow:0 0 5px #ff5353,0 0 13px rgba(255,24,40,.52);}
+.wolfbyte-hero-content>p:last-child{max-width:310px;color:#f4e6de;text-shadow:0 2px 12px #000;}
+.wolfbyte-page-intro{padding:75px 0 115px;}
+.wolfbyte-page-intro .container{max-width:900px;}
+.wolfbyte-page-intro h2{margin:16px 0;}
+.wolfbyte-page-intro p:not(.project-tag){max-width:630px;margin-bottom:26px;color:var(--muted);}
+@media(max-width:650px){.wolfbyte-hero{min-height:63vh;padding:115px 24px 60px;background-position:61% center;}.wolfbyte-hero-content{max-width:64%;}}
