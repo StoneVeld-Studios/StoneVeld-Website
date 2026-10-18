@@ -860,3 +860,25 @@ padding: 40px 30px;
 .wolfbyte-page-intro h2{margin:16px 0;}
 .wolfbyte-page-intro p:not(.project-tag){max-width:630px;margin-bottom:26px;color:var(--muted);}
 @media(max-width:650px){.wolfbyte-hero{min-height:63vh;padding:115px 24px 60px;background-position:61% center;}.wolfbyte-hero-content{max-width:64%;}}
+
+/* Leon's Studio: approved kernel blueprint / mechanical raven artwork. */
+.explore-card-leon, .leon-hero {
+ background-color:#030a11;
+ background-image:linear-gradient(90deg,rgba(2,9,17,.82) 0%,rgba(2,9,17,.62) 37%,rgba(2,9,17,.12) 100%),url("assets/leon_systems_crow.png");
+ background-size:cover; background-position:center center;
+}
+.explore-card-leon {align-items:flex-end; border-color:rgba(72,187,235,.3);}
+.explore-card-leon .explore-card-content {max-width:63%; padding:30px;}
+.explore-card-leon h3, .leon-hero h1 {
+ color:#f4fbff;
+ text-shadow:0 2px 3px rgba(0,0,0,.92),0 0 9px rgba(255,179,93,.44),0 0 21px rgba(255,151,70,.23);
+}
+.explore-card-leon p, .leon-hero p {
+ color:#e6f2f9; text-shadow:0 2px 4px rgba(0,0,0,.92),0 0 12px rgba(255,161,83,.27);
+}
+.leon-hero {background-position:center center;}
+.leon-hero-content {max-width:630px;}
+@media(max-width:600px){
+ .explore-card-leon .explore-card-content{max-width:70%;padding:22px;}
+ .leon-hero-content{max-width:83%;}
+}
