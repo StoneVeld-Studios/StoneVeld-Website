@@ -801,3 +801,15 @@ padding: 40px 30px;
 @media(max-width:800px){.creation-grid,.split-feature,.footer-layout{grid-template-columns:1fr}.creation-card{min-height:230px}.split-feature{gap:24px}}
 
 .catalogue-page{min-height:100vh;padding:125px 0 90px;background:#171d21}.catalogue-page h1{font-size:clamp(2.5rem,5vw,4.3rem);margin:14px 0}.catalogue-intro{max-width:780px;color:var(--muted);font-size:1.15rem}.catalogue-note{margin-top:22px;color:var(--muted)}.catalogue-note a{color:var(--accent-light)}
+
+/* Approved original Wolfbytes wolf artwork; keep the left-hand copy legible. */
+.explore-card-wolfbytes {
+  background-color: #141719;
+  background-image: linear-gradient(90deg,rgba(8,11,16,.86) 0%,rgba(8,11,16,.62) 44%,rgba(8,11,16,.14) 100%), url("assets/wolfbytes-volcanic-wolf.webp");
+  background-position: center center;
+  background-size: cover;
+  border-color: rgba(228,128,61,.37);
+}
+.explore-card-wolfbytes h3 { color: #ffe0c2; text-shadow: 0 2px 18px rgba(0,0,0,.75); }
+.explore-card-wolfbytes .explore-card-content { max-width: 76%; }
+.explore-card-wolfbytes p { color: #f3e2d4; text-shadow: 0 2px 8px rgba(0,0,0,.9); }
