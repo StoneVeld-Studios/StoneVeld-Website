@@ -759,3 +759,19 @@ padding: 40px 30px;
 .leon-content h2 { margin: 18px 0; }
 .leon-content > p { line-height: 1.8; }
 @media (max-width: 600px) { .leon-hero { min-height: 52vh; padding: 80px 22px 45px; } }
+
+/* The studio section forms two rows of matched cards; the working lab follows. */
+.explore-card-leon { border-radius: 26px; }
+.explore-card-contingency, .explore-card-wolfbytes { border-radius: 26px; }
+.explore-card-contingency { background: radial-gradient(circle at 80% 15%, rgba(134,184,174,.28), transparent 55%), linear-gradient(135deg, #20373d 0%, #172d35 48%, #17232b 100%); border-color: rgba(112,193,186,.28); }
+.explore-card-contingency h3 { color: #c0f2e8; }
+.explore-card-wolfbytes { background: radial-gradient(circle at 78% 22%, rgba(153,122,221,.25), transparent 55%), linear-gradient(145deg,#202232,#18232d 70%,#111921); border-color:rgba(181,150,224,.28); }
+.explore-card-wolfbytes h3 { color: #dfcffd; }
+.explore-card-workspace { min-height: 320px; border-radius: 26px; }
+.explore-card-workspace .explore-card-image { min-height: 320px; }
+@media (max-width: 800px) { .explore-card-workspace .explore-card-image { min-height: 240px; } }
+
+.contingency-preview { min-height:100vh; padding:120px 7vw 80px; background:radial-gradient(circle at 80% 18%,rgba(131,193,172,.17),transparent 50%),#0c181b; }
+.contingency-preview-content { max-width:800px; margin:7vh auto 0; }
+.contingency-preview h1 { font-size:clamp(2.8rem,6vw,5rem); color:#d2fff2; margin:14px 0; }
+.contingency-preview p { max-width:640px; margin:0 0 24px; color:#d3e0df; }
