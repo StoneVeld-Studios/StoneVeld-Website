@@ -909,3 +909,14 @@ padding: 40px 30px;
   color: #e8f3f2;
   text-shadow: 0 1px 3px rgba(0,0,0,.75);
 }
+
+/* Contingency collaboration network background: Teams, chat, Git and Archive. */
+.explore-card-contingency {
+  background-color:#07151d;
+  background-image:linear-gradient(90deg,rgba(5,16,25,.86) 0%,rgba(5,16,25,.68) 40%,rgba(5,16,25,.1) 100%),url("assets/contingency-collaboration.webp");
+  background-position:center; background-size:cover;
+  border-color:rgba(211,139,59,.43);
+}
+.explore-card-contingency .explore-card-content{max-width:68%;padding:28px 30px;}
+.explore-card-contingency h3 {color:#cf791c;text-shadow:0 0 3px rgba(255,255,255,.93),0 0 9px rgba(255,255,255,.74),0 0 20px rgba(255,255,255,.3),0 0 27px rgba(226,142,56,.24);}
+@media(max-width:600px){.explore-card-contingency .explore-card-content{max-width:78%;padding:22px;}}
