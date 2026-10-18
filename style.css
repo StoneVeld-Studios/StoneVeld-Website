@@ -892,3 +892,20 @@ padding: 40px 30px;
  text-shadow:0 0 3px rgba(255,193,111,.92),0 0 8px rgba(255,153,61,.88),0 0 18px rgba(255,119,35,.7),0 0 30px rgba(255,113,29,.38);
 }
 @media(max-width:600px){.explore-card-leon .explore-card-content{max-width:72%;padding:19px 20px;}}
+
+/* Contingency: warm tungsten-orange identity with restrained white neon. */
+.explore-card-contingency h3 {
+  color: #f0a33a;
+  text-shadow: 0 0 2px rgba(255,255,255,.95),
+               0 0 8px rgba(255,255,255,.80),
+               0 0 17px rgba(255,255,255,.40),
+               0 0 27px rgba(240,163,58,.35);
+}
+.explore-card-contingency .project-tag {
+  color: rgba(245,245,245,.9);
+  letter-spacing: .22em;
+}
+.explore-card-contingency p:not(.project-tag) {
+  color: #e8f3f2;
+  text-shadow: 0 1px 3px rgba(0,0,0,.75);
+}
