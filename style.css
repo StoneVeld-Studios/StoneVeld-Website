@@ -779,3 +779,25 @@ padding: 40px 30px;
 /* Full-width Workspace card remains a navigable gateway to open project material. */
 .explore-workspace-link { grid-column: 1 / -1; }
 .explore-workspace-link .explore-card-workspace { grid-column: auto; }
+
+/* StoneVeld public-facing lower homepage */
+.creation-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:36px 0 25px; }
+.creation-card {padding:32px;min-height:270px;border:1px solid var(--border);border-radius:22px;background:linear-gradient(145deg,#283039,#1a2128);}
+.creation-card:nth-child(2){background:linear-gradient(145deg,#302b3c,#1a2128)}
+.creation-card:nth-child(3){background:linear-gradient(145deg,#333027,#1b2027)}
+.creation-card h3{margin:12px 0;color:var(--text)}.creation-card p{color:var(--muted)}
+.creation-icon{font-size:2.3rem;color:#e9b981;display:block;margin-bottom:22px}
+.section-action{display:inline-block;color:var(--accent-light);font-weight:700;margin-top:6px}
+.split-feature{display:grid;grid-template-columns:1.4fr 1fr;align-items:center;gap:46px}
+.split-feature h2{margin:16px 0}.split-feature p{color:var(--muted)}
+.split-actions{display:flex;flex-direction:column;align-items:flex-start;gap:19px}
+.open-tools-section{background:#1b2429}.taking-shape-section{background:linear-gradient(110deg,#1d2b2b,#1c2027)}
+.modern-footer{padding:55px 0 22px;background:#101719;border-top:1px solid var(--border)}
+.footer-layout{display:grid;grid-template-columns:1.6fr 1fr 1.3fr;gap:34px}
+.footer-layout>div{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.footer-layout a,.footer-layout span,.footer-layout p{font-size:.9rem;color:var(--muted)}
+.footer-layout a:hover{color:var(--accent-light)}
+.footer-bottom{border-top:1px solid var(--border);margin-top:35px;padding-top:18px;color:var(--muted);font-size:.8rem}
+@media(max-width:800px){.creation-grid,.split-feature,.footer-layout{grid-template-columns:1fr}.creation-card{min-height:230px}.split-feature{gap:24px}}
+
+.catalogue-page{min-height:100vh;padding:125px 0 90px;background:#171d21}.catalogue-page h1{font-size:clamp(2.5rem,5vw,4.3rem);margin:14px 0}.catalogue-intro{max-width:780px;color:var(--muted);font-size:1.15rem}.catalogue-note{margin-top:22px;color:var(--muted)}.catalogue-note a{color:var(--accent-light)}
