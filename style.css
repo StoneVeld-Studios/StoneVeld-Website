@@ -642,7 +642,7 @@ background-position: center 90%;
 .explore-card-bianca h3 { color: #c77dff; text-shadow: 0 0 6px rgba(199, 125, 255, 0.75), 0 0 14px rgba(199, 125, 255, 0.45), 0 0 24px rgba(199, 125, 255, 0.25); }
 
 
-`.bianca-page {
+.bianca-page {
 min-height: 100vh;
 padding: 120px 7vw 80px;
 }
@@ -735,7 +735,7 @@ min-height: 450px;
 .bianca-hero-content {
 padding: 40px 30px;
 }
-}`
+}
 .explore-card-link { display: block; text-decoration: none; color: inherit; }
 
 /* Leon's Studio — restrained, static cyan digital rain. */
