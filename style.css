@@ -882,3 +882,13 @@ padding: 40px 30px;
  .explore-card-leon .explore-card-content{max-width:70%;padding:22px;}
  .leon-hero-content{max-width:83%;}
 }
+
+/* Leon homepage card typography placement and blue/orange title treatment. */
+.explore-card-leon { align-items:flex-start; }
+.explore-card-leon .explore-card-content { max-width:64%; padding:21px 24px; }
+.explore-card-leon h3 {
+ color:#123c85;
+ -webkit-text-stroke:.35px rgba(255,195,120,.75);
+ text-shadow:0 0 3px rgba(255,193,111,.92),0 0 8px rgba(255,153,61,.88),0 0 18px rgba(255,119,35,.7),0 0 30px rgba(255,113,29,.38);
+}
+@media(max-width:600px){.explore-card-leon .explore-card-content{max-width:72%;padding:19px 20px;}}
