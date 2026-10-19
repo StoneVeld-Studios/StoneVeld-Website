@@ -1118,3 +1118,19 @@ padding: 40px 30px;
 .nexus-home-cta:hover,.nexus-home-cta:focus-visible{background:rgba(228,158,80,.2);box-shadow:0 0 26px rgba(236,170,91,.36);}
 .nexus-home-copy .nexus-home-note{font-size:.85rem;color:#c8d9db;margin-top:17px;}
 @media(max-width:740px){.nexus-home-section{padding:55px 0;}.nexus-home-panel{min-height:0;background-position:65% center;background-image:linear-gradient(90deg,rgba(5,18,28,.95),rgba(6,19,30,.72) 68%,rgba(6,19,30,.38)),url("assets/nexus-orbital-collaboration.webp");}.nexus-home-copy{padding:48px 24px;}.nexus-home-copy h2{font-size:clamp(2.6rem,9vw,4.4rem);}}
+
+/* Phase 1: site-wide readability pass. Display typefaces and approved copy are retained. */
+:root{--reading-font:Arial,Helvetica,sans-serif;}
+body{font-family:var(--reading-font);font-size:16px;}
+p{font-family:var(--reading-font);font-weight:400;line-height:1.65;}
+/* Navigational and UI copy stays readable without losing the distinct display titles. */
+.navigation a,.back-link,.section-action,.project-link,.button,.nexus-cta,.nexus-secondary,.nexus-home-cta,.tools-primary-link,.tools-secondary-link,.fed-launch-button,.fed-launch-secondary,.fed-launch-links a,.fed-text-link{font-family:var(--reading-font);font-weight:700;letter-spacing:normal;}
+.navigation a{font-size:.88rem;line-height:1.4;}
+.section-label,.project-tag{font-family:var(--reading-font);font-size:.78rem;letter-spacing:.13em;line-height:1.5;font-weight:700;}
+/* Metadata and explanatory text should remain legible at normal desktop zoom. */
+.nexus-orbit-card p,.nexus-orbit-center>p:not(.project-tag),.nexus-orbit-center small,.nexus-category small,.nexus-state,.nexus-home-copy .nexus-home-note,.nexus-home-tags span,.nexus-hero-layout>div:first-child>p:not(.section-label),.nexus-featured-copy p:not(.project-tag),.nexus-coming p:not(.project-tag),.nexus-no-sale,.tools-availability,.tools-caveat,.tools-screenshot figcaption,.fed-launch-banner figcaption,.fed-interest-note,.footer-bottom{font-family:var(--reading-font);line-height:1.55;}
+.nexus-orbit-card p,.nexus-orbit-center>p:not(.project-tag),.nexus-category small{font-size:.9rem;}
+.nexus-orbit-center small,.nexus-home-copy .nexus-home-note,.nexus-home-tags span,.tools-availability,.tools-screenshot figcaption,.fed-launch-banner figcaption,.footer-bottom{font-size:.85rem;}
+.nexus-home-copy>p:not(.section-label){line-height:1.65;}
+.nexus-home-tags span{padding:7px 12px;}
+@media(max-width:600px){.section-label,.project-tag{letter-spacing:.1em;}.nexus-home-copy>p:not(.section-label),.nexus-hero-layout>div:first-child>p:not(.section-label){line-height:1.65;}}
