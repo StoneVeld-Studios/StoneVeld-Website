@@ -741,7 +741,7 @@ padding: 40px 30px;
 /* Leon's Studio — restrained, static cyan digital rain. */
 .explore-card-leon, .leon-hero {
   background-color: #03080d;
-  background-image: linear-gradient(180deg, rgba(2,7,12,.15), rgba(2,7,12,.88)), url("assets/leon-digital-rain.png");
+  background-image: linear-gradient(180deg, rgba(2,7,12,.15), rgba(2,7,12,.88)), url("assets/leon-digital-rain.webp");
   background-position: center;
   background-size: cover;
 }
@@ -864,7 +864,7 @@ padding: 40px 30px;
 /* Leon's Studio: approved kernel blueprint / mechanical raven artwork. */
 .explore-card-leon, .leon-hero {
  background-color:#030a11;
- background-image:linear-gradient(90deg,rgba(2,9,17,.82) 0%,rgba(2,9,17,.62) 37%,rgba(2,9,17,.12) 100%),url("assets/leon_systems_crow.png");
+ background-image:linear-gradient(90deg,rgba(2,9,17,.82) 0%,rgba(2,9,17,.62) 37%,rgba(2,9,17,.12) 100%),url("assets/leon_systems_crow.webp");
  background-size:cover; background-position:center center;
 }
 .explore-card-leon {align-items:flex-end; border-color:rgba(72,187,235,.3);}
