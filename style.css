@@ -1171,3 +1171,45 @@ p{font-family:var(--reading-font);font-weight:400;line-height:1.65;}
 body:has(#open-tools:target) .navigation a[href="#open-tools"],
 body:has(#contact:target) .navigation a[href="#contact"]{color:#f7c487;text-shadow:0 0 10px rgba(231,153,66,.55),0 0 18px rgba(231,153,66,.22);}
 .navigation a[aria-current="page"]{text-shadow:0 0 10px rgba(231,153,66,.55),0 0 18px rgba(231,153,66,.22);}
+
+/* Phase 3: responsive layout safeguards, preserving approved desktop composition. */
+@media(max-width:1180px){
+ .site-header .nav-container{display:flex;flex-wrap:wrap;align-items:center;gap:7px 18px;padding:8px 0 9px;}
+ .site-header .logo{flex:none;font-size:clamp(1.4rem,2.4vw,1.8rem);white-space:nowrap;}
+ .site-header .navigation{display:flex;width:100%;min-width:0;gap:18px;overflow-x:auto;overflow-y:hidden;white-space:nowrap;scrollbar-width:thin;padding:7px 0 4px;}
+ .site-header .navigation a{display:inline-block;flex:none;white-space:nowrap;}
+ .site-header~main{padding-top:112px;}
+ .site-header~main .hero{min-height:calc(85vh - 112px);}
+}
+@media(max-width:740px){
+ .container{width:min(92%,var(--max-width));}
+ .nexus-orbit-card{min-width:0;max-width:100%;}
+ .nexus-orbit-center{width:100%;}
+ .nexus-featured-copy{padding:26px;}
+ .nexus-product-grid,.tools-spotlight-grid,.fed-journey-layout{gap:26px;}
+ .nexus-featured-image,.tools-screenshot{min-width:0;}
+ .nexus-featured-image img,.tools-screenshot img,.nexus-product img{max-width:100%;}
+ .fed-launch-heading h1,.tools-intro h1,.nexus-product h1{overflow-wrap:break-word;}
+ .nexus-home-panel{min-width:0;}
+}
+@media(max-width:550px){
+ .site-header .nav-container{flex-direction:column;align-items:stretch;gap:7px;padding:9px 0;}
+ .site-header .navigation{display:flex;width:100%;gap:17px;padding:5px 0 6px;}
+ .site-header .navigation a{font-size:.85rem;}
+ .site-header~main{padding-top:109px;}
+ .nexus-hero{min-height:0;padding:75px 0 42px;}
+ .nexus-hero-layout{min-height:0;}
+ .nexus-hero-layout>div:first-child{margin-left:0;max-width:100%;}
+ .nexus-hero h1{font-size:clamp(2rem,9vw,3.25rem);}
+ .nexus-hero h1 .nexus-heading-brand{gap:8px;}
+ .nexus-hero h1 .nexus-heading-logo{width:45px;}
+ .nexus-hero h1 .nexus-heading-stoneveld{white-space:normal;overflow-wrap:anywhere;}
+ .nexus-hero h1 .nexus-heading-nexus{margin-left:53px;}
+ .nexus-hero .nexus-cta{margin-top:31px;}
+ .nexus-orbit{gap:13px;}
+ .nexus-orbit-card{padding:16px 20px;}
+ .nexus-home-copy h2{overflow-wrap:anywhere;}
+ .nexus-spec>div{grid-template-columns:85px minmax(0,1fr);gap:10px;}
+ .bianca-hero-content{padding:26px;}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}.nexus-home-cta,.nexus-cta,.nexus-category,.button{transition:none;}}
