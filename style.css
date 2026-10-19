@@ -1156,3 +1156,13 @@ p{font-family:var(--reading-font);font-weight:400;line-height:1.65;}
 @media(max-width:600px){.leon-hero{background-position:58% calc(50% + 48px);}}
 /* Keep homepage navigation discoverable on compact screens instead of hiding every link. */
 @media(max-width:550px){.site-header .nav-container{display:flex;flex-direction:column;align-items:stretch;gap:8px;padding:9px 0;}.site-header .navigation{display:flex;gap:15px;width:100%;overflow-x:auto;white-space:nowrap;padding-bottom:5px;scrollbar-width:thin;}.site-header .navigation a{flex:none;font-size:.86rem;}.site-header:has(.navigation)~main{padding-top:108px;}}
+
+/* Consistent StoneVeld navigation on every destination. */
+.shared-site-header .nav-container{gap:22px;}
+.shared-site-header .logo{flex-shrink:0;white-space:nowrap;}
+.shared-site-header .navigation{gap:clamp(10px,1.55vw,24px);align-items:center;min-width:0;}
+.shared-site-header .navigation a{white-space:nowrap;}
+.navigation a[aria-current="page"]{color:#f7c487;text-shadow:0 0 10px rgba(231,153,66,.34);}
+.navigation a:focus-visible,.logo:focus-visible{outline:2px solid #83e9ee;outline-offset:5px;border-radius:3px;}
+@media(max-width:1180px){.shared-site-header .nav-container{flex-wrap:wrap;padding:8px 0 9px;gap:9px;}.shared-site-header .logo{font-size:1.65rem;}.shared-site-header .navigation{width:100%;overflow-x:auto;scrollbar-width:thin;gap:19px;white-space:nowrap;padding:4px 0 3px;}.shared-site-header .navigation a{flex:none;}.shared-site-header~main{padding-top:113px;}}
+@media(max-width:550px){.shared-site-header .navigation{display:flex;}.shared-site-header .logo{font-size:1.5rem;}.shared-site-header~main{padding-top:111px;}}
