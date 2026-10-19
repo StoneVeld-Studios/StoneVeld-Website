@@ -1103,3 +1103,18 @@ padding: 40px 30px;
 .nexus-discovery-backdrop::before{content:"";position:absolute;top:-19px;left:0;right:0;height:44px;z-index:2;pointer-events:none;background-image:url("assets/nexus-neon-wave.svg");background-position:center;background-size:100% 100%;background-repeat:no-repeat;filter:drop-shadow(0 0 5px rgba(99,230,249,.58)) drop-shadow(0 0 9px rgba(242,164,84,.34));opacity:.82;}
 .nexus-discovery-backdrop::after{content:"";position:absolute;top:0;left:0;right:0;height:52px;z-index:1;pointer-events:none;background:linear-gradient(to bottom,rgba(8,21,30,.38),transparent);}
 @media(max-width:600px){.nexus-discovery-backdrop::before{height:31px;top:-14px;opacity:.78;}}
+
+/* Homepage feature: a cinematic invitation to StoneVeld Nexus. */
+.nexus-home-section{background:radial-gradient(circle at 75% 35%,rgba(34,151,166,.14),transparent 48%),#111b22;padding:78px 0 86px;}
+.nexus-home-panel{position:relative;overflow:hidden;min-height:525px;border:1px solid rgba(109,213,215,.4);border-radius:27px;display:flex;align-items:center;background-color:#091d2a;background-image:linear-gradient(90deg,rgba(6,19,29,.97) 0%,rgba(7,23,34,.89) 32%,rgba(8,26,36,.48) 62%,rgba(7,19,28,.06) 100%),url("assets/nexus-orbital-collaboration.webp");background-position:center;background-repeat:no-repeat;background-size:cover;box-shadow:0 24px 55px rgba(0,0,0,.3),0 0 26px rgba(74,182,198,.1);}
+.nexus-home-copy{position:relative;z-index:1;padding:45px clamp(25px,5vw,66px);max-width:650px;}
+.nexus-home-copy h2{font-family:"Nexus Overload",Arial,Helvetica,sans-serif;font-size:clamp(2.7rem,5.2vw,5.5rem);line-height:1.1;font-weight:400;margin:19px 0;color:#f4faf9;text-shadow:0 3px 20px rgba(0,0,0,.74);}
+.nexus-home-copy h2 span{color:#8aebec;}
+.nexus-home-copy>p:not(.section-label){max-width:490px;color:#e2f0f1;text-shadow:0 2px 12px rgba(0,0,0,.85);line-height:1.55;}
+.nexus-home-copy .nexus-home-lead{color:#ffc184!important;font-size:1.29rem;font-weight:700;margin-bottom:15px;}
+.nexus-home-tags{display:flex;gap:9px;flex-wrap:wrap;max-width:510px;margin:22px 0 28px;}
+.nexus-home-tags span{font-family:Arial,Helvetica,sans-serif;font-size:.76rem;color:#c9eeee;background:rgba(11,39,49,.7);border:1px solid rgba(117,211,210,.38);border-radius:999px;padding:6px 11px;}
+.nexus-home-cta{display:inline-flex;align-items:center;gap:11px;padding:13px 24px;border:2px solid #f0b86f;border-radius:999px;background:rgba(6,20,29,.35);font-size:1rem;font-weight:800;color:#ffe1af;box-shadow:0 0 18px rgba(236,170,91,.18);backdrop-filter:blur(4px);}
+.nexus-home-cta:hover,.nexus-home-cta:focus-visible{background:rgba(228,158,80,.2);box-shadow:0 0 26px rgba(236,170,91,.36);}
+.nexus-home-copy .nexus-home-note{font-size:.85rem;color:#c8d9db;margin-top:17px;}
+@media(max-width:740px){.nexus-home-section{padding:55px 0;}.nexus-home-panel{min-height:0;background-position:65% center;background-image:linear-gradient(90deg,rgba(5,18,28,.95),rgba(6,19,30,.72) 68%,rgba(6,19,30,.38)),url("assets/nexus-orbital-collaboration.webp");}.nexus-home-copy{padding:48px 24px;}.nexus-home-copy h2{font-size:clamp(2.6rem,9vw,4.4rem);}}
