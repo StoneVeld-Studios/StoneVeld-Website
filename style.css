@@ -1054,3 +1054,13 @@ padding: 40px 30px;
 @media(max-width:950px){.nexus-orbit{min-height:620px;}.nexus-orbit-card{width:230px;min-height:110px;padding:15px 17px;gap:9px;}.nexus-orbit-icon{width:30px;height:30px;}.nexus-orbit-center{min-height:230px;padding:20px;width:31%;}.nexus-orbit-stories{left:37%;}.nexus-orbit-graphics{left:0;}.nexus-orbit-books{right:0;}}
 @media(max-width:740px){.nexus-orbit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;min-height:0;}.nexus-orbit-ring{display:none;}.nexus-orbit-card,.nexus-orbit-center{position:static;transform:none;width:auto;min-height:130px;border-radius:90px;}.nexus-orbit-card{padding:17px;}.nexus-orbit-center{grid-column:1/-1;grid-row:1;min-height:200px;border-radius:35px;padding:25px;}.nexus-orbit-center h3 br{display:none;}.nexus-orbit-center .nexus-cta{margin:10px 0;}}
 @media(max-width:480px){.nexus-orbit{grid-template-columns:1fr;}.nexus-orbit-center{grid-column:1;}.nexus-orbit-card{min-height:106px;}.nexus-orbit-icon{width:40px;height:40px;}}
+
+/* Nexus cinematic hero: collaboration above the stars. The original logo panel stays in place. */
+.nexus-hero{position:relative;isolation:isolate;background:#091923 linear-gradient(90deg,rgba(5,15,25,.89) 0%,rgba(5,18,28,.78) 31%,rgba(7,25,32,.39) 65%,rgba(5,15,23,.18) 100%),url("assets/nexus-orbital-collaboration.webp") center 47% / cover no-repeat;min-height:610px;display:flex;align-items:center;}
+.nexus-hero::after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(0deg,rgba(11,26,33,.7),transparent 22%,transparent 78%,rgba(7,20,28,.2));pointer-events:none;}
+.nexus-hero-layout{position:relative;z-index:1;width:100%;}
+.nexus-hero h1{text-shadow:0 3px 28px rgba(0,0,0,.8);}
+.nexus-hero p:not(.section-label){text-shadow:0 2px 12px rgba(0,0,0,.87);}
+.nexus-hero-art{background:rgba(11,30,39,.79);backdrop-filter:blur(9px);box-shadow:0 15px 45px rgba(0,0,0,.37);}
+@media(max-width:850px){.nexus-hero{background-position:61% center;min-height:0;}.nexus-hero-art{max-width:245px;}}
+@media(max-width:510px){.nexus-hero{background-image:linear-gradient(90deg,rgba(5,15,25,.88),rgba(5,18,28,.63)),url("assets/nexus-orbital-collaboration.webp");background-position:65% center;}}
