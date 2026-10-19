@@ -1078,3 +1078,13 @@ padding: 40px 30px;
 .nexus-hero-art img{border-radius:11px;}.nexus-hero-art span{display:none;}
 @media(max-width:850px){.nexus-hero-layout{min-height:390px;}.nexus-hero-art{left:auto;right:1%;bottom:4px;width:88px;transform:none;}.nexus-hero-layout>div:first-child{max-width:570px;}}
 @media(max-width:510px){.nexus-hero-layout{min-height:410px;}.nexus-hero h1{font-size:clamp(2.8rem,11vw,4.2rem);}.nexus-hero-art{width:67px;right:0;bottom:0;}.nexus-hero .nexus-cta{margin-top:48px;}}
+
+/* Nexus hero composition: shift copy inward and integrate emblem with heading. */
+.nexus-hero-layout>div:first-child{margin-left:clamp(24px,7vw,95px);max-width:760px;}
+.nexus-hero h1 .nexus-heading-brand{display:flex;align-items:center;gap:15px;color:#f3f7f8;}
+.nexus-hero h1 .nexus-heading-logo{display:block;width:clamp(76px,7.2vw,105px);height:auto;aspect-ratio:1;object-fit:cover;border-radius:18px;flex:none;box-shadow:0 0 17px rgba(77,211,226,.27);border:1px solid rgba(121,227,230,.28);}
+.nexus-hero h1 .nexus-heading-stoneveld{color:#f3f7f8;white-space:nowrap;}
+.nexus-hero h1 .nexus-heading-nexus{display:block;color:#91eef0;margin-left:calc(clamp(76px,7.2vw,105px) + 15px);}
+.nexus-hero-art{display:none;}
+@media(max-width:850px){.nexus-hero-layout>div:first-child{margin-left:clamp(18px,4vw,38px);max-width:92%;}.nexus-hero h1{font-size:clamp(2.7rem,7vw,5.5rem);}}
+@media(max-width:510px){.nexus-hero-layout>div:first-child{margin-left:12px;max-width:95%;}.nexus-hero h1{font-size:clamp(2.15rem,9vw,3.3rem);}.nexus-hero h1 .nexus-heading-logo{width:52px;border-radius:12px;}.nexus-hero h1 .nexus-heading-brand{gap:9px;}.nexus-hero h1 .nexus-heading-nexus{margin-left:61px;}}
