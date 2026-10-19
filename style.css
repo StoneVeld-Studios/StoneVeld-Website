@@ -1220,3 +1220,10 @@ body:has(#contact:target) .navigation a[href="#contact"]{color:#f7c487;text-shad
  .taking-shape-section .split-feature{min-width:0;}
  .taking-shape-section .split-feature>div{min-width:0;}
 }
+
+/* Keyboard access and reduced-motion safeguards. */
+.skip-link{position:fixed;left:16px;top:-90px;z-index:2000;padding:11px 18px;background:#102d37;color:#eafcff;border:2px solid #83e9ee;border-radius:9px;font:700 1rem Arial,Helvetica,sans-serif;}
+.skip-link:focus{top:12px;outline:3px solid #f1b66f;outline-offset:2px;}
+a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4px;}
+#main-content{scroll-margin-top:120px;}
+@media(prefers-reduced-motion:reduce){.hero-video{display:none;}html{scroll-behavior:auto;}}
