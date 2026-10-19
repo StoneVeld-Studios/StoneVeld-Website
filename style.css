@@ -1056,7 +1056,7 @@ padding: 40px 30px;
 @media(max-width:480px){.nexus-orbit{grid-template-columns:1fr;}.nexus-orbit-center{grid-column:1;}.nexus-orbit-card{min-height:106px;}.nexus-orbit-icon{width:40px;height:40px;}}
 
 /* Nexus cinematic hero: collaboration above the stars. The original logo panel stays in place. */
-.nexus-hero{position:relative;isolation:isolate;background:#091923 linear-gradient(90deg,rgba(5,15,25,.89) 0%,rgba(5,18,28,.78) 31%,rgba(7,25,32,.39) 65%,rgba(5,15,23,.18) 100%),url("assets/nexus-orbital-collaboration.webp") center 47% / cover no-repeat;min-height:610px;display:flex;align-items:center;}
+.nexus-hero{position:relative;isolation:isolate;background-color:#091923;background-image:linear-gradient(90deg,rgba(5,15,25,.81) 0%,rgba(5,18,28,.67) 33%,rgba(7,25,32,.15) 70%,rgba(5,15,23,.06) 100%),url("assets/nexus-orbital-collaboration.webp");background-position:center 47%;background-size:cover;background-repeat:no-repeat;min-height:610px;display:flex;align-items:center;}
 .nexus-hero::after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(0deg,rgba(11,26,33,.7),transparent 22%,transparent 78%,rgba(7,20,28,.2));pointer-events:none;}
 .nexus-hero-layout{position:relative;z-index:1;width:100%;}
 .nexus-hero h1{text-shadow:0 3px 28px rgba(0,0,0,.8);}
