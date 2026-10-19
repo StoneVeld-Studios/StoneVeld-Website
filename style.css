@@ -1088,3 +1088,12 @@ padding: 40px 30px;
 .nexus-hero-art{display:none;}
 @media(max-width:850px){.nexus-hero-layout>div:first-child{margin-left:clamp(18px,4vw,38px);max-width:92%;}.nexus-hero h1{font-size:clamp(2.7rem,7vw,5.5rem);}}
 @media(max-width:510px){.nexus-hero-layout>div:first-child{margin-left:12px;max-width:95%;}.nexus-hero h1{font-size:clamp(2.15rem,9vw,3.3rem);}.nexus-hero h1 .nexus-heading-logo{width:52px;border-radius:12px;}.nexus-hero h1 .nexus-heading-brand{gap:9px;}.nexus-hero h1 .nexus-heading-nexus{margin-left:61px;}}
+
+/* One continuous colourful tech backdrop for the category orbit and featured work. */
+.nexus-discovery-backdrop{background-color:#122630;background-image:linear-gradient(180deg,rgba(10,25,35,.58),rgba(9,22,32,.49) 45%,rgba(12,29,38,.76)),url("assets/Tech_background_Oval_area.jpg");background-position:center center;background-repeat:no-repeat;background-size:cover;}
+.nexus-discovery-backdrop>.nexus-categories,.nexus-discovery-backdrop>.nexus-showcase{background:transparent;}
+.nexus-discovery-backdrop .nexus-orbit-card{background:linear-gradient(135deg,rgba(24,48,60,.9),rgba(13,29,42,.93));backdrop-filter:blur(5px);}
+.nexus-discovery-backdrop .nexus-orbit-center{background:radial-gradient(circle at 45% 30%,rgba(52,91,108,.95),rgba(11,30,43,.97) 78%);}
+.nexus-discovery-backdrop .nexus-featured{box-shadow:0 15px 45px rgba(0,0,0,.35);}
+.nexus-discovery-backdrop .nexus-categories h2,.nexus-discovery-backdrop .nexus-showcase h2{text-shadow:0 3px 14px rgba(0,0,0,.75);}
+@media(max-width:740px){.nexus-discovery-backdrop{background-position:center center;background-size:cover;}}
