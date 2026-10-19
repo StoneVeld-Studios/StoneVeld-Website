@@ -1253,3 +1253,20 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
  .site-header .navigation a{font-size:.86rem;line-height:1.5;}
  .site-header~main{padding-top:112px;}
 }
+
+/* Phone homepage hero: undo the desktop-only cinematic text offset. */
+@media(max-width:800px){
+ .hero .hero-content{transform:none;max-width:100%;min-width:0;margin-inline:auto;padding:45px 0;}
+ .hero{min-height:560px;align-items:center;}
+ .hero .hero-video{object-position:center center;}
+ .hero .hero-text{max-width:100%;}
+}
+@media(max-width:550px){
+ .site-header~main .hero{min-height:clamp(490px,73svh,680px);}
+ .hero .hero-content{padding:45px 0 65px;}
+ .hero h1{font-size:clamp(2rem,9vw,2.8rem);line-height:1.12;letter-spacing:-.035em;overflow-wrap:normal;}
+ .hero .eyebrow{font-size:.75rem;line-height:1.5;letter-spacing:.08em;}
+ .hero .hero-text{font-size:1rem;line-height:1.6;}
+ .hero-buttons{gap:12px;align-items:stretch;}
+ .hero-buttons .button{max-width:100%;text-align:center;}
+}
