@@ -1166,3 +1166,8 @@ p{font-family:var(--reading-font);font-weight:400;line-height:1.65;}
 .navigation a:focus-visible,.logo:focus-visible{outline:2px solid #83e9ee;outline-offset:5px;border-radius:3px;}
 @media(max-width:1180px){.shared-site-header .nav-container{flex-wrap:wrap;padding:8px 0 9px;gap:9px;}.shared-site-header .logo{font-size:1.65rem;}.shared-site-header .navigation{width:100%;overflow-x:auto;scrollbar-width:thin;gap:19px;white-space:nowrap;padding:4px 0 3px;}.shared-site-header .navigation a{flex:none;}.shared-site-header~main{padding-top:113px;}}
 @media(max-width:550px){.shared-site-header .navigation{display:flex;}.shared-site-header .logo{font-size:1.5rem;}.shared-site-header~main{padding-top:111px;}}
+
+/* Active navigation: direct destination pages use aria-current; homepage sections use :target. */
+body:has(#open-tools:target) .navigation a[href="#open-tools"],
+body:has(#contact:target) .navigation a[href="#contact"]{color:#f7c487;text-shadow:0 0 10px rgba(231,153,66,.55),0 0 18px rgba(231,153,66,.22);}
+.navigation a[aria-current="page"]{text-shadow:0 0 10px rgba(231,153,66,.55),0 0 18px rgba(231,153,66,.22);}
