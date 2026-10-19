@@ -1031,3 +1031,26 @@ padding: 40px 30px;
 .nexus-product{padding:135px 0 110px;background:radial-gradient(circle at 85% 15%,rgba(53,181,189,.15),transparent 50%),#182c33;}.nexus-product-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:50px;align-items:start;margin-top:24px;}.nexus-product figure{margin:0;padding:13px;border-radius:21px;background:#233c46;border:1px solid rgba(129,215,211,.4);}.nexus-product figure img{display:block;width:100%;height:auto;border-radius:11px;}.nexus-product figcaption{font-size:.85rem;color:#c4dcdd;margin:10px 2px 0;}.nexus-product h1{font-size:clamp(2.6rem,5vw,4.5rem);line-height:1.09;margin:13px 0;}.nexus-spec{margin:25px 0;}.nexus-spec>div{display:grid;grid-template-columns:110px 1fr;gap:15px;padding:11px 0;border-bottom:1px solid rgba(145,209,211,.24);}.nexus-spec dt{color:#9bdede;}.nexus-spec dd{color:#f5f3e9;}.nexus-product-actions{display:flex;flex-wrap:wrap;gap:12px;}
 @media(max-width:850px){.nexus-hero-layout,.nexus-featured,.nexus-product-grid{grid-template-columns:1fr;}.nexus-category-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.nexus-hero-art{justify-self:start;max-width:310px;}.nexus-coming{align-items:flex-start;flex-direction:column;}.nexus-categories,.nexus-showcase,.nexus-how{padding:62px 0;}}
 @media(max-width:510px){.nexus-category-grid{grid-template-columns:1fr;}.nexus-featured-copy{padding:26px;}.nexus-hero{padding:100px 0 55px;}}
+
+/* Nexus discovery orbit: five oval categories around the featured-work hub. */
+.nexus-orbit{position:relative;min-height:680px;max-width:1090px;margin:35px auto 0;isolation:isolate;}
+.nexus-orbit-ring{position:absolute;inset:8% 15%;border:1px dashed rgba(147,225,224,.24);border-radius:50%;box-shadow:0 0 55px rgba(48,168,185,.08),inset 0 0 60px rgba(48,168,185,.04);pointer-events:none;}
+.nexus-orbit-ring::before,.nexus-orbit-ring::after{content:"";position:absolute;inset:12%;border:1px solid rgba(214,165,97,.11);border-radius:50%;}
+.nexus-orbit-ring::after{inset:30%;border-color:rgba(107,216,222,.13);}
+.nexus-orbit-card{--orbit-accent:#9bd9e7;position:absolute;width:265px;min-height:125px;display:flex;align-items:center;gap:15px;padding:19px 22px;border:1px solid var(--orbit-accent);border-radius:100px;background:linear-gradient(135deg,rgba(43,71,80,.95),rgba(21,36,45,.97));box-shadow:0 7px 27px rgba(0,0,0,.2),0 0 23px color-mix(in srgb,var(--orbit-accent) 18%,transparent);}
+.nexus-orbit-card h3{font-size:1.09rem;line-height:1.25;color:#f8f8f3;margin:0 0 5px;}
+.nexus-orbit-card p{font-size:.84rem;line-height:1.3;color:#d0dfe2;}
+.nexus-orbit-icon{width:37px;height:37px;flex:none;color:var(--orbit-accent);filter:drop-shadow(0 0 9px color-mix(in srgb,var(--orbit-accent) 42%,transparent));}
+.nexus-orbit-stories{--orbit-accent:#e8b66d;top:4%;left:37%;}
+.nexus-orbit-books{--orbit-accent:#cc9cee;top:27%;right:1%;}
+.nexus-orbit-games{--orbit-accent:#82c6f5;bottom:5%;right:12%;}
+.nexus-orbit-software{--orbit-accent:#75e0d0;bottom:5%;left:12%;}
+.nexus-orbit-graphics{--orbit-accent:#ed9b85;top:27%;left:1%;}
+.nexus-orbit-center{position:absolute;top:47%;left:50%;transform:translate(-50%,-50%);width:min(320px,33%);min-height:270px;padding:30px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid rgba(147,225,224,.36);border-radius:50%;background:radial-gradient(circle at 50% 35%,#31515a,#162c35 75%);box-shadow:0 0 38px rgba(96,209,217,.15),0 16px 40px rgba(0,0,0,.18);}
+.nexus-orbit-center h3{font-size:clamp(1.24rem,2vw,1.65rem);line-height:1.3;margin:10px 0;color:#fbf6ee;}
+.nexus-orbit-center>p:not(.project-tag){font-size:.9rem;color:#d5ebeb;line-height:1.4;}
+.nexus-orbit-center .nexus-cta{font-size:.87rem;margin:13px 0;padding:10px 14px;}
+.nexus-orbit-center small{font-size:.72rem;color:#bdd9d8;}
+@media(max-width:950px){.nexus-orbit{min-height:620px;}.nexus-orbit-card{width:230px;min-height:110px;padding:15px 17px;gap:9px;}.nexus-orbit-icon{width:30px;height:30px;}.nexus-orbit-center{min-height:230px;padding:20px;width:31%;}.nexus-orbit-stories{left:37%;}.nexus-orbit-graphics{left:0;}.nexus-orbit-books{right:0;}}
+@media(max-width:740px){.nexus-orbit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;min-height:0;}.nexus-orbit-ring{display:none;}.nexus-orbit-card,.nexus-orbit-center{position:static;transform:none;width:auto;min-height:130px;border-radius:90px;}.nexus-orbit-card{padding:17px;}.nexus-orbit-center{grid-column:1/-1;grid-row:1;min-height:200px;border-radius:35px;padding:25px;}.nexus-orbit-center h3 br{display:none;}.nexus-orbit-center .nexus-cta{margin:10px 0;}}
+@media(max-width:480px){.nexus-orbit{grid-template-columns:1fr;}.nexus-orbit-center{grid-column:1;}.nexus-orbit-card{min-height:106px;}.nexus-orbit-icon{width:40px;height:40px;}}
