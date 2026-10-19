@@ -73,7 +73,7 @@ a {
     z-index: 1000;
     width: 100%;
     border-bottom: 1px solid var(--border);
-    background: background: rgba(21, 23, 25, 0.95);
+    background: rgba(21, 23, 25, 0.95);
     backdrop-filter: blur(12px);
 }
 
@@ -1150,3 +1150,9 @@ p{font-family:var(--reading-font);font-weight:400;line-height:1.65;}
 .open-tools-section .button-primary{background:rgba(10,34,45,.42);color:#d5fbfb;border:2px solid #81e3e6;box-shadow:0 0 17px rgba(77,206,222,.13);}
 .taking-shape-section .button-secondary{background:rgba(37,32,27,.25);border:2px solid #e8b578;color:#ffe0b1;box-shadow:0 0 18px rgba(226,159,75,.12);}
 @media(max-width:750px){.open-tools-section .split-feature,.taking-shape-section .split-feature{padding:25px 22px;}}
+
+/* Phase 2: preserve the Crow while bringing the image visibly lower. */
+.leon-hero{background-position:center calc(50% + 76px);}
+@media(max-width:600px){.leon-hero{background-position:58% calc(50% + 48px);}}
+/* Keep homepage navigation discoverable on compact screens instead of hiding every link. */
+@media(max-width:550px){.site-header .nav-container{display:flex;flex-direction:column;align-items:stretch;gap:8px;padding:9px 0;}.site-header .navigation{display:flex;gap:15px;width:100%;overflow-x:auto;white-space:nowrap;padding-bottom:5px;scrollbar-width:thin;}.site-header .navigation a{flex:none;font-size:.86rem;}.site-header:has(.navigation)~main{padding-top:108px;}}
