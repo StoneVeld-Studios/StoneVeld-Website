@@ -1097,3 +1097,9 @@ padding: 40px 30px;
 .nexus-discovery-backdrop .nexus-featured{box-shadow:0 15px 45px rgba(0,0,0,.35);}
 .nexus-discovery-backdrop .nexus-categories h2,.nexus-discovery-backdrop .nexus-showcase h2{text-shadow:0 3px 14px rgba(0,0,0,.75);}
 @media(max-width:740px){.nexus-discovery-backdrop{background-position:center center;background-size:cover;}}
+
+/* Subtle cyan/amber neon wave connecting the Nexus hero to the discovery surface. */
+.nexus-discovery-backdrop{position:relative;isolation:isolate;}
+.nexus-discovery-backdrop::before{content:"";position:absolute;top:-19px;left:0;right:0;height:44px;z-index:2;pointer-events:none;background-image:url("assets/nexus-neon-wave.svg");background-position:center;background-size:100% 100%;background-repeat:no-repeat;filter:drop-shadow(0 0 5px rgba(99,230,249,.58)) drop-shadow(0 0 9px rgba(242,164,84,.34));opacity:.82;}
+.nexus-discovery-backdrop::after{content:"";position:absolute;top:0;left:0;right:0;height:52px;z-index:1;pointer-events:none;background:linear-gradient(to bottom,rgba(8,21,30,.38),transparent);}
+@media(max-width:600px){.nexus-discovery-backdrop::before{height:31px;top:-14px;opacity:.78;}}
