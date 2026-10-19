@@ -1242,3 +1242,14 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
  .site-header .navigation{gap:16px;padding:5px 0;}
  .site-header~main{padding-top:105px;}
 }
+
+/* Phone header: compact brand text, separate pulse line and unobstructed menu. */
+@media(max-width:600px){
+ .site-header .nav-container{gap:5px;padding:8px 0 7px;}
+ .site-header .logo{display:flex;flex-wrap:wrap;align-items:baseline;align-self:stretch;width:100%;max-width:100%;gap:0 5px;padding:0 0 19px;font-family:Arial,Helvetica,sans-serif;font-size:clamp(.85rem,3.55vw,1.05rem);font-weight:800;line-height:1.35;letter-spacing:0;white-space:normal;overflow-wrap:normal;}
+ .site-header .logo-studios{margin-left:0;}
+ .site-header .logo-trace{left:0;top:auto;bottom:0;width:130px;height:13px;}
+ .site-header .navigation{margin:0;gap:17px;padding:6px 0 4px;scrollbar-width:thin;}
+ .site-header .navigation a{font-size:.86rem;line-height:1.5;}
+ .site-header~main{padding-top:112px;}
+}
