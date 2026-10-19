@@ -1227,3 +1227,18 @@ body:has(#contact:target) .navigation a[href="#contact"]{color:#f7c487;text-shad
 a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4px;}
 #main-content{scroll-margin-top:120px;}
 @media(prefers-reduced-motion:reduce){.hero-video{display:none;}html{scroll-behavior:auto;}}
+
+/* Production fix: the custom display-font wordmark must never push links offscreen. */
+@media(max-width:1700px){
+ .site-header .nav-container{display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:8px;padding:10px 0 8px;min-height:0;}
+ .site-header .logo{display:inline-block;align-self:flex-start;flex:none;max-width:100%;white-space:normal;font-size:clamp(1.15rem,2.15vw,1.7rem);line-height:1.1;overflow-wrap:break-word;}
+ .site-header .navigation{display:flex;align-items:center;width:100%;min-width:0;gap:clamp(13px,2vw,24px);overflow-x:auto;overflow-y:hidden;white-space:nowrap;scrollbar-width:thin;padding:7px 0 5px;}
+ .site-header .navigation a{flex:none;white-space:nowrap;font-size:.85rem;}
+ .site-header~main{padding-top:112px;}
+}
+@media(max-width:550px){
+ .site-header .nav-container{gap:7px;padding:9px 0 7px;}
+ .site-header .logo{font-size:clamp(1rem,4.7vw,1.35rem);}
+ .site-header .navigation{gap:16px;padding:5px 0;}
+ .site-header~main{padding-top:105px;}
+}
