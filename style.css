@@ -1325,7 +1325,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
   border-bottom: 1px solid rgba(210, 229, 226, .14);
   box-shadow: 0 8px 22px rgba(0, 0, 0, .15);
 }
-.logo-trace { top: calc(100% - 1px); }
+.logo-trace { top: calc(100% - 3px); }
 .logo-trace path {
   filter: drop-shadow(0 0 2px rgba(44, 244, 113, .9))
           drop-shadow(0 0 6px rgba(44, 244, 113, .48))
