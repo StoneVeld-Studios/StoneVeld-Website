@@ -1288,3 +1288,6 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
 .services-next { color: var(--muted); }
 .services-next a { color: var(--accent-light); text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 800px) { .services-grid { grid-template-columns: 1fr; } }
+
+/* Keep the desktop homepage title clear of the fixed header; other hero elements stay put. */
+@media (min-width: 801px) { .hero .hero-content h1 { position: relative; top: 30px; } }
