@@ -1291,3 +1291,17 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
 
 /* Keep the desktop homepage title clear of the fixed header; other hero elements stay put. */
 @media (min-width: 801px) { .hero .hero-content h1 { position: relative; top: 30px; } }
+
+/* Gremlin service invitation: separate from and below the approved service cards. */
+.gremlin-section { background: #121a1f; }
+.gremlin-layout { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.03fr); align-items: center; gap: clamp(24px,4vw,60px); }
+.gremlin-copy h2 { font-size: clamp(2rem,3.5vw,3.2rem); letter-spacing: -1.5px; margin: 12px 0 25px; }
+.gremlin-copy p { color: var(--muted); margin-bottom: 17px; line-height: 1.65; }
+.gremlin-copy .gremlin-lead { font-size: 1.14rem; color: var(--text); font-weight: 700; }
+.gremlin-copy strong { color: var(--accent-light); }
+.gremlin-copy .gremlin-promise { color: var(--accent-light); font-weight: 700; border-left: 3px solid var(--accent); padding-left: 15px; margin: 24px 0; }
+.gremlin-copy h3 { font-size: 1.35rem; margin: 25px 0 12px; }
+.gremlin-copy .button { margin-top: 12px; }
+.gremlin-visual { min-height: 500px; border-radius: 18px; border: 1px solid rgba(224,154,69,.25); background: #16252b url("assets/gremlins/stoneveld-gremlins-web.webp") center / cover no-repeat; box-shadow: 0 18px 45px rgba(0,0,0,.28); }
+@media (max-width: 850px) { .gremlin-layout { grid-template-columns: 1fr; } .gremlin-visual { min-height: 330px; } }
+@media (max-width: 550px) { .gremlin-visual { min-height: 250px; } }
