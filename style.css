@@ -1270,3 +1270,21 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
  .hero-buttons{gap:12px;align-items:stretch;}
  .hero-buttons .button{max-width:100%;text-align:center;}
 }
+
+
+/* Focused homepage service discovery additions; preserve established layout. */
+.site-header { background: rgba(21, 23, 25, 0.89); }
+.hero-text a { color: #eab46d; text-decoration: underline; text-decoration-color: rgba(234,180,109,.5); text-underline-offset: 4px; }
+.hero-text a:hover, .hero-text a:focus-visible { color: #ffd09a; text-decoration-color: currentColor; }
+.gremlin-teaser { display: inline-block; margin: -14px 0 22px; color: #f2b86a; font-size: .92rem; text-decoration: underline; text-decoration-color: rgba(242,184,106,.45); text-underline-offset: 4px; }
+.gremlin-teaser:hover, .gremlin-teaser:focus-visible { color: #ffd6a6; }
+.stoneveld-services { background: #1b2429; scroll-margin-top: 90px; }
+.stoneveld-services h2 { margin: 12px 0 24px; letter-spacing: -2px; }
+.services-intro { max-width: 750px; color: var(--muted); font-size: 1.1rem; }
+.services-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; margin: 36px 0 28px; }
+.service-item { border: 1px solid var(--border); background: rgba(21,23,25,.55); border-radius: 14px; padding: 27px; }
+.service-item h3 { margin-bottom: 13px; font-size: 1.23rem; }
+.service-item p { color: var(--muted); }
+.services-next { color: var(--muted); }
+.services-next a { color: var(--accent-light); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 800px) { .services-grid { grid-template-columns: 1fr; } }
