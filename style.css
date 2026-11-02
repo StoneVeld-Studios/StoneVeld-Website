@@ -1305,3 +1305,14 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
 .gremlin-visual { min-height: 500px; border-radius: 18px; border: 1px solid rgba(224,154,69,.25); background: #16252b url("assets/gremlins/stoneveld-gremlins-web.webp") center / cover no-repeat; box-shadow: 0 18px 45px rgba(0,0,0,.28); }
 @media (max-width: 850px) { .gremlin-layout { grid-template-columns: 1fr; } .gremlin-visual { min-height: 330px; } }
 @media (max-width: 550px) { .gremlin-visual { min-height: 250px; } }
+
+/* StoneVeld brand finishing touches: small changes only. */
+.logo-trace { top: calc(100% + 2px); }
+.logo-trace path { stroke: #31d96c; filter: drop-shadow(0 0 3px rgba(49,217,108,.58)) drop-shadow(0 0 7px rgba(49,217,108,.22)); }
+.logo-trace circle { fill: #79f8a2; filter: drop-shadow(0 0 4px rgba(121,248,162,.7)); }
+.hero-brand-main { color: #f4f1ea; }
+.hero-brand-accent { color: var(--accent); }
+.footer-layout { grid-template-columns: 1.4fr 1fr 1.15fr 1.1fr; }
+.footer-bottom { display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px 24px; }
+@media(max-width: 800px) { .footer-layout { grid-template-columns: 1fr 1fr; } }
+@media(max-width: 550px) { .footer-layout { grid-template-columns: 1fr; } }
