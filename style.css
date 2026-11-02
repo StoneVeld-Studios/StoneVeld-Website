@@ -1274,7 +1274,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
 
 /* Focused homepage service discovery additions; preserve established layout. */
 .site-header { background: rgba(21, 23, 25, 0.89); }
-.hero-text a { color: #eab46d; text-decoration: underline; text-decoration-color: rgba(234,180,109,.5); text-underline-offset: 4px; }
+.hero-text a { color: var(--accent); text-decoration: underline; text-decoration-color: rgba(234,180,109,.5); text-underline-offset: 4px; }
 .hero-text a:hover, .hero-text a:focus-visible { color: #ffd09a; text-decoration-color: currentColor; }
 .gremlin-teaser { display: inline-block; margin: -14px 0 22px; color: #f2b86a; font-size: .92rem; text-decoration: underline; text-decoration-color: rgba(242,184,106,.45); text-underline-offset: 4px; }
 .gremlin-teaser:hover, .gremlin-teaser:focus-visible { color: #ffd6a6; }
