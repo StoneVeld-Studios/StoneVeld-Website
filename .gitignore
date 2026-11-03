@@ -1,2 +1,5 @@
 .DS_Store
 Thumbs.db
+
+# Windows alternate data stream metadata
+*:Zone.Identifier
