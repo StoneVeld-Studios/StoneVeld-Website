@@ -1557,3 +1557,34 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
   .bia-music-staff { padding: 8px 4px; }
   .bia-music-title-row { margin: 16px auto 22px; }
 }
+
+/* Bia's flowing score: delicate ink and barely tinted backing. */
+.bia-music-staff {
+  margin: 0 0 20px;
+  padding: 6px 4px 0;
+  background: linear-gradient(90deg,
+    rgba(221, 124, 153, 0),
+    rgba(231, 162, 181, .13) 22%,
+    rgba(233, 167, 182, .17) 50%,
+    rgba(231, 162, 181, .13) 78%,
+    rgba(221, 124, 153, 0));
+  box-shadow: none;
+  border-radius: 15px;
+}
+.bia-music-staff svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 138px;
+  filter: drop-shadow(0 0 2px rgba(211, 79, 96, .55));
+}
+.bia-staff-lines { fill: none; stroke: #221017; stroke-width: 2; opacity: .88; stroke-linecap: round; }
+.bia-clef { fill: #221017; }
+.bia-notes { stroke: #221017; stroke-width: 2.8; }
+.bia-notes .note-head { fill: #221017; }
+.bia-notes .note-half { fill: none; stroke-width: 3.5; }
+.bia-notes .note-stem { fill: none; }
+@media (max-width: 650px) {
+  .bia-music-staff { padding: 4px 0 0; }
+  .bia-music-staff svg { min-height: 38px; }
+}
