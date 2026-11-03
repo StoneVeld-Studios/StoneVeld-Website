@@ -39,28 +39,28 @@ The same young, copper-orange and ember-gold phoenix from Bia's original work is
 **Sound:** Low thunder, rain, strained wingbeats; score thins rather than becoming bombastic.
 
 ## 02:05–02:50 — Scene 4: The Fall
-**Picture:** After a violent gust, the bird tumbles through rain and broken twigs. Use a wide view and a cut to forest ground; avoid depicting an explicit impact. The phoenix lies beneath wet leaves, breathing, alive but exhausted. Its ember-like plumage dims. The storm recedes.
+**Picture:** The storm explodes into violent chaos. The phoenix is thrown from the sky and falls through driving rain. On the forest floor it lies motionless in eerie silence while thunder shakes the trees. Lightning strikes nearby trunks repeatedly; patches of forest ignite and the fire spreads through the storm-dark background. One final blinding strike silhouettes the fallen phoenix. Its familiar copper-orange feathers dissolve into a small mound of black ash with a few dim embers. No graphic injury or suffering; this is the mythic phoenix transformation. Hold on the ash as the storm and fire rage beyond it.
 
 **Narration:**
-> It fell. Not because its dream was foolish. Not because it was weak. It fell because it had flown into something bigger than itself. There, on the cold forest floor, the little phoenix could not imagine the open sky. It could only feel how far it had fallen.
+> And then the sky broke open. The phoenix fell through thunder and rain, until the forest caught its silence. Lightning tore across the trees. Fire rose around the fallen bird. For one terrible moment, it seemed there was nothing left of the dream. Only ashes remained.
 
-**Sound:** Wind muffles abruptly; a muted low chord, then near silence. Long visual hold.
+**Sound:** Violent wind and layered thunder, sharp lightning cracks, fire catching in trees. Drop the score entirely for two seconds after the transformation; leave rain, distant fire and a faint low pulse.
 
 ## 02:50–03:35 — Scene 5: The Silence
-**Picture:** Dripping branches after rain; dew on the phoenix's feathers. A ray of sunlight finds its closed wing. A small butterfly — with subtle violet and teal iridescence, echoing Bia's studio identity — settles nearby. The phoenix opens one eye. It does not miraculously recover; it simply notices life is still moving. A pin-sized ember survives under its chest feathers.
+**Picture:** The forest remains scarred and smoky, with isolated flames and glowing embers in the distance; the lightning slowly moves away. At the centre lies a small ash mound where the phoenix fell. A delicate violet-and-teal butterfly enters the quiet clearing and settles on a stone beside the ashes. The butterfly cannot resurrect the phoenix by itself; its presence marks a moment of hope. A tiny golden ember pulses inside the ash, and the first faint phoenix outline takes form, rising from the ashes toward the end of the scene.
 
 **Narration:**
-> Time passed. The forest did not ask it to be brave. The sunlight did not demand a victory. A butterfly settled beside the fallen bird, light enough not to bend a leaf. The phoenix watched it lift into the air. Beneath the ash, one quiet ember still burned.
+> The storm could take its wings. The flames could scatter its feathers. But deep within the ashes, something refused to disappear. The forest grew quiet enough for a butterfly to land. And there, beneath all that had been lost, a single spark answered the light.
 
-**Sound:** Raindrops stop. Birdsong slowly returns. No music for the first 12 seconds; then one gentle piano note.
+**Sound:** Thunder retreats; crackling forest fire fades in the mix; 10–12 seconds of near silence as the butterfly arrives. One clear piano note as the first gold ember appears.
 
 ## 03:35–04:20 — Scene 6: The Awakening
-**Picture:** The phoenix plants one foot; fails gently; takes a breath; plants it again. Its wing unfolds only halfway. Dawn-gold fire travels along a few individual feathers. This is an earned, gradual return of strength, not an instant transformation. It climbs to a small mossy rock, faces the valley, and tests the breeze.
+**Picture:** Complete the rebirth begun in Scene 5: gold flame spirals gently upward from the ash mound and resolves into the SAME young phoenix, with the same crest, face, tail and wings as before. Its shape is recognisable before its feathers illuminate. It takes a first uncertain breath, then a step. Golden light travels along its feather edges while the fire behind it dies to isolated coals. The bird spreads its wings, finds its balance, and climbs to a mossy rock facing the dawn.
 
 **Narration:**
-> It could not undo the storm. It could not become the bird it had been that morning. But the ember was still there. One breath. One step. One wing. Another. Hope returned without making a sound. And when it finally looked toward the sky, it saw not a promise of an easy journey — but a chance to try again.
+> From the ashes, the phoenix returned. Not untouched by what had happened, and not without remembering the fall. One breath. One step. One wing. Then another. The storm had changed its journey, but it had not ended it. When the phoenix looked upward, the sky was waiting again.
 
-**Sound:** Heartbeat-like soft percussion, then warm strings. Wind becomes gentle.
+**Sound:** A low ember hum becomes the familiar piano theme; warm strings return as the bird reforms. No triumphant fanfare until the next scene.
 
 ## 04:20–05:00 — Scene 7: The Rise
 **Picture:** The phoenix takes off from the mossy ledge, initially low and uneven, then rises on a thermal. A ribbon of fire follows the wings briefly, warm rather than destructive. The camera pulls back across the same river valley from Scene 1. The butterfly passes below, unremarked. The bird glides into sunrise. Hold the final wide frame and fade to black.
@@ -76,6 +76,6 @@ The same young, copper-orange and ember-gold phoenix from Bia's original work is
 ## Writing and ethics notes
 - Narrator: sincere, calm, never preachy. Keep enough air between lines for visual storytelling. Script above is a *timed draft*: recording and timing must be checked at the chosen speaking pace. Do not squeeze narration to fill all five minutes.
 - Avoid promising every hardship ends quickly. Show rest, difficulty and continued uncertainty.
-- No melodramatic close-ups of suffering; no injury detail, death or violent rebirth.
+- Bianca-approved visual mythology includes a violent lightning storm, forest fires, the fallen phoenix transforming into ash, and a visually beautiful rebirth from those ashes. Show no gore or prolonged suffering; keep fire and lightning intense but intelligible, not flashing rapidly.
 - Preserve the *specific existing* original phoenix character and composition from Bianca's art. Never regenerate the original images in-place.
-- The butterfly is a cameo representing gentle company, not a supernatural cure.
+- The butterfly arrives beside the ash as a quiet symbol of hope; the rebirth is intrinsic to the phoenix, not a magical cure caused by the butterfly.

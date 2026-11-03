@@ -23,3 +23,6 @@
 - **P7:** Export video + poster + subtitles to new assets, measure final file size and verify deployment before adding new gallery entry. Keep original release as version one.
 
 **Important distinction:** Current files establish the approved *direction* and a draft production blueprint. They are not proof that an actual five-minute video, audio recording or individual scene visuals have been produced.
+
+## Creative revision — 2026-11-03, Bianca approved
+The chapter's design sheet and story progression are approved, including a more dramatic transformation. Scene 4 features violent lightning strikes and forest fires, ending with the fallen phoenix becoming ashes. Scene 5 holds on the ashes as a butterfly arrives and a new ember sparks. Scene 6 completes the phoenix's rebirth from those ashes before Scene 7's flight. The original film remains unchanged. Updated screenplay and storyboard reflect this decision.

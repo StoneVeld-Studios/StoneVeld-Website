@@ -19,17 +19,17 @@ Use the time ranges as editing targets, not guaranteed generator lengths. Genera
 | 10 | 01:31–01:42 | 11s | Medium, handheld subtle | Crosswind shakes the bird; rain begins |
 | 11 | 01:42–01:53 | 11s | Distant wide | The small phoenix against overwhelming storm scale |
 | 12 | 01:53–02:05 | 12s | Side profile | Wingbeats slow under rain; lightning distant behind clouds |
-| 13 | 02:05–02:16 | 11s | Wide oblique | Bird loses altitude among trees, no explicit impact |
-| 14 | 02:16–02:27 | 11s | Cut to ground close-up | Rain-dark feathers and wet leaves; bird alive and breathing |
-| 15 | 02:27–02:38 | 11s | Static medium | Dim embers along feathers, no movement except breath |
-| 16 | 02:38–02:50 | 12s | Wide static | Rain thins; forest dark but peaceful |
-| 17 | 02:50–03:01 | 11s | Macro | Water drips from leaves as light changes |
-| 18 | 03:01–03:12 | 11s | Medium | Sunbeam crosses phoenix's closed wing |
-| 19 | 03:12–03:23 | 11s | Macro to medium | Iridescent violet-teal butterfly lands nearby |
-| 20 | 03:23–03:35 | 12s | Detail | One eye opens; tiny gold ember flickers under plumage |
-| 21 | 03:35–03:46 | 11s | Medium | First attempt to stand; gentle stumble |
-| 22 | 03:46–03:57 | 11s | Detail | Talon grips soil; controlled inhale, feathers brighten |
-| 23 | 03:57–04:08 | 11s | Medium side | Wings half-open, individual feather edges glow |
+| 13 | 02:05–02:16 | 11s | Sweeping wide | Phoenix tumbles through storm; lightning reveals burning treetops below |
+| 14 | 02:16–02:27 | 11s | Low forest wide | Phoenix lies motionless in a clearing; repeated strikes ignite distant trees |
+| 15 | 02:27–02:38 | 11s | Medium through smoke | One brilliant strike silhouettes bird; its form dissolves into black ash |
+| 16 | 02:38–02:50 | 12s | Still low angle | Ash mound in foreground; fierce flames and chaotic storm beyond, then sudden hush |
+| 17 | 02:50–03:01 | 11s | Close low static | Ash and fading embers; storm retreats, smoke drifts among singed trees |
+| 18 | 03:01–03:12 | 11s | Wide clearing | Warm light begins filtering through smoke to the ash mound |
+| 19 | 03:12–03:23 | 11s | Macro to medium | Violet-teal butterfly lands beside ashes; a single hidden gold ember answers |
+| 20 | 03:23–03:35 | 12s | Ground-level close-up | Ember blossoms inside ashes; first recognisable phoenix silhouette starts rising |
+| 21 | 03:35–03:46 | 11s | Medium, slow upward | Golden flame resolves ash into the SAME young phoenix, matching face and crest |
+| 22 | 03:46–03:57 | 11s | Detail | Bird's first breath and grounded talons; feather edges begin glowing |
+| 23 | 03:57–04:08 | 11s | Side medium | Reborn phoenix opens same familiar wings; fire in forest recedes to coals |
 | 24 | 04:08–04:20 | 12s | Wide over shoulder | Bird stands on mossy rock, testing the wind |
 | 25 | 04:20–04:30 | 10s | Side tracking | Careful new takeoff, wings slightly uneven |
 | 26 | 04:30–04:40 | 10s | Wide sweeping | Flight steadies; warm fire ribbon traces wing arc briefly |
@@ -41,11 +41,11 @@ Use the time ranges as editing targets, not guaranteed generator lengths. Genera
 ## Continuity sheet
 **Hero:** one young phoenix, smaller and less ornate than an adult; copper-orange body, bright amber outer wing feathers, golden chest highlights, short flame-like crest, warm intelligent eyes, pointed hooked beak, broad feathered wings. Flight anatomy remains bird-like. It cannot change into a humanoid or grow extra wings. Preserve the original character's exact appearance as established by the approved source images when creating frame references; description above is a guide, not permission to replace that look.
 
-**World:** one geography — high sunlit mountain ledge, broad forested valley, winding river, mossy forest ground and the same peaks visible from multiple directions. Dawn (scenes 1–2), storm (3–4), clearing daylight (5–6), renewed dawnlike golden light (7). Daylight progression is stylized but coherent.
+**World:** one geography — high sunlit mountain ledge, broad forested valley, winding river, mossy forest ground and the same peaks visible from multiple directions. Dawn (scenes 1–2), violent lightning and visible forest fire (3–4), scarred smoky clearing and fire gradually dying (5–6), renewed dawnlike golden light (7). Daylight progression is stylized but coherent.
 
 **Butterfly:** one small purple/violet with slight teal/blue sheen, delicate wings. Appears only in scene 5, may reappear quietly in scene 7. Never physically heals phoenix.
 
-**Ember cue:** gold under feathers when phoenix first flies; almost invisible after fall; one small gold point in scene 5; gradual returning warmth in scene 6; a short clean glowing arc in 7.
+**Ash and ember cue:** after the final strike in scene 4, the entire bird becomes a small ash mound with residual ember glow. In scene 5 a gold spark glows within the ashes and the first phoenix form rises. Scene 6 completes the physical rebirth of the *same bird*, feathers returning gradually. Scene 7 gives a short clean glowing flight arc.
 
 **Color:** amber/copper, moss green, slate storm blue, warm silver-gold, tiny violet accent. Avoid saturated neon, sci-fi devices, text in images, extra characters or gruesome injury.
 
@@ -56,17 +56,17 @@ Generate **clean image-only keyframes**, then animate those approved stills in a
 Cinematic illustrated fantasy short film, one consistent small youthful copper-orange and amber-gold phoenix with bird-accurate anatomy and a distinctive short flame-like crest, expressive natural motion, layered Karoo-inspired mountain valley with a winding reflective river, lush forest, volumetric sunlight, cinematic painterly realism, subtle fine linework, restrained magical ember glow, emotionally grounded, 16:9 widescreen, rich natural texture, no humans, no letters, no watermark. Match the approved phoenix model and valley compositions from Bia's original artwork.
 
 **Scene-specific variation:**
-1. dawn optimism, quiet perched bird; 2. sweeping joyful flight; 3. threatening rain and huge wind, no injury close-up; 4. quiet aftermath, wet leaves and breathing; 5. small violet-teal butterfly and delicate ember; 6. slow recovery, no instant transformation; 7. earned ascent and golden sunlight.
+1. dawn optimism, quiet perched bird; 2. sweeping joyful flight; 3. threatening rain and huge wind, no injury close-up; 4. lightning strikes, forest fires and the bird turning to ash; 5. smouldering ashes, violet-teal butterfly and first rebirth spark; 6. gradual recognisable phoenix reforming from the ash with natural wing motion; 7. earned ascent and golden sunlight.
 
-**Avoid:** visual identity drift, extra limbs, second phoenix, anthropomorphic facial emotions, human character, flames consuming the forest, excessive particle effects, seizure-like strobing, dramatic explosions, fake cinematic text. Maintain smooth consistent camera directions across adjoining shots.
+**Avoid:** visual identity drift, extra limbs, second phoenix, anthropomorphic facial emotions, human character, gore, rapid strobe-like lightning, excessive particle effects, fake cinematic text. A portion of the forest can burn intensely, but do not transform the entire valley into an unrecognisable apocalypse. Maintain smooth consistent camera directions across adjoining shots.
 
 ## Sound and narration edit map
 - **00:00–00:40:** sparse piano, dawn ambience, first narration; bird movements audible.
 - **00:40–01:20:** warm strings and light percussion, flight narration.
 - **01:20–02:05:** low wind, distant thunder and sparse strings; storm narration.
-- **02:05–02:50:** sound drops in intensity, distant rain; deliberately hold silence.
-- **02:50–03:35:** foliage, water and the quiet butterfly moment; narration after 12-second nonverbal interval.
-- **03:35–04:20:** first piano motif returns in changed harmony; recovery narration.
+- **02:05–02:50:** violent layered thunder, sharp lightning, forest fire crackle; a dramatic two-second near-silence follows the ash transformation.
+- **02:50–03:35:** retreating storm, dying flames, smoky silence; butterfly arrives amid the ash; soft piano begins as the gold spark appears.
+- **03:35–04:20:** warm piano motif and strings accompany gradual, recognizable rebirth from ash; first breath, wings and cautious step.
 - **04:20–05:00:** restrained emotional resolution; narration ends early enough to hold the title, 6–8 seconds at end.
 
 Use licensed or original score, sound and voice assets. Never assume public-use rights for music or third-party audio. Consider CC-licensed material only after checking licence terms and attribution.
