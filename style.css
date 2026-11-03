@@ -1356,3 +1356,20 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
 @media (max-width: 800px) {
   .bianca-placeholder { min-height: 450px; }
 }
+
+/* StoneVeld emblem: quiet brand signature before the footer. */
+.stoneveld-emblem-band { padding: 32px 20px 12px; text-align: center; background: #10121b; }
+.stoneveld-emblem-band img { display: block; width: min(260px, 70vw); height: auto; margin: 0 auto; object-fit: contain; }
+
+/* Secret Workshop: a small invitation, not a competing homepage feature. */
+.secret-workshop-entrance { background: #10121b; padding: 28px 20px 8px; text-align: center; }
+.secret-workshop-entrance a { display: inline-flex; align-items: center; gap: 14px; color: var(--muted); font-size: .92rem; border-radius: 16px; padding: 8px 18px; transition: transform .2s, color .2s; }
+.secret-workshop-entrance a:hover, .secret-workshop-entrance a:focus-visible { color: var(--accent-light); transform: translateY(-3px); }
+.secret-workshop-entrance img { width: 76px; height: 76px; object-fit: contain; border-radius: 50%; }
+.secret-workshop-page { min-height: 85vh; padding: 125px 0 70px; }
+.secret-workshop-panel { max-width: 750px; text-align: center; padding: 35px 24px 60px; border: 1px solid var(--border); border-radius: 24px; background: var(--surface); }
+.secret-workshop-panel img { display: block; width: min(350px, 80%); height: auto; margin: 20px auto; border-radius: 20px; }
+.secret-workshop-panel h1 { font-size: clamp(2rem, 5vw, 3.5rem); color: var(--accent-light); margin-bottom: 14px; }
+.secret-workshop-panel p { margin: 0 auto 18px; max-width: 560px; }
+.secret-workshop-panel .button { margin-top: 14px; }
+@media (max-width: 600px) { .secret-workshop-entrance a { flex-direction: column; gap: 4px; } }

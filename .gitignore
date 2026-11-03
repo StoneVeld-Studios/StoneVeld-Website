@@ -3,3 +3,6 @@ Thumbs.db
 
 # Windows alternate data stream metadata
 *:Zone.Identifier
+
+# Local SentinelX safe-edit backups
+*.bak.20*
