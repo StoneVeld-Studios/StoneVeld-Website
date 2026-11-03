@@ -1499,3 +1499,24 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
   .bianca-page .bianca-hero-content { padding: 24px; }
   .bia-track-grid { grid-template-columns: 1fr; }
 }
+
+/* Decorative five-line music staff across Bia's music card. */
+.bia-music-staff {
+  width: 100%;
+  margin: 24px 0 8px;
+  padding: 12px 8px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, transparent, rgba(172, 92, 217, .10), transparent);
+  overflow: hidden;
+}
+.bia-music-staff svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 122px;
+  filter: drop-shadow(0 0 5px rgba(201, 114, 249, .3));
+}
+@media (max-width: 650px) {
+  .bia-music-staff { margin: 16px 0 4px; padding: 6px 0; }
+  .bia-music-staff svg { min-height: 42px; }
+}
