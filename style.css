@@ -1373,3 +1373,33 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
 .secret-workshop-panel p { margin: 0 auto 18px; max-width: 560px; }
 .secret-workshop-panel .button { margin-top: 14px; }
 @media (max-width: 600px) { .secret-workshop-entrance a { flex-direction: column; gap: 4px; } }
+
+/* Mountain landscape is separate from the untouched master emblem. */
+.stoneveld-landscape-band {
+  position: relative; isolation: isolate; min-height: 480px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 42px 24px 110px; overflow: hidden; text-align: center;
+  background: #32454c url("assets/Layered%20Karoo%20Mountain%20Landscape.png") center 53% / cover no-repeat;
+  border-top: 1px solid rgba(255,255,255,.12);
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+.stoneveld-landscape-band::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(180deg, rgba(13,23,29,.18), rgba(13,23,29,.10) 45%, rgba(13,23,29,.32));
+}
+.stoneveld-landscape-hint { color: #ffe0a0; font-size: 1.1rem; text-shadow: 0 2px 8px #17232a; margin-bottom: 12px; }
+.stoneveld-landscape-logo { display: block; width: min(300px, 65vw); height: auto; object-fit: contain; filter: drop-shadow(0 6px 18px rgba(0,0,0,.32)); }
+.stoneveld-landscape-workshop {
+  position: absolute; bottom: 20px; left: max(22px, calc((100% - 1150px)/2));
+  display: inline-flex; align-items: center; gap: 12px; padding: 5px 18px 5px 5px;
+  background: rgba(12,19,23,.72); border-radius: 999px; color: #ffcb79;
+  font-weight: 700; text-shadow: 0 1px 5px #141414; transition: background .2s, transform .2s;
+}
+.stoneveld-landscape-workshop:hover, .stoneveld-landscape-workshop:focus-visible { background: rgba(12,19,23,.92); transform: translateY(-2px); }
+.stoneveld-landscape-workshop img { width: 62px; height: 62px; object-fit: contain; border-radius: 50%; }
+@media (max-width: 600px) {
+  .stoneveld-landscape-band { min-height: 410px; padding: 36px 16px 104px; }
+  .stoneveld-landscape-logo { width: min(265px, 72vw); }
+  .stoneveld-landscape-workshop { left: 14px; bottom: 16px; font-size: .9rem; }
+  .stoneveld-landscape-workshop img { width: 48px; height: 48px; }
+}
