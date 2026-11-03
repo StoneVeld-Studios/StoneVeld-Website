@@ -1520,3 +1520,40 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
   .bia-music-staff { margin: 16px 0 4px; padding: 6px 0; }
   .bia-music-staff svg { min-height: 42px; }
 }
+
+/* Bia's refined music corner: black notation, warm red backglow, butterfly-framed title. */
+.bia-music-staff {
+  margin: 0 0 18px;
+  padding: 15px 18px;
+  background: linear-gradient(90deg,
+    rgba(244, 193, 208, .75),
+    rgba(252, 217, 221, .93) 30%,
+    rgba(251, 218, 225, .93) 70%,
+    rgba(244, 193, 208, .75));
+  box-shadow: inset 0 0 35px rgba(168, 49, 79, .18), 0 0 24px rgba(161, 47, 77, .13);
+}
+.bia-music-staff svg {
+  filter: drop-shadow(0 0 3px rgba(198, 36, 58, .45));
+}
+.bia-music-title-row {
+  display: flex; align-items: center; justify-content: center;
+  gap: clamp(10px, 2.4vw, 28px);
+  margin: 22px auto 24px; text-align: center;
+}
+.bia-music-title-row h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.75rem, 3.5vw, 3rem);
+  font-weight: 700; letter-spacing: .02em;
+  color: #ffdcac;
+  text-shadow: 0 2px 14px rgba(233, 110, 129, .40), 0 2px 2px rgba(0,0,0,.6);
+}
+.bia-music-butterfly {
+  font-size: clamp(1.25rem, 2.7vw, 2rem);
+  line-height: 1;
+  filter: drop-shadow(0 0 5px rgba(230, 155, 248, .5));
+}
+@media (max-width: 650px) {
+  .bia-music-staff { padding: 8px 4px; }
+  .bia-music-title-row { margin: 16px auto 22px; }
+}
