@@ -1403,3 +1403,40 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
   .stoneveld-landscape-workshop { left: 14px; bottom: 16px; font-size: .9rem; }
   .stoneveld-landscape-workshop img { width: 48px; height: 48px; }
 }
+
+/* Bia's approved artwork: keep image unaltered, set the link text in HTML. */
+.explore-card-bianca {
+  position: relative;
+  background-image: linear-gradient(180deg, rgba(15,8,22,.02) 42%, rgba(15,8,22,.76) 100%), url("assets/Enchanted%20Garden%20of%20Golden%20Butterflies_Bia.png");
+  background-size: cover;
+  background-position: center center;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.explore-card-bianca .explore-card-content {
+  align-self: flex-end;
+  width: 100%;
+  max-width: 100%;
+  padding: 24px 30px;
+  text-align: right;
+}
+.explore-card-bianca h3 { color: #ffe0ad; text-shadow: 0 2px 12px rgba(0,0,0,.9); }
+.explore-card-bianca .explore-card-content p { text-shadow: 0 2px 8px rgba(0,0,0,.95); }
+.bianca-hero { display: block; min-height: auto; max-width: 860px; }
+.bianca-hero-content { min-height: 320px; }
+@media (max-width: 600px) {
+  .explore-card-bianca .explore-card-content { padding: 18px 20px; }
+}
+
+/* Keep the master brand mark beside the wordmark; heartbeat stays visible below the text. */
+.site-header .logo:has(.header-master-emblem) { padding-left: 52px; min-height: 43px; }
+.site-header .header-master-emblem {
+  position: absolute; left: 0; top: 0; width: 42px; height: 42px;
+  object-fit: contain; pointer-events: none;
+}
+.site-header .logo:has(.header-master-emblem) .logo-trace { left: 52px; }
+@media (max-width: 600px) {
+  .site-header .logo:has(.header-master-emblem) { padding-left: 41px; min-height: 36px; }
+  .site-header .header-master-emblem { width: 34px; height: 34px; }
+  .site-header .logo:has(.header-master-emblem) .logo-trace { left: 41px; }
+}
