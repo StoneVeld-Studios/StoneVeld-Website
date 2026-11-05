@@ -1838,3 +1838,16 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
   .sv-workflow-card:nth-child(2)::before,.sv-workflow-card:nth-child(2)::after{display:block}
   .sv-workflow-foot{margin-top:27px}
 }
+
+/* Emphasize Federation identity without altering the card artwork. */
+.explore-card-contingency .explore-card-content h3 {
+  font-size: clamp(2.55rem, 4.2vw, 3.5rem);
+  line-height: 1.12;
+  letter-spacing: -.025em;
+  color: #e3f5ef;
+  text-shadow: 0 2px 16px rgba(1,15,20,.65),0 0 16px rgba(79,194,177,.18);
+  margin-bottom: 18px;
+}
+@media (max-width: 600px) {
+  .explore-card-contingency .explore-card-content h3 { font-size: clamp(2.2rem, 9vw, 3rem); }
+}
