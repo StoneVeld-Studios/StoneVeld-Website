@@ -1707,3 +1707,23 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
 .sv-start-back{display:inline-block;margin-left:20px;text-decoration:underline;color:#e6c593;text-underline-offset:4px}
 .sv-start-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;padding:28px 0;color:#e5e3da;font-size:.92rem}
 @media(max-width:740px){.sv-start-grid{grid-template-columns:1fr}.sv-start-hero{padding:75px 0 45px}.sv-start-back{display:block;margin:18px 0 0}.sv-start-footer{flex-direction:column}.sv-start-card{padding:23px}}
+
+/* Start Here heading correction: override legacy .section h2 tight tracking and large margin. */
+.sv-start-choices.section .sv-start-card h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.4rem, 2.3vw, 1.85rem);
+  font-weight: 750;
+  line-height: 1.28;
+  letter-spacing: normal;
+  margin: 8px 0 15px;
+  max-width: 100%;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.sv-start-next.section h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.65rem, 3vw, 2.65rem);
+  line-height: 1.2;
+  letter-spacing: normal;
+  margin: 10px 0 18px;
+}
