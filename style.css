@@ -1776,3 +1776,65 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
 .sv-service-hook::after{content:"";pointer-events:none;position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(222,179,119,.36) 50%,transparent)}
 .sv-service-hook + .explore-section{background:linear-gradient(180deg,#1a252b 0%,#151719 155px);padding-top:90px}
 @media(max-width:620px){.sv-service-hook{padding-bottom:68px}.sv-service-hook + .explore-section{padding-top:73px;background:linear-gradient(180deg,#1a252b 0%,#151719 110px)}}
+
+/* StoneVeld workflow connector rail v2 — generous breathing room and illuminated junctions. */
+.sv-service-hook .sv-workflow{padding-top:35px;padding-bottom:35px}
+.sv-service-hook .sv-workflow-journey{
+  gap:32px;
+  margin-top:27px;
+  isolation:isolate;
+}
+.sv-service-hook .sv-workflow-card{
+  overflow:visible;
+  min-height:345px;
+}
+.sv-workflow-card:not(:last-child)::after{
+  top:49%;
+  left:calc(100% + 1px);
+  width:30px;
+  height:3px;
+  border:0;
+  border-radius:3px;
+  background:linear-gradient(90deg,#d4a86c 0%,#f1c78e 47%,#74bfc3 100%);
+  box-shadow:0 0 8px rgba(226,168,96,.42),0 0 13px rgba(112,189,198,.2);
+  transform:translateY(-50%);
+}
+.sv-workflow-card:not(:last-child)::before{
+  top:49%;
+  left:calc(100% + 12px);
+  width:9px;
+  height:9px;
+  border:2px solid #efc48b;
+  background:#28454b;
+  border-radius:50%;
+  box-shadow:0 0 0 3px #233841,0 0 12px rgba(240,186,113,.63);
+  transform:translateY(-50%);
+}
+.sv-workflow-head{margin-bottom:7px}
+.sv-workflow-foot{margin-top:29px}
+@media(max-width:990px) and (min-width:621px){
+  .sv-service-hook .sv-workflow-journey{gap:28px 32px}
+  .sv-workflow-card:nth-child(2)::before,.sv-workflow-card:nth-child(2)::after{display:none}
+}
+@media(max-width:620px){
+  .sv-service-hook .sv-workflow{padding-top:27px;padding-bottom:29px}
+  .sv-service-hook .sv-workflow-journey{gap:32px;margin-top:21px}
+  .sv-service-hook .sv-workflow-card{min-height:0}
+  .sv-workflow-card:not(:last-child)::after{
+    top:calc(100% + 1px);
+    left:27px;
+    width:3px;
+    height:31px;
+    transform:none;
+    background:linear-gradient(180deg,#d4a86c,#74bfc3);
+  }
+  .sv-workflow-card:not(:last-child)::before{
+    top:calc(100% + 11px);
+    left:23px;
+    width:9px;
+    height:9px;
+    transform:none;
+  }
+  .sv-workflow-card:nth-child(2)::before,.sv-workflow-card:nth-child(2)::after{display:block}
+  .sv-workflow-foot{margin-top:27px}
+}
