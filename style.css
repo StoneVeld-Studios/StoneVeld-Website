@@ -1768,3 +1768,11 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
 .sv-service-hook .sv-workflow-card{min-height:345px}
 .sv-service-hook .sv-workflow-card h4{margin-top:1px}
 @media(max-width:620px){.sv-service-hook .sv-workflow-card{min-height:0}.sv-workflow-scene{height:160px}.sv-workflow-scene svg{max-height:155px}}
+
+/* Final workflow polish: illustrations carry the visual meaning; numbers retain sequence. */
+.sv-workflow-top{margin-bottom:12px;justify-content:flex-start}
+.sv-workflow-scene{margin-top:0}
+.sv-service-hook{position:relative;padding-bottom:95px;background:linear-gradient(180deg,#23353c 0%,#1d3038 76%,#1a252b 100%)}
+.sv-service-hook::after{content:"";pointer-events:none;position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(222,179,119,.36) 50%,transparent)}
+.sv-service-hook + .explore-section{background:linear-gradient(180deg,#1a252b 0%,#151719 155px);padding-top:90px}
+@media(max-width:620px){.sv-service-hook{padding-bottom:68px}.sv-service-hook + .explore-section{padding-top:73px;background:linear-gradient(180deg,#1a252b 0%,#151719 110px)}}
