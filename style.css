@@ -1643,3 +1643,198 @@ a:focus-visible,button:focus-visible{outline:3px solid #8be9ef;outline-offset:4p
   .bia-artwork-creation { grid-template-columns: 1fr; }
   .bia-artwork-image img { max-height: 470px; }
 }
+
+/* Services-first homepage: isolated additions, no changes to studio or image styles. */
+.sv-service-hook{background:linear-gradient(140deg,#23353c,#1d3038 68%,#24313a);color:#f9f6f0;padding:78px 0 85px;scroll-margin-top:125px}
+.sv-service-hook h2{font-size:clamp(2.1rem,4vw,3.7rem);line-height:1.13;letter-spacing:-.03em;margin:12px 0}
+.sv-hook-subtitle{font-size:clamp(1.1rem,2vw,1.4rem);color:#f3cf9d;font-weight:650;margin:0 0 14px}
+.sv-hook-intro{max-width:770px;color:#dbe7e8;line-height:1.65;margin:0 0 35px}
+.sv-offering-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:18px;align-items:stretch}
+.sv-offering{min-width:0;border:1px solid rgba(199,228,228,.24);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;background:#1c292f;box-shadow:0 16px 36px rgba(0,0,0,.16)}
+.sv-web{border-color:rgba(244,195,133,.6);background:#263840}
+.sv-offering-art{height:157px;position:relative;overflow:hidden;background:radial-gradient(circle at 70% 12%,#57798a,#203744 67%)}
+.sv-web .sv-offering-art{height:190px;background:radial-gradient(circle at 72% 6%,#b08661,#284758 67%)}
+.sv-offering-body{display:flex;flex:1;flex-direction:column;padding:24px}
+.sv-offering-label{font-size:.73rem;letter-spacing:.14em;color:#f0c390;font-weight:750}
+.sv-offering h3{font-size:clamp(1.23rem,1.8vw,1.65rem);line-height:1.25;margin:11px 0}
+.sv-offering p{color:#e0e8e8;line-height:1.65;margin:0 0 21px}
+.sv-offering a{margin-top:auto;align-self:flex-start;color:#f3c793;text-decoration:none;font-weight:700;border-bottom:1px solid currentColor;padding-bottom:4px}
+.sv-offering a:hover,.sv-offering a:focus-visible{color:white;outline-offset:4px}
+.sv-browser{position:absolute;width:74%;height:85%;left:13%;top:17%;background:#e3ebea;border-radius:11px 11px 0 0;box-shadow:13px 12px 0 rgba(0,0,0,.3);padding:10px 13px}
+.sv-browser-top{color:#b47b58;font-size:.8rem;letter-spacing:3px}
+.sv-browser-hero{height:39%;background:linear-gradient(105deg,#5d8896,#d5aa80);border-radius:5px;margin:8px 0}
+.sv-browser-lines{height:7px;width:67%;background:#94aeb2;border-radius:4px;box-shadow:0 12px #a4bbba}
+.sv-browser-tiles{display:flex;gap:8px;margin-top:27px}.sv-browser-tiles i{height:17px;background:#b0cac7;border-radius:4px;flex:1}
+.sv-creative .sv-offering-art{background:radial-gradient(circle at 47% 23%,#7b688c,#273a50 70%)}
+.sv-storyboard{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:0}
+.sv-storyboard i{display:block;width:25%;height:67%;border:2px solid #e8c7a0;border-radius:8px;background:linear-gradient(145deg,#9e819a,#536980);transform:rotate(-9deg);margin-right:-6%;box-shadow:5px 8px 12px rgba(0,0,0,.2)}
+.sv-storyboard i:nth-child(2){transform:rotate(8deg);background:linear-gradient(140deg,#b9a08f,#66858c)}
+.sv-storyboard i:nth-child(3){transform:rotate(-3deg);background:linear-gradient(140deg,#a98eaf,#545d89)}
+.sv-storyboard span{position:absolute;right:14%;top:15%;font-size:25px;color:#e7c9eb;text-shadow:0 0 8px #e6b8ec}
+.sv-tech-visual{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;gap:13px;color:#b9e4e6}
+.sv-tech-visual span{font-size:52px}.sv-tech-visual i{width:18%;height:2px;background:#ebc28d;box-shadow:0 0 12px #ebc28d}.sv-tech-visual code{font-size:17px;background:#152c34;border:1px solid #8eb8bc;color:#f2cc99;border-radius:8px;padding:10px}
+.sv-workflow{margin-top:25px;border:1px solid rgba(195,220,224,.3);border-radius:19px;background:rgba(10,28,36,.46);padding:24px 26px}
+.sv-workflow h3{font-size:1.45rem;margin:7px 0 18px}
+.sv-workflow ol{list-style:none;padding:0;margin:0 0 23px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.sv-workflow li{font-size:.92rem;display:flex;gap:9px;align-items:center;color:#f3f4f2}
+.sv-workflow li span{color:#f4c58c;border:1px solid #b58c63;border-radius:50%;padding:7px;font-size:.76rem}
+.sv-practical-support{background:#202c32}.sv-practical-support h2{font-size:clamp(2rem,3.6vw,3.25rem);margin:12px 0 20px}
+.sv-practical-support .services-intro{color:#dce7e6}.sv-built-credit{color:#e8c48f;font-size:.92rem}
+@media(max-width:990px){.sv-offering-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sv-web{grid-column:1/-1}.sv-workflow ol{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.sv-service-hook{padding:56px 0}.sv-offering-grid{grid-template-columns:1fr}.sv-web{grid-column:auto}.sv-offering-art,.sv-web .sv-offering-art{height:160px}.sv-workflow ol{grid-template-columns:1fr}.sv-workflow{padding:19px}.sv-offering-body{padding:21px}}
+
+/* Start Here: friendly branching navigation; no scripts, tracking, accounts or form collection. */
+.sv-start-page{background:#1c282e;color:#f6f3ed}
+.sv-start-hero{padding:100px 0 55px;background:radial-gradient(circle at 79% 25%,rgba(189,158,121,.2),transparent 32%),linear-gradient(130deg,#243b45,#2e3b43);border-bottom:1px solid rgba(230,224,209,.16)}
+.sv-start-hero h1{font-size:clamp(2.3rem,5vw,4.15rem);line-height:1.12;margin:12px 0 18px}
+.sv-start-hero p:last-child{max-width:740px;color:#e1e9e8;font-size:1.12rem;line-height:1.65}
+.sv-start-choices{background:#24323a;padding:52px 0 70px}
+.sv-start-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.sv-start-card{min-width:0;padding:29px;background:linear-gradient(140deg,#354951,#273941);border:1px solid rgba(213,230,225,.27);border-radius:20px;scroll-margin-top:135px;display:flex;flex-direction:column}
+.sv-start-card:nth-child(2){background:linear-gradient(130deg,#544758,#344351)}
+.sv-start-card:nth-child(3){background:linear-gradient(130deg,#314c53,#294048)}
+.sv-start-card:nth-child(4){background:linear-gradient(130deg,#42505b,#303b44)}
+.sv-start-glyph{display:grid;place-items:center;width:50px;height:50px;border-radius:14px;background:rgba(255,228,184,.12);border:1px solid rgba(253,220,176,.33);font-size:1.65rem;color:#f5d39f;margin-bottom:19px}
+.sv-start-kicker{font-size:.77rem;letter-spacing:.12em;color:#f1c88f;text-transform:uppercase}
+.sv-start-card h2{font-size:clamp(1.45rem,2.4vw,1.85rem);margin:7px 0 14px}
+.sv-start-card>p:not(.sv-start-kicker){color:#e1e9e9;line-height:1.62;margin-bottom:20px}
+.sv-start-actions{margin-top:auto;display:flex;gap:12px 22px;flex-wrap:wrap}
+.sv-start-actions a{color:#f7d0a0;font-weight:700;border-bottom:1px solid currentColor}
+.sv-start-actions a:focus-visible,.sv-start-actions a:hover{color:#fff;outline-offset:4px}
+.sv-start-next{background:#24323a;padding:55px 0 78px;border-top:1px solid rgba(234,224,204,.18)}
+.sv-start-next h2{font-size:clamp(1.6rem,3vw,2.65rem);margin:10px 0 15px}
+.sv-start-next>div>p:not(.section-label){max-width:730px;color:#e3eae7;margin-bottom:25px}
+.sv-start-back{display:inline-block;margin-left:20px;text-decoration:underline;color:#e6c593;text-underline-offset:4px}
+.sv-start-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;padding:28px 0;color:#e5e3da;font-size:.92rem}
+@media(max-width:740px){.sv-start-grid{grid-template-columns:1fr}.sv-start-hero{padding:75px 0 45px}.sv-start-back{display:block;margin:18px 0 0}.sv-start-footer{flex-direction:column}.sv-start-card{padding:23px}}
+
+/* Start Here heading correction: override legacy .section h2 tight tracking and large margin. */
+.sv-start-choices.section .sv-start-card h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.4rem, 2.3vw, 1.85rem);
+  font-weight: 750;
+  line-height: 1.28;
+  letter-spacing: normal;
+  margin: 8px 0 15px;
+  max-width: 100%;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.sv-start-next.section h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.65rem, 3vw, 2.65rem);
+  line-height: 1.2;
+  letter-spacing: normal;
+  margin: 10px 0 18px;
+}
+
+/* StoneVeld client journey — connected four-step visual workflow. */
+.sv-service-hook .sv-workflow{padding:29px 30px 27px;overflow:hidden}
+.sv-workflow-head h3{font-family:Arial,Helvetica,sans-serif;font-size:clamp(1.55rem,2.3vw,2rem);line-height:1.2;letter-spacing:normal;margin:6px 0 8px}
+.sv-workflow-intro{font-size:.97rem;color:#d7e3e3;margin:0 0 24px;line-height:1.55}
+.sv-service-hook .sv-workflow-journey{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;list-style:none;margin:0;padding:0;position:relative}
+.sv-service-hook .sv-workflow-card{position:relative;z-index:1;min-width:0;display:flex;flex-direction:column;align-items:stretch;padding:18px 17px 19px;background:linear-gradient(145deg,#34474e,#243941);border:1px solid rgba(213,231,228,.26);border-radius:15px;box-shadow:0 7px 18px rgba(0,0,0,.14)}
+.sv-workflow-card:not(:last-child)::after{content:"";position:absolute;z-index:2;top:47px;left:100%;width:17px;height:2px;background:#d9ac78;box-shadow:0 0 8px rgba(240,176,102,.45)}
+.sv-workflow-card:not(:last-child)::before{content:"";position:absolute;z-index:3;top:43px;left:calc(100% + 10px);width:8px;height:8px;border-top:2px solid #d9ac78;border-right:2px solid #d9ac78;transform:rotate(45deg)}
+.sv-workflow-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:17px}
+.sv-workflow-number{font-family:Arial,Helvetica,sans-serif;font-size:.82rem;font-weight:800;letter-spacing:.08em;color:#f9d4a2;border:1px solid rgba(242,188,124,.7);border-radius:100px;min-width:38px;height:38px;display:grid;place-items:center;background:rgba(255,194,118,.08);padding:0 7px}
+.sv-workflow-icon{width:38px;height:38px;color:#b7e0e0;display:grid;place-items:center;background:rgba(163,218,214,.1);border-radius:11px}
+.sv-workflow-icon svg{width:24px;height:24px}
+.sv-service-hook .sv-workflow-card h4{font-family:Arial,Helvetica,sans-serif;font-size:clamp(.98rem,1.35vw,1.15rem);line-height:1.3;letter-spacing:normal;color:#fff;margin:0 0 8px;font-weight:750}
+.sv-service-hook .sv-workflow-card p{font-size:.87rem;line-height:1.5;color:#d9e4e4;margin:0}
+.sv-workflow-foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px 24px;margin-top:23px}
+.sv-workflow-foot p{margin:0;font-size:.9rem;color:#e6d4b9}
+.sv-workflow-foot .button{margin:0}
+@media(max-width:990px){
+.sv-service-hook .sv-workflow-journey{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sv-workflow-card:nth-child(2)::before,.sv-workflow-card:nth-child(2)::after{display:none}
+}
+@media(max-width:620px){
+.sv-service-hook .sv-workflow{padding:23px 20px}
+.sv-service-hook .sv-workflow-journey{grid-template-columns:1fr;gap:19px;margin-left:9px}
+.sv-service-hook .sv-workflow-card{padding:16px 18px}
+.sv-workflow-card:not(:last-child)::after{left:25px;top:100%;height:19px;width:2px}
+.sv-workflow-card:not(:last-child)::before{left:21px;top:calc(100% + 10px);transform:rotate(135deg)}
+.sv-workflow-card:nth-child(2)::before,.sv-workflow-card:nth-child(2)::after{display:block}
+.sv-workflow-foot{align-items:flex-start}
+}
+
+/* Larger visual process illustrations: show the action, not only an icon. */
+.sv-workflow-scene{display:flex;align-items:center;justify-content:center;min-width:0;height:145px;margin:0 -8px 19px;border:1px solid rgba(167,208,211,.22);border-radius:12px;background:radial-gradient(ellipse at 70% 20%,rgba(116,171,179,.23),transparent 60%),linear-gradient(145deg,#203943,#1a3139);overflow:hidden}
+.sv-workflow-scene svg{display:block;width:min(100%,265px);height:100%;max-height:140px;filter:drop-shadow(0 7px 7px rgba(0,0,0,.18))}
+.sv-workflow-scene-2{background:radial-gradient(ellipse at 70% 30%,rgba(205,164,118,.22),transparent 60%),linear-gradient(145deg,#24414b,#23383f)}
+.sv-workflow-scene-3{background:radial-gradient(ellipse at 50% 40%,rgba(208,163,112,.21),transparent 65%),linear-gradient(145deg,#243841,#1b3038)}
+.sv-workflow-scene-4{background:radial-gradient(ellipse at 65% 35%,rgba(137,197,190,.22),transparent 65%),linear-gradient(145deg,#28444a,#1c353b)}
+.sv-service-hook .sv-workflow-card{min-height:345px}
+.sv-service-hook .sv-workflow-card h4{margin-top:1px}
+@media(max-width:620px){.sv-service-hook .sv-workflow-card{min-height:0}.sv-workflow-scene{height:160px}.sv-workflow-scene svg{max-height:155px}}
+
+/* Final workflow polish: illustrations carry the visual meaning; numbers retain sequence. */
+.sv-workflow-top{margin-bottom:12px;justify-content:flex-start}
+.sv-workflow-scene{margin-top:0}
+.sv-service-hook{position:relative;padding-bottom:95px;background:linear-gradient(180deg,#23353c 0%,#1d3038 76%,#1a252b 100%)}
+.sv-service-hook::after{content:"";pointer-events:none;position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(222,179,119,.36) 50%,transparent)}
+.sv-service-hook + .explore-section{background:linear-gradient(180deg,#1a252b 0%,#151719 155px);padding-top:90px}
+@media(max-width:620px){.sv-service-hook{padding-bottom:68px}.sv-service-hook + .explore-section{padding-top:73px;background:linear-gradient(180deg,#1a252b 0%,#151719 110px)}}
+
+/* StoneVeld workflow connector rail v2 — generous breathing room and illuminated junctions. */
+.sv-service-hook .sv-workflow{padding-top:35px;padding-bottom:35px}
+.sv-service-hook .sv-workflow-journey{
+  gap:32px;
+  margin-top:27px;
+  isolation:isolate;
+}
+.sv-service-hook .sv-workflow-card{
+  overflow:visible;
+  min-height:345px;
+}
+.sv-workflow-card:not(:last-child)::after{
+  top:49%;
+  left:calc(100% + 1px);
+  width:30px;
+  height:3px;
+  border:0;
+  border-radius:3px;
+  background:linear-gradient(90deg,#d4a86c 0%,#f1c78e 47%,#74bfc3 100%);
+  box-shadow:0 0 8px rgba(226,168,96,.42),0 0 13px rgba(112,189,198,.2);
+  transform:translateY(-50%);
+}
+.sv-workflow-card:not(:last-child)::before{
+  top:49%;
+  left:calc(100% + 12px);
+  width:9px;
+  height:9px;
+  border:2px solid #efc48b;
+  background:#28454b;
+  border-radius:50%;
+  box-shadow:0 0 0 3px #233841,0 0 12px rgba(240,186,113,.63);
+  transform:translateY(-50%);
+}
+.sv-workflow-head{margin-bottom:7px}
+.sv-workflow-foot{margin-top:29px}
+@media(max-width:990px) and (min-width:621px){
+  .sv-service-hook .sv-workflow-journey{gap:28px 32px}
+  .sv-workflow-card:nth-child(2)::before,.sv-workflow-card:nth-child(2)::after{display:none}
+}
+@media(max-width:620px){
+  .sv-service-hook .sv-workflow{padding-top:27px;padding-bottom:29px}
+  .sv-service-hook .sv-workflow-journey{gap:32px;margin-top:21px}
+  .sv-service-hook .sv-workflow-card{min-height:0}
+  .sv-workflow-card:not(:last-child)::after{
+    top:calc(100% + 1px);
+    left:27px;
+    width:3px;
+    height:31px;
+    transform:none;
+    background:linear-gradient(180deg,#d4a86c,#74bfc3);
+  }
+  .sv-workflow-card:not(:last-child)::before{
+    top:calc(100% + 11px);
+    left:23px;
+    width:9px;
+    height:9px;
+    transform:none;
+  }
+  .sv-workflow-card:nth-child(2)::before,.sv-workflow-card:nth-child(2)::after{display:block}
+  .sv-workflow-foot{margin-top:27px}
+}
