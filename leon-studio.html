@@ -7,25 +7,179 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crow's Studio — StoneVeld Studios</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="crow-studio.css?v=20261106d">
 <link rel="stylesheet" href="/assistant/bridge.css">
 </head>
 <body><a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="site-header shared-site-header"><div class="container nav-container"><a href="/" class="logo" aria-label="StoneVeld Studios homepage"><span class="logo-name">StoneVeld</span><span class="logo-studios">Studios</span><span class="logo-studios">(pty) Ltd</span><span class="logo-trace" aria-hidden="true"><svg viewBox="0 0 150 18" preserveAspectRatio="none"><path d="M2 10 H28 L34 10 L38 4 L43 15 L48 8 L53 10 H72 L78 10 L83 3 L88 16 L94 8 L100 10 H148"/><circle cx="88" cy="16" r="1.8"/></svg></span></a><nav class="navigation" aria-label="Main navigation"><a href="/shop">StoneVeld Nexus</a><a href="/open-tools">Open Tools</a><a href="/leon-studio" aria-current="page">Crow's Studio</a><a href="/bianca-studio">Bia's Studio</a><a href="/wolfbyte-studio">Wolfbyte Studio</a><a href="/contingency">Contingency</a><a href="/#open-tools">Open Source</a><a href="/#contact">Contact</a></nav></div></header>
-  <main class="leon-page" id="main-content">
-    <section class="leon-hero" aria-labelledby="leon-title">
-      <div class="leon-hero-content">
-        <p class="project-tag">PERSONAL STUDIO</p>
-        <h1 id="leon-title">Crow's Studio</h1>
-        <p>A space for building software, exploring difficult ideas and turning experiments into working systems.</p>
+  <main class="leon-page crow-studio" id="main-content">
+  <section class="leon-hero crow-hero" aria-labelledby="crow-title">
+    <div class="crow-hero-inner">
+      <p class="crow-kicker"><span class="crow-live-dot" aria-hidden="true"></span> STONEVELD STUDIOS / THE SOFTWARE WORKBENCH</p>
+      <h1 id="crow-title">Crow’s <span>Studio.</span></h1>
+      <p class="crow-hero-line">Build. Test. Learn. Improve.</p>
+      <p class="crow-hero-intro">A place for practical software, technical problem-solving and experiments that challenge what we know. The work starts with a question—and earns its place by working.</p>
+      <div class="crow-hero-actions">
+        <a href="#the-workbench" class="crow-btn crow-btn-primary">Explore the workbench <span aria-hidden="true">↗</span></a>
+        <a href="#contact-crow" class="crow-btn crow-btn-quiet">Talk to Crow <span aria-hidden="true">↗</span></a>
       </div>
-    </section>
-    <section class="leon-content" aria-labelledby="leon-work-title">
-      <p class="project-tag">THE STUDIO</p>
-      <h2 id="leon-work-title">Build. Test. Learn. Improve.</h2>
-      <p>Explore the development work behind StoneVeld Studios, from useful software tools to experimental systems. This space will grow as projects and their evidence are ready to share.</p>
-      <p><a href="/#projects" class="button button-secondary">Explore StoneVeld projects</a></p>
-    </section>
-  </main>
+      <div class="crow-hero-note"><span class="crow-mini-bracket" aria-hidden="true">[ 01 ]</span> Independent thinking. Real tests. Useful outcomes.</div>
+    </div>
+  </section>
+
+  <nav class="crow-section-nav" aria-label="Explore Crow's Studio">
+    <span class="crow-section-nav-title">STUDIO INDEX <span aria-hidden="true">/</span></span>
+    <a href="#the-workbench">Projects</a>
+    <a href="#how-i-work">The process</a>
+    <a href="#tools-and-systems">Tools & systems</a>
+    <a href="#contact-crow">Get in touch</a>
+  </nav>
+
+  <section class="crow-command-section crow-section" id="the-terminal" aria-labelledby="crow-terminal-title">
+    <div class="crow-shell crow-command-grid">
+      <div class="crow-command-story">
+        <p class="crow-eyebrow"><span>02</span> / TECHNICAL PHILOSOPHY</p>
+        <h2 id="crow-terminal-title">A practical workbench <em>for real problems.</em></h2>
+        <p class="crow-command-lead">I'm Leon—Crow around here. This is where difficult questions become experiments, software tools and working systems.</p>
+        <p>Investigate. Test. Build. Verify. The same principles that make a sound diagnosis also make dependable software.</p>
+        <a class="crow-console-shortcut" href="#the-workbench"><span aria-hidden="true">›_</span> EXPLORE SELECTED WORK <span aria-hidden="true">↗</span></a>
+        <p class="crow-command-caption">UNDERSTAND THE PROBLEM BEFORE CHOOSING THE SOLUTION.</p>
+      </div>
+      <div class="crow-terminal" aria-label="Crow's interactive studio terminal">
+        <div class="crow-terminal-head">
+          <span class="crow-terminal-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="crow-terminal-title">crow@stoneveld: ~/workbench</span>
+          <span class="crow-terminal-indicator">STUDIO GUIDE</span>
+        </div>
+        <div class="crow-terminal-screen" id="crow-terminal-output" role="log" aria-live="polite" aria-relevant="additions">
+          <p class="crow-cli-line"><span class="crow-cli-prompt">crow@studio:~$</span> help</p>
+          <p class="crow-cli-success">✓  Workbench interface ready</p>
+          <p class="crow-cli-dim">Type a command to explore Crow's Studio.</p>
+          <p class="crow-cli-dim">Commands: help · projects · process · tools · contact · about · clear</p>
+        </div>
+        <form class="crow-terminal-form" id="crow-terminal-form" autocomplete="off">
+          <label for="crow-terminal-input" class="crow-cli-prompt">crow@studio:~$</label>
+          <input id="crow-terminal-input" type="text" name="command" maxlength="48" placeholder="type help" spellcheck="false" aria-describedby="crow-terminal-disclaimer">
+          <button type="submit" aria-label="Enter studio terminal command">RUN <span aria-hidden="true">↵</span></button>
+        </form>
+        <p class="crow-terminal-foot" id="crow-terminal-disclaimer">INTERACTIVE STUDIO NAVIGATOR · No system commands are executed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="crow-projects-section crow-section" id="the-workbench" aria-labelledby="crow-work-title">
+    <div class="crow-shell">
+      <div class="crow-heading-row">
+        <div>
+          <p class="crow-eyebrow"><span>03</span> / ON THE WORKBENCH</p>
+          <h2 id="crow-work-title">Things being built.</h2>
+          <p>Real projects, different stages. The status matters just as much as the idea.</p>
+        </div>
+        <a class="crow-inline-link" href="/open-tools">Explore public tools <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <article class="crow-feature-project">
+        <div class="crow-feature-visual">
+          <div class="crow-feature-windowbar"><span class="crow-window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>RAG TRIGGER STUDIO / DESKTOP WORKSPACE</span></div>
+          <img src="assets/Screenshot%20RAG_Trigger_Studio_2026-10-02%20015248.png" width="899" height="752" loading="lazy" alt="Screenshot of the RAG Trigger Studio desktop interface">
+          <span class="crow-visual-caption">Actual application screenshot · Local-first development</span>
+        </div>
+        <div class="crow-feature-copy">
+          <span class="crow-project-status"><span aria-hidden="true" class="crow-status-indicator"></span> PUBLIC SOFTWARE PROJECT</span>
+          <p class="crow-project-serial">PROJECT 001 / DEVELOPER TOOLS</p>
+          <h3>RAG Trigger<br>Studio.</h3>
+          <p>A desktop workbench for preparing project context, examining what gets included and keeping developers in control of the information they share with AI tools.</p>
+          <p class="crow-project-subtext">Built to make a complicated workflow easier to inspect and understand.</p>
+          <div class="crow-project-actions">
+            <a href="/open-tools" class="crow-btn crow-btn-primary">See the project <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/StoneVeld-Studios/RAG_Trigger_Studio" class="crow-text-link" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <div class="crow-project-grid">
+        <article class="crow-project-card crow-project-card-assistant">
+          <figure class="crow-project-visual"><img src="assets/crow-project-assistant.webp" width="320" height="124" loading="lazy" alt="Concept illustration of the cybernetic crow alongside an engineering software console"></figure>
+          <div class="crow-card-top"><span>PROJECT 002</span><span class="crow-card-state">LIVE ON STONEVELD</span></div>
+          <h3>StoneVeld Assistant</h3>
+          <p>An independently built, knowledge-guided digital receptionist. It helps visitors find useful answers, project information and the right business contact—without a paid AI service.</p>
+          <a href="/start-here" class="crow-card-link">Meet the digital guide <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="crow-project-card crow-project-card-fed">
+          <figure class="crow-project-visual"><img src="assets/crow-project-federation.webp" width="320" height="124" loading="lazy" alt="Concept illustration of an orbital engineering station representing Federation collaboration"></figure>
+          <div class="crow-card-top"><span>PROJECT 003</span><span class="crow-card-state">PRIVATE PILOT</span></div>
+          <h3>Contingency Federation</h3>
+          <p>A collaboration platform for capable builders, with teams, projects and controlled repository workflows. The backend and security work are being developed and tested privately.</p>
+          <a href="/contingency" class="crow-card-link">Explore the Federation <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="crow-project-card crow-project-card-roots">
+          <figure class="crow-project-visual"><img src="assets/crow-project-roots.webp" width="320" height="124" loading="lazy" alt="Concept illustration of a Linux development laptop in an illuminated workshop"></figure>
+          <div class="crow-card-top"><span>PROJECT 004</span><span class="crow-card-state">OPEN SOURCE</span></div>
+          <h3>Roots Ubuntu Interface</h3>
+          <p>A touchpad-first Linux workbench with an interactive terminal, saved commands and guided developer tools. Built to make useful computing more accessible when the physical keyboard is unavailable.</p>
+          <a href="https://github.com/Root-Law/Roots-Ubuntu-interface" class="crow-card-link" target="_blank" rel="noopener noreferrer">Explore the open-source code <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="crow-method-section crow-section" id="how-i-work" aria-labelledby="crow-method-title">
+    <div class="crow-shell">
+      <div class="crow-method-heading">
+        <p class="crow-eyebrow"><span>04</span> / HOW I APPROACH A PROBLEM</p>
+        <h2 id="crow-method-title">The method behind<br>the build.</h2>
+        <p>Useful software rarely starts with typing. It starts with understanding what should happen—and what could go wrong.</p>
+      </div>
+      <ol class="crow-method-grid">
+        <li><span class="crow-method-symbol" aria-hidden="true">◎</span><span class="crow-method-count">01</span><h3>Understand</h3><p>Ask the questions. Find the real requirement, not just the symptom.</p></li>
+        <li><span class="crow-method-symbol" aria-hidden="true">⌕</span><span class="crow-method-count">02</span><h3>Investigate</h3><p>Inspect the evidence. Test likely causes and challenge assumptions.</p></li>
+        <li><span class="crow-method-symbol" aria-hidden="true">◇</span><span class="crow-method-count">03</span><h3>Build</h3><p>Choose a practical approach. Implement carefully and keep it understandable.</p></li>
+        <li><span class="crow-method-symbol" aria-hidden="true">✓</span><span class="crow-method-count">04</span><h3>Verify</h3><p>Test the result, document what changed and improve what the tests reveal.</p></li>
+      </ol>
+      <div class="crow-method-bottom">
+        <p><strong>Working principle:</strong> A successful test is evidence. It isn't permission to stop thinking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="crow-systems-section crow-section" id="tools-and-systems" aria-labelledby="crow-systems-title">
+    <div class="crow-shell crow-systems-grid">
+      <div class="crow-systems-heading">
+        <p class="crow-eyebrow"><span>05</span> / TOOLS & SYSTEMS</p>
+        <h2 id="crow-systems-title">Whatever helps solve the problem.</h2>
+        <p>Tools are chosen for the work, not the other way around. My focus spans application development, Linux systems, automation, testing and the software that connects them.</p>
+        <div class="crow-tech-tags" aria-label="Technologies used in studio projects">
+          <span>Python</span><span>Linux</span><span>JavaScript</span><span>Git & GitHub</span>
+          <span>Docker</span><span>Flask</span><span>PostgreSQL</span><span>pytest</span>
+        </div>
+      </div>
+      <figure class="crow-tools-art">
+        <img src="assets/crow-tools-workstation.webp" width="832" height="472" loading="lazy" alt="Concept illustration of a workshop computer with code, diagnostics screens, warm desk lighting and a crow emblem mug">
+        <figcaption>THE WORKSTATION / An illustrated view into the studio.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="crow-contact-section crow-section" id="contact-crow" aria-labelledby="crow-contact-title">
+    <div class="crow-shell crow-contact-inner">
+      <div>
+        <p class="crow-eyebrow"><span>06</span> / START A CONVERSATION</p>
+        <h2 id="crow-contact-title">Have a problem worth solving?</h2>
+        <p>Whether it's a website, a stubborn technical issue, a workflow or a software idea, the first step is a conversation. Initial discussions and quotations are free; scope and feasibility are agreed before work begins.</p>
+        <p class="crow-contact-note">StoneVeld currently works online. On-site visits and physical repairs are not offered.</p>
+      </div>
+      <div class="crow-contact-actions">
+        <a class="crow-btn crow-btn-primary" href="mailto:leon@stoneveldstudios.co.za?subject=Enquiry%20for%20Crow%27s%20Studio">Email Crow <span aria-hidden="true">↗</span></a>
+        <a class="crow-btn crow-btn-quiet" href="/start-here">Find your starting point <span aria-hidden="true">↗</span></a>
+        <span class="crow-contact-email">leon@stoneveldstudios.co.za</span>
+      </div>
+    </div>
+  </section>
+  <footer class="crow-studio-footer">
+    <div class="crow-shell"><span>CROW'S STUDIO <i aria-hidden="true">/</i> STONEVELD STUDIOS</span><a href="/">Back to StoneVeld Studios <span aria-hidden="true">↗</span></a></div>
+  </footer>
+</main>
+<script defer src="crow-studio-terminal.js"></script>
 <script type="module" src="/assistant/bridge.js"></script>
 </body>
 </html>

@@ -1,0 +1,1117 @@
+/* Crow's Studio — scoped engineering-workbench design, 2026-11-06.
+   Original StoneVeld mechanical-crow imagery stays in the hero. */
+.crow-studio { --crow-cyan:#7cdaec; --crow-aqua:#9ce7db; --crow-copper:#eeb476; --crow-white:#f1f6f8; --crow-muted:#b2c3c9; background:#070f17; color:var(--crow-white); font-family:Arial,Helvetica,sans-serif; overflow:clip; }
+.crow-studio p {font-family:Arial,Helvetica,sans-serif;font-weight:400;}
+.crow-studio a {text-decoration:none;}
+.crow-shell {width:min(1135px,calc(100% - 48px));margin-inline:auto;}
+.crow-section {padding:clamp(72px,8.5vw,128px) 0;}
+.crow-studio [id] {scroll-margin-top:140px;}
+.crow-hero {min-height:min(770px,calc(100svh - 60px));padding:clamp(85px,12vh,130px) max(24px,calc((100vw - 1135px)/2)) 55px;align-items:center;position:relative;isolation:isolate;background-position:center 53%;}
+.crow-hero::after {content:"";position:absolute;inset:0;background:linear-gradient(180deg,#06111a2a 0%,transparent 52%,#07131bec 100%);z-index:-1;pointer-events:none;}
+.crow-hero-inner {position:relative;z-index:1;max-width:620px;}
+.crow-kicker,.crow-eyebrow {color:var(--crow-copper);font-size:.75rem;font-weight:700!important;letter-spacing:.18em;line-height:1.5;}
+.crow-kicker {display:flex;align-items:center;gap:12px;margin-bottom:21px;color:#cce8ee;}
+.crow-live-dot {width:8px;height:8px;border-radius:50%;background:#8ef2d1;box-shadow:0 0 0 5px #72dfba29,0 0 16px #4fefccab;flex:none;}
+.crow-hero h1 {font-size:clamp(3.55rem,7.7vw,7rem);line-height:1.02;margin:0 0 24px;letter-spacing:-.055em;color:var(--crow-white);}
+.crow-hero h1 span {color:var(--crow-copper);text-shadow:0 0 21px #c78c5e4d;}
+.crow-hero .crow-hero-line {font-size:clamp(1.28rem,2.25vw,1.8rem);font-weight:800;letter-spacing:-.025em;color:#c9edf2;text-shadow:0 2px 9px #000;}
+.crow-hero .crow-hero-intro {max-width:570px;margin:19px 0 32px;color:#e0eaf0;font-size:1.06rem;line-height:1.78;text-shadow:0 3px 10px #01070e;}
+.crow-hero-actions,.crow-project-actions,.crow-contact-actions {display:flex;flex-wrap:wrap;align-items:center;gap:13px;}
+.crow-btn {display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:50px;padding:12px 20px;border-radius:9px;border:1px solid #9bced0;font-size:.92rem;font-weight:800;color:var(--crow-white);transition:transform .2s,background .2s,border-color .2s;}
+.crow-btn:hover {transform:translateY(-2px);}
+.crow-btn-primary {background:linear-gradient(135deg,#eeb476,#de9149);border-color:#f1c68c;color:#10212a;box-shadow:0 8px 29px #0006;}
+.crow-btn-primary:hover {background:#f6ca90;color:#101c23;}
+.crow-btn-quiet {background:#0c2029ae;border-color:#6d9ca8;color:#d9f3f7;}
+.crow-btn-quiet:hover {background:#1d3c49;color:#fff;border-color:#9ce5e9;}
+.crow-studio a:focus-visible,.crow-section-nav a:focus-visible {outline:3px solid #a3eddf;outline-offset:4px;}
+.crow-hero-note {display:flex;gap:13px;align-items:center;border-top:1px solid #91b5bf52;padding-top:23px;margin-top:51px;color:#c0ced2;font-size:.85rem;}
+.crow-mini-bracket {color:var(--crow-copper);font:700 .82rem/1 monospace;}
+.crow-section-nav {position:relative;z-index:1;display:flex;gap:clamp(10px,3vw,43px);justify-content:center;align-items:center;flex-wrap:wrap;padding:18px 24px;background:#0d1d28;border-top:1px solid #3c63726b;border-bottom:1px solid #3c63726b;}
+.crow-section-nav-title {color:#edae67;font-weight:800;font-size:.69rem;letter-spacing:.14em;}
+.crow-section-nav-title span {color:#619fa8;padding-left:8px;}
+.crow-section-nav a {font-size:.86rem;font-weight:700;color:#cadfe4;padding:5px;border-bottom:1px solid transparent;}
+.crow-section-nav a:hover {color:var(--crow-copper);border-color:var(--crow-copper);}
+.crow-intro-section {background:radial-gradient(circle at 81% 45%,#17445268,transparent 48%),#0a161e;border-bottom:1px solid #53758239;}
+.crow-intro-grid {display:grid;grid-template-columns:1fr 1fr;gap:clamp(35px,6vw,105px);}
+.crow-eyebrow {margin-bottom:20px;}
+.crow-eyebrow span {color:#7fc9dd;margin-right:9px;font-family:monospace;font-weight:800;}
+.crow-studio h2 {font-size:clamp(2.2rem,4.1vw,4.1rem);line-height:1.12;letter-spacing:-.045em;font-weight:850;margin:0;}
+.crow-intro-section h2 em {font-style:normal;color:var(--crow-cyan);}
+.crow-intro-copy p {font-size:1.03rem;line-height:1.84;color:#bdcbd3;margin:0 0 18px;}
+.crow-intro-copy p:first-child {color:#eff6f7;font-size:1.18rem;}
+.crow-intro-copy .crow-philosophy {color:#f5c58d;font-size:.97rem;margin-top:32px;padding:15px 0 0;border-top:1px solid #527b865e;}
+.crow-philosophy span {color:#69d5df;margin-right:8px;}
+.crow-projects-section {background:linear-gradient(180deg,#091923,#070f17 58%);}
+.crow-heading-row {display:flex;justify-content:space-between;align-items:end;gap:26px;margin-bottom:37px;}
+.crow-heading-row h2 {margin-bottom:14px;}
+.crow-heading-row p:not(.crow-eyebrow) {color:var(--crow-muted);font-size:1.02rem;line-height:1.7;max-width:620px;}
+.crow-inline-link,.crow-text-link {color:#a3e7ee;font-weight:750;font-size:.91rem;border-bottom:1px solid #76b3bd;padding-bottom:7px;white-space:nowrap;}
+.crow-inline-link:hover,.crow-text-link:hover {color:#f6c58c;border-color:#edb778;}
+.crow-feature-project {display:grid;grid-template-columns:1.1fr .9fr;border:1px solid #5483988a;border-radius:24px;overflow:hidden;background:linear-gradient(140deg,#152d38,#10212b);box-shadow:0 20px 58px #01070e66;margin-bottom:23px;}
+.crow-feature-visual {position:relative;min-width:0;background:radial-gradient(circle at center,#1a4960,#081725);padding:22px 22px 37px;display:flex;flex-direction:column;justify-content:center;}
+.crow-feature-windowbar {display:flex;align-items:center;gap:16px;justify-content:space-between;background:#0d1b28;border:1px solid #50717b;border-bottom:0;border-radius:10px 10px 0 0;padding:10px 15px;color:#8dafbd;font:600 .62rem/1.5 monospace;letter-spacing:.08em;}
+.crow-window-dots {display:flex;gap:5px;flex:none;}
+.crow-window-dots i {display:block;width:8px;height:8px;border-radius:50%;background:#efb374;}
+.crow-window-dots i:nth-child(2) {background:#73b9c6;}
+.crow-window-dots i:nth-child(3) {background:#8ce0bf;}
+.crow-feature-visual img {width:100%;height:auto;aspect-ratio:899/600;object-fit:cover;object-position:top;border:1px solid #50717b;display:block;border-radius:0 0 8px 8px;}
+.crow-visual-caption {font-size:.69rem;color:#a0bac2;letter-spacing:.045em;position:absolute;bottom:12px;left:24px;}
+.crow-feature-copy {padding:clamp(29px,4vw,52px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;}
+.crow-project-status {font-size:.69rem;font-weight:800;letter-spacing:.12em;color:#a9e8cb;display:flex;align-items:center;gap:9px;border:1px solid #4b99814d;border-radius:50px;padding:7px 10px;margin-bottom:20px;}
+.crow-status-indicator {width:6px;height:6px;border-radius:50%;background:#8aefc8;}
+.crow-project-serial {font:700 .73rem/1.5 monospace;color:#deb47e;margin-bottom:16px;letter-spacing:.07em;}
+.crow-feature-copy h3 {font-size:clamp(2.1rem,3.55vw,3.7rem);letter-spacing:-.055em;line-height:1.08;margin-bottom:22px;}
+.crow-feature-copy > p:not(.crow-project-serial) {line-height:1.74;color:#c5d5dc;font-size:.98rem;margin-bottom:16px;}
+.crow-feature-copy .crow-project-subtext {color:#98b4bd;font-size:.88rem;}
+.crow-project-actions {margin-top:17px;gap:22px;}
+.crow-project-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:21px;}
+.crow-project-card {position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;min-height:365px;border-radius:18px;padding:29px;background:linear-gradient(150deg,#133f3a,#12262f 61%,#0b1820);border:1px solid #427d83;transition:transform .2s,border-color .2s;}
+.crow-project-card:hover {transform:translateY(-4px);border-color:#9edcd5;}
+.crow-project-card-fed {background:linear-gradient(150deg,#263a4e,#172938 61%,#0a1820);border-color:#4b708e;}
+.crow-project-card-roots {background:linear-gradient(150deg,#302943,#1b2534 61%,#0c1720);border-color:#655583;}
+.crow-project-icon {display:flex;justify-content:space-between;align-items:center;width:100%;margin-bottom:27px;color:#a9eadc;}
+.crow-project-icon>span:first-child {font-size:2.4rem;line-height:1;}
+.crow-glyph-track {font:700 .8rem/1.5 monospace;letter-spacing:.1em;color:#86aab15a;}
+.crow-card-top {display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:18px;font:700 .65rem/1.5 monospace;letter-spacing:.04em;color:#aec6c7;}
+.crow-card-state {color:#edbc7a;border:1px solid #c897625e;border-radius:30px;padding:3px 8px;}
+.crow-project-card h3 {font-size:1.43rem;line-height:1.25;margin-bottom:13px;letter-spacing:-.02em;}
+.crow-project-card p {font-size:.9rem;line-height:1.74;color:#bbcbd2;flex-grow:1;}
+.crow-card-link {color:#b9f7e9;font-weight:800;font-size:.86rem;border-bottom:1px solid #8bceb6;padding:7px 0;margin-top:24px;display:inline-flex;gap:16px;}
+.crow-card-link:hover {color:#f4c68b;border-color:#efbd82;}
+.crow-method-section {background:#0d1d26;border-top:1px solid #3d647556;border-bottom:1px solid #3d647556;position:relative;}
+.crow-method-heading {max-width:740px;}
+.crow-method-heading p:last-child {color:#bbcdd1;max-width:680px;line-height:1.7;font-size:1.04rem;margin-top:20px;}
+.crow-method-grid {list-style:none;margin:53px 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;}
+.crow-method-grid li {position:relative;min-height:234px;background:#172c35;border:1px solid #3e6e7d;border-radius:13px;padding:26px;}
+.crow-method-grid li::before {content:"";position:absolute;left:26px;right:26px;top:71px;height:1px;background:linear-gradient(90deg,#78d7df8c,transparent);}
+.crow-method-count {font:700 .9rem/1 monospace;color:#efba78;display:block;margin-bottom:43px;}
+.crow-method-grid h3 {font-size:1.16rem;margin-bottom:12px;color:#e7f3f4;}
+.crow-method-grid p {font-size:.86rem;line-height:1.7;color:#afc2ca;}
+.crow-method-bottom {margin-top:30px;padding:17px 19px;background:#091820;border-left:3px solid #dda565;border-radius:4px;}
+.crow-method-bottom p {color:#c3d1d5;font-size:.9rem;}
+.crow-method-bottom strong {color:#f0ba7e;}
+.crow-systems-section {background:radial-gradient(circle at 78% 45%,#16445278,transparent 50%),#07131c;}
+.crow-systems-grid {display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(40px,7vw,100px);align-items:center;}
+.crow-systems-heading > p:not(.crow-eyebrow) {font-size:1.02rem;line-height:1.8;color:#bcd0d6;margin-top:23px;}
+.crow-tech-tags {display:flex;gap:9px;flex-wrap:wrap;margin-top:33px;}
+.crow-tech-tags span {padding:7px 12px;font-size:.8rem;font-weight:700;border:1px solid #538691;background:#16303b;border-radius:6px;color:#c4e9ed;}
+.crow-system-console {background:#0b1820;border:1px solid #46758a;border-radius:16px;overflow:hidden;box-shadow:0 25px 55px #0008;transform:rotate(1deg);}
+.crow-console-heading {display:flex;justify-content:space-between;align-items:center;gap:12px;background:#1c3340;padding:13px 18px;border-bottom:1px solid #497387;font:700 .73rem/1.5 monospace;color:#b7d4df;}
+.crow-console-lights {letter-spacing:.25em;color:#f3b778;}
+.crow-console-body {padding:28px clamp(15px,3vw,30px) 34px;min-height:315px;}
+.crow-console-body p {font:500 .79rem/2.15 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere;color:#d5eaf2;}
+.crow-console-body .crow-terminal-muted {color:#6f91a3;margin-bottom:19px;}
+.crow-terminal-prompt {color:#edb474;}
+.crow-console-body .crow-terminal-success {color:#9bdec2;padding-left:12px;}
+.crow-terminal-cursor {color:#d8a773;}
+.crow-console-caption {padding:10px 17px 15px;font-size:.68rem!important;color:#7a9eaf;border-top:1px solid #294659;}
+.crow-contact-section {background:linear-gradient(130deg,#162c36,#0b1b26 70%);border-top:1px solid #4c7d8166;}
+.crow-contact-inner {display:grid;grid-template-columns:1fr auto;gap:45px;align-items:center;}
+.crow-contact-inner h2 {max-width:780px;}
+.crow-contact-inner >div>p:not(.crow-eyebrow) {font-size:1.03rem;line-height:1.8;color:#cbdae0;max-width:720px;margin-top:24px;}
+.crow-contact-inner .crow-contact-note {font-size:.85rem!important;color:#f1bc7d!important;margin-top:15px!important;}
+.crow-contact-actions {flex-direction:column;align-items:stretch;min-width:245px;}
+.crow-contact-actions .crow-btn {justify-content:space-between;}
+.crow-contact-email {text-align:center;font-size:.74rem;color:#a4d2d2;overflow-wrap:anywhere;}
+.crow-studio-footer {border-top:1px solid #305664;background:#061017;padding:23px 0;}
+.crow-studio-footer .crow-shell {display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;}
+.crow-studio-footer span,.crow-studio-footer a {font:700 .74rem/1.5 monospace;letter-spacing:.07em;color:#a9c1ca;}
+.crow-studio-footer i {font-style:normal;color:#eab175;margin:0 9px;}
+.crow-studio-footer a:hover {color:#ebbe8a;}
+@media(max-width:930px) {
+ .crow-feature-project {grid-template-columns:1fr;}
+ .crow-feature-visual img {max-height:350px;}
+ .crow-project-grid {grid-template-columns:1fr 1fr;}
+ .crow-project-card:last-child {grid-column:span 2;min-height:260px;}
+ .crow-method-grid {grid-template-columns:1fr 1fr;}
+ .crow-systems-grid {grid-template-columns:1fr;}
+ .crow-system-console {max-width:650px;transform:none;}
+ .crow-hero {min-height:660px;}
+}
+@media(max-width:650px) {
+ .crow-shell {width:min(100% - 36px,1135px);}
+ .crow-section {padding:64px 0;}
+ .crow-hero {padding:65px 20px 34px;min-height:630px;background-position:59% 58%;}
+ .crow-hero::after {background:linear-gradient(90deg,#04131fe8,#04131f7c),linear-gradient(180deg,transparent,#06111bf5);}
+ .crow-hero-inner {max-width:100%;}
+ .crow-hero h1 {font-size:clamp(3rem,12vw,4.7rem);margin-bottom:17px;}
+ .crow-hero .crow-hero-intro {font-size:.96rem;line-height:1.7;}
+ .crow-kicker {font-size:.62rem;letter-spacing:.12em;}
+ .crow-hero-note {margin-top:34px;font-size:.75rem;}
+ .crow-hero-actions {align-items:stretch;}
+ .crow-hero-actions .crow-btn {flex-grow:1;}
+ .crow-section-nav {justify-content:flex-start;gap:10px 15px;padding:15px 18px;}
+ .crow-section-nav-title {width:100%;}
+ .crow-intro-grid,.crow-contact-inner {grid-template-columns:1fr;gap:22px;}
+ .crow-heading-row {align-items:flex-start;flex-direction:column;}
+ .crow-project-grid {grid-template-columns:1fr;}
+ .crow-project-card:last-child {grid-column:auto;min-height:345px;}
+ .crow-feature-visual {padding:12px 12px 35px;}
+ .crow-feature-windowbar {font-size:.51rem;gap:8px;padding:9px;}
+ .crow-feature-copy {padding:30px 24px 35px;}
+ .crow-method-grid {grid-template-columns:1fr;}
+ .crow-method-grid li {min-height:160px;padding:23px;}
+ .crow-method-grid li::before {top:59px;}
+ .crow-method-count {margin-bottom:29px;}
+ .crow-contact-actions {min-width:0;}
+ .crow-studio-footer .crow-shell {align-items:flex-start;flex-direction:column;}
+}
+@media(prefers-reduced-motion:reduce) {
+ .crow-studio .crow-btn,.crow-project-card {transition:none;transform:none!important;}
+}
+
+
+/* Industrial circuit treatment — approved Cybernetic Crow Software Workbench reference.
+   Full reference: assets/Cybernetic Crow Software Workbench.png.
+   Hero artwork is a cropped derivative; interactive content stays real HTML. */
+body:has(.crow-studio) {
+  background: #051019;
+}
+body:has(.crow-studio) .site-header {
+  background:
+    radial-gradient(ellipse at 83% -40%, rgba(215, 126, 39, .25), transparent 40%),
+    linear-gradient(116deg, rgba(8, 35, 40, .95), rgba(9, 18, 23, .98) 49%, rgba(43, 31, 25, .96)),
+    repeating-linear-gradient(125deg, #fff1 0px, #fff1 1px, transparent 2px, transparent 11px);
+  border-bottom: 1px solid rgba(75, 235, 221, .7);
+  box-shadow: 0 0 0 1px #122f36, 0 7px 23px #0bfff019, inset 0 -1px 0 #f4a24144;
+}
+body:has(.crow-studio) .site-header .logo {
+  filter: drop-shadow(0 0 7px #eab26830);
+}
+body:has(.crow-studio) .navigation a[aria-current="page"] {
+  color: #ffd18a;
+  text-shadow: 0 0 10px #f7a42e99, 0 0 22px #fc962f66;
+  box-shadow: inset 0 -2px 0 #ffaa48, 0 5px 7px -5px #ffb563;
+}
+.crow-studio {
+  --crow-cyan: #75f0f3;
+  --crow-aqua: #9dfbe7;
+  --crow-copper: #ffbd73;
+  --crow-white: #f6fafb;
+  --crow-muted: #afc7cf;
+  background:
+    radial-gradient(ellipse at 45% 30%, #0d42466b, transparent 44%),
+    repeating-linear-gradient(135deg, transparent 0 20px, #d2f4f408 21px, transparent 22px 30px),
+    #07151b;
+}
+.crow-hero {
+  isolation: isolate;
+  min-height: 670px;
+  background:
+    radial-gradient(ellipse at 65% 45%, #04646a91, transparent 49%),
+    radial-gradient(ellipse at 11% 85%, #ad51271f, transparent 49%),
+    linear-gradient(107deg, #081b23, #04131b 53%, #09212a);
+  box-shadow: inset 0 0 75px #041017, inset 0 -32px 42px #061319;
+  border-bottom: 2px solid #29eff3aa;
+}
+.crow-hero::before {
+  content: "";
+  position: absolute;
+  inset: 3% 0 3% 39%;
+  background: url("assets/crow-workbench-hero-art.webp") center center / contain no-repeat;
+  opacity: .98;
+  mask-image: linear-gradient(90deg, transparent, #000 23%, #000 100%);
+  pointer-events: none;
+  z-index: -1;
+  filter: drop-shadow(0 0 28px #04bac34d);
+}
+.crow-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, #07161ff5 0%, #071923cb 24%, #0719228f 45%, transparent 70%),
+    linear-gradient(180deg, #06151b75, transparent 30%, transparent 74%, #07151dca 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+.crow-hero-inner { max-width: 625px; }
+.crow-hero h1 {
+  font-size: clamp(3.9rem, 8.3vw, 7.3rem);
+  text-shadow: 0 3px 1px #0009, 0 0 18px #f0ebdd2e;
+  letter-spacing: -.065em;
+}
+.crow-hero h1 span {
+  display: inline-block;
+  background: linear-gradient(175deg, #ffe3b0 3%, #ffbd55 43%, #e8842a 73%, #ffc76f 93%);
+  color: #ffb84e;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 #9d401b) drop-shadow(0 0 12px #f7934165);
+}
+.crow-hero .crow-hero-line {
+  color: #c0ffff;
+  text-shadow: 0 0 14px #03c5d34a, 0 2px 4px #000;
+  font-weight: 850;
+}
+.crow-hero .crow-hero-intro {
+  color: #f0f9f7;
+  text-shadow: 0 1px 9px #000e, 0 3px 12px #000d;
+}
+.crow-kicker { text-shadow: 0 0 10px #45f4db55; }
+.crow-hero-note {
+  color: #e0eaf1;
+  border-top: 1px solid #4eddd6a6;
+}
+.crow-mini-bracket { color: #ffc56f; }
+.crow-btn {
+  position: relative;
+  border-radius: 7px;
+  box-shadow: inset 0 0 0 1px #fff1, 0 4px 16px #0007;
+}
+.crow-btn-primary {
+  color: #122129;
+  background:
+    linear-gradient(155deg, #ffdaa3 0%, #f7b155 27%, #e58635 61%, #e6a557 100%);
+  border: 1px solid #ffd198;
+  box-shadow: inset 0 1px 0 #fff4, inset 0 -2px 0 #8b451d55, 0 0 24px #f5a04343, 0 5px 15px #0008;
+}
+.crow-btn-primary:hover { color: #101c23; box-shadow: 0 0 26px #f6b66383, 0 5px 16px #0008; }
+.crow-btn-quiet {
+  background: linear-gradient(155deg, #0a333bfa, #071a23f7);
+  border-color: #47eaf1;
+  box-shadow: inset 0 0 0 1px #0ceaf033, 0 0 17px #13eff124;
+}
+.crow-btn-quiet:hover { background: #15424b; box-shadow: 0 0 19px #16d9e558; }
+.crow-section-nav {
+  position: relative;
+  margin: -1px auto 0;
+  padding: 25px clamp(25px, 6vw, 105px);
+  background:
+    linear-gradient(180deg, #1a353e 0%, #10262f 45%, #0b171e 100%);
+  border-block: 1px solid #43dfebb5;
+  box-shadow: inset 0 1px 0 #98e6e046, inset 0 -1px 0 #f1ab4d56, 0 10px 30px #000b, 0 -9px 17px #30e5f01b;
+}
+.crow-section-nav::before, .crow-section-nav::after {
+  content:"";
+  position:absolute;
+  top: 50%;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 26%, #f7d4a0, #80562c 70%);
+  box-shadow: 0 0 0 2px #07151a, 0 0 8px #efa35e;
+  transform: translateY(-50%);
+}
+.crow-section-nav::before {left: 19px;}
+.crow-section-nav::after {right: 19px;}
+.crow-section-nav-title {color:#ffd18a;font-size:.76rem;text-shadow:0 0 10px #df8e3555;}
+.crow-section-nav a {color:#e0fbfc;font-weight:800;}
+.crow-section-nav a:hover {color:#ffca7c;}
+.crow-intro-section, .crow-projects-section, .crow-method-section, .crow-systems-section, .crow-contact-section {
+  position: relative;
+  isolation: isolate;
+}
+.crow-intro-section::before,.crow-projects-section::before,.crow-method-section::before,.crow-systems-section::before,.crow-contact-section::before {
+  content:"";
+  position:absolute;inset:0;pointer-events:none;z-index:-1;
+  background:
+    repeating-linear-gradient(90deg,transparent 0 55px,#84efea0b 56px,transparent 57px 112px),
+    repeating-linear-gradient(0deg,transparent 0 55px,#84efea08 56px,transparent 57px 112px),
+    radial-gradient(circle at 88% 22%,#00d6db21 0,transparent 30%);
+  opacity:.65;
+}
+.crow-intro-section {
+  background:
+    radial-gradient(ellipse at 11% 20%,#b45d282c,transparent 37%),
+    linear-gradient(128deg,#071820,#0b252b 64%,#0b191f);
+}
+.crow-intro-section h2 em {color:#8cf2f0;text-shadow:0 0 15px #12c9ce55;}
+.crow-projects-section {
+  background:
+    radial-gradient(ellipse at 5% 0%, #d2763628, transparent 34%),
+    radial-gradient(ellipse at 93% 33%, #11dfd52c, transparent 38%),
+    linear-gradient(180deg,#0c202a,#06151d 72%,#0b1d25);
+}
+.crow-projects-section .crow-shell {
+  position: relative;
+}
+.crow-projects-section .crow-shell::before, .crow-projects-section .crow-shell::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid #efaa62;
+  border-radius: 50%;
+  background: #22333b;
+  box-shadow: 0 0 8px #eab270;
+}
+.crow-projects-section .crow-shell::before {top:-18px;left: 2px;}
+.crow-projects-section .crow-shell::after {bottom:-25px;right: 1px;}
+.crow-feature-project {
+  border:1px solid #3cdce3a1;
+  background:linear-gradient(138deg,#122e37,#101d24);
+  box-shadow: 0 0 0 4px #102e35, inset 0 0 0 1px #edba6741, 0 0 35px #00d6df16, 0 24px 48px #000b;
+}
+.crow-feature-visual {
+  background:
+    radial-gradient(ellipse at center, #23647669, transparent 66%),
+    repeating-linear-gradient(0deg,#98e7f00b 0 1px,transparent 1px 8px),
+    #071923;
+}
+.crow-feature-windowbar {background:linear-gradient(90deg,#193741,#142029);border-color:#3fd5d8;}
+.crow-feature-copy {
+  background:
+    radial-gradient(ellipse at 100% 0%,#da813023,transparent 60%),
+    linear-gradient(135deg,#132c33,#0c2028);
+}
+.crow-feature-copy h3 {text-shadow: 0 2px 7px #020a10;}
+.crow-project-card {
+  border:1px solid #4ec7bd97;
+  background:
+    radial-gradient(ellipse at 85% 15%, #35f4c02c,transparent 45%),
+    repeating-linear-gradient(135deg, transparent 0 26px,#defcff07 27px,transparent 28px 38px),
+    linear-gradient(140deg,#163b39,#0b242e);
+  box-shadow:inset 0 1px 0 #a6fce42b,0 0 0 3px #062129,0 16px 29px #0008;
+}
+.crow-project-card-fed {
+  border-color:#44c0ef8c;
+  background:radial-gradient(ellipse at 80% 5%,#3abce638,transparent 49%),linear-gradient(145deg,#173544,#10202d);
+}
+.crow-project-card-roots {
+  border-color:#d7a35b9c;
+  background:radial-gradient(ellipse at 80% 5%,#eda74c2f,transparent 49%),linear-gradient(145deg,#413025,#19252a);
+}
+.crow-project-card:hover {box-shadow: inset 0 1px 0 #a6fce443,0 0 0 3px #0a242c,0 0 25px #15d8e23a,0 18px 29px #0009;}
+.crow-project-icon>span:first-child {color:#80eff4;text-shadow:0 0 19px #25f1e382;}
+.crow-project-card-roots .crow-project-icon>span:first-child {color:#ffd390;text-shadow:0 0 18px #f89d4277;}
+.crow-card-state {color:#ffd49b;}
+.crow-method-section {
+  background:radial-gradient(ellipse at 40% 0%,#c26c2a24,transparent 42%),linear-gradient(135deg,#09202a,#0d2430);
+  border-color:#46c7d077;
+}
+.crow-method-grid li {
+  background:
+    radial-gradient(ellipse at 95% 0%,#34dbdb22,transparent 56%),
+    linear-gradient(165deg,#1a3740,#101f27);
+  border: 1px solid #5aa9b2a6;
+  box-shadow:inset 0 1px 0 #cbffff20,0 10px 26px #0005;
+}
+.crow-method-grid li::after {
+  content:"";
+  position:absolute;right:10px;top:10px;width:6px;height:6px;border:1px solid #cb8a4d;
+  border-radius:50%;box-shadow:inset 0 0 2px #dda665;
+}
+.crow-method-count {color:#ffc579;text-shadow:0 0 11px #de8f4533;}
+.crow-systems-section {
+  background:radial-gradient(ellipse at 90% 45%,#02d9da2e,transparent 50%),#06151e;
+}
+.crow-system-console {
+  border:1px solid #62d4df;
+  box-shadow:inset 0 0 0 2px #072b36,0 0 23px #1bd7e433,0 25px 53px #0009;
+}
+.crow-console-heading {border-color:#4db9bc;background:linear-gradient(100deg,#1a4049,#10232d);}
+.crow-console-body {background:radial-gradient(ellipse at 70% 25%,#0a8a9525,transparent 48%),#071820;}
+.crow-contact-section {
+  background:
+    radial-gradient(ellipse at 78% 40%,#e09c4730,transparent 55%),
+    linear-gradient(120deg,#10252e,#0b1a23);
+  border-top:1px solid #b47a4e9c;
+}
+.crow-studio-footer {
+  background: linear-gradient(90deg,#081c25,#14272b,#141c20);
+  border-top:1px solid #35d8de79;
+  box-shadow: inset 0 1px 0 #f2a7593d;
+}
+@media(max-width:900px) {
+ .crow-hero::before {
+   inset: 9% -13% 8% 32%;
+   opacity:.65;
+ }
+ .crow-hero::after {
+   background:linear-gradient(90deg,#061720f0,#071a21b8 54%,#05141f6b),
+      linear-gradient(0deg,#08161fd6,transparent 34%);
+ }
+}
+@media(max-width:650px) {
+ .crow-hero {background:#06151e;min-height:640px;}
+ .crow-hero::before {
+   inset: 0 -85% 0 14%;
+   background-position: 50% 25%;
+   opacity:.33;
+   mask-image: linear-gradient(90deg,transparent,#000 35%,#000);
+ }
+ .crow-hero::after {
+   background:linear-gradient(90deg,#06151ef2,#06151ed6 62%,#06151ebb),
+      linear-gradient(0deg,#08171ecf,transparent 44%);
+ }
+ .crow-hero h1 {font-size:clamp(3.3rem,12vw,5rem);}
+ .crow-section-nav {padding:18px 26px;}
+ .crow-section-nav::before,.crow-section-nav::after {width:5px;height:5px;}
+ .crow-section-nav::before {left:9px;}
+ .crow-section-nav::after {right:9px;}
+}
+
+
+/* Crow Studio / material texture pass — 2026-11-06.
+   Pure CSS etched steel, brushed grain, bevels and circuit traces.
+   Decorative layers only: no extra images, effects, or layout rebuild. */
+
+.crow-intro-section,
+.crow-projects-section,
+.crow-method-section,
+.crow-systems-section,
+.crow-contact-section {
+  border-top: 1px solid rgba(106, 210, 212, .24);
+  box-shadow: inset 0 1px 0 rgba(215, 255, 250, .055);
+}
+
+/* Etched metal workstation plate around the personal introduction. */
+.crow-intro-grid {
+  position: relative;
+}
+.crow-intro-copy {
+  position: relative;
+  padding: 30px 35px 27px;
+  background:
+    repeating-linear-gradient(0deg,
+      rgba(190, 245, 245, .022) 0 1px,
+      transparent 1px 4px),
+    linear-gradient(133deg,
+      rgba(82, 163, 165, .14),
+      rgba(6, 23, 32, .54) 43%,
+      rgba(173, 104, 51, .10) 100%);
+  border: 1px solid rgba(99, 183, 188, .44);
+  border-left: 3px solid rgba(244, 172, 91, .82);
+  border-radius: 4px 17px 17px 4px;
+  box-shadow:
+    inset 1px 1px 0 rgba(226, 255, 255, .095),
+    inset -1px -1px 0 rgba(0, 0, 0, .34),
+    0 17px 35px rgba(0, 0, 0, .24);
+}
+.crow-intro-copy::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 34% 28%, #ffd8a5, #ab7444 57%, #3d3229 72%);
+  border: 1px solid rgba(253, 194, 128, .5);
+  box-shadow: 0 0 0 2px #061b22, 0 0 9px #ffaf5345;
+  pointer-events: none;
+}
+.crow-intro-copy .crow-philosophy {
+  border-top-color: rgba(208, 160, 98, .42);
+}
+
+/* A machined divider and small etched registration mark. */
+.crow-heading-row {
+  position: relative;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(83, 187, 190, .37);
+}
+.crow-heading-row::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: clamp(70px, 16%, 180px);
+  height: 3px;
+  background: linear-gradient(90deg, #f2b36a, #82ede1 65%, transparent);
+  box-shadow: 0 0 11px rgba(53, 226, 226, .24);
+  pointer-events: none;
+}
+
+/* Brushed metal inside project panels, rather than flat tinted rectangles. */
+.crow-feature-project {
+  position: relative;
+  background:
+    repeating-linear-gradient(0deg, rgba(200, 249, 247, .022) 0 1px, transparent 1px 5px),
+    linear-gradient(145deg, #132c36, #0e1e28 68%);
+}
+.crow-feature-project::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1px solid rgba(127, 210, 208, .14);
+  border-radius: 16px;
+  pointer-events: none;
+  z-index: 2;
+}
+.crow-feature-copy {
+  background:
+    repeating-linear-gradient(0deg, rgba(217, 250, 251, .019) 0 1px, transparent 1px 4px),
+    radial-gradient(ellipse at 100% 0%, rgba(214, 123, 49, .15), transparent 60%),
+    linear-gradient(132deg, #122e35, #0c1c26);
+}
+.crow-feature-windowbar {
+  background:
+    repeating-linear-gradient(90deg, rgba(235, 255, 251, .035) 0 1px, transparent 1px 4px),
+    linear-gradient(180deg, #23434b, #112530);
+  box-shadow: inset 0 1px 0 rgba(214, 253, 251, .14);
+}
+
+/* Every card has a subtle grain, etched corner, and physical rim. */
+.crow-project-card {
+  background:
+    repeating-linear-gradient(0deg, rgba(204, 248, 244, .026) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(129deg, transparent 0 30px, rgba(203, 251, 245, .024) 30px 31px, transparent 31px 61px),
+    radial-gradient(ellipse at 85% 15%, rgba(53, 244, 192, .15), transparent 46%),
+    linear-gradient(140deg, #163b39, #0b242e);
+  box-shadow:
+    inset 0 1px 0 rgba(213, 255, 244, .24),
+    inset 1px 0 0 rgba(147, 231, 226, .09),
+    inset 0 -2px 0 rgba(0, 0, 0, .27),
+    0 0 0 3px #062129,
+    0 16px 29px rgba(0, 0, 0, .48);
+}
+.crow-project-card-fed {
+  background:
+    repeating-linear-gradient(0deg, rgba(204, 248, 244, .025) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(129deg, transparent 0 30px, rgba(203, 251, 245, .025) 30px 31px, transparent 31px 61px),
+    radial-gradient(ellipse at 80% 5%, rgba(58, 188, 230, .22), transparent 49%),
+    linear-gradient(145deg, #173544, #10202d);
+}
+.crow-project-card-roots {
+  background:
+    repeating-linear-gradient(0deg, rgba(246, 225, 197, .029) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(129deg, transparent 0 30px, rgba(239, 203, 165, .024) 30px 31px, transparent 31px 61px),
+    radial-gradient(ellipse at 80% 5%, rgba(237, 167, 76, .18), transparent 49%),
+    linear-gradient(145deg, #413025, #19252a);
+}
+.crow-project-card::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 19px;
+  height: 19px;
+  border-top: 2px solid rgba(250, 196, 119, .73);
+  border-right: 2px solid rgba(250, 196, 119, .73);
+  border-radius: 0 4px 0 0;
+  pointer-events: none;
+}
+.crow-project-card:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(213, 255, 244, .3),
+    inset 0 -2px 0 rgba(0, 0, 0, .23),
+    0 0 0 3px #0a242c,
+    0 0 25px rgba(21, 216, 226, .23),
+    0 18px 29px #0009;
+}
+
+/* An understated circuit track connecting the four engineering steps. */
+.crow-method-grid {
+  position: relative;
+}
+.crow-method-grid::before {
+  content: "";
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 69px;
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(243, 170, 79, .78) 10%,
+    rgba(94, 230, 222, .79) 52%,
+    rgba(243, 170, 79, .65) 90%,
+    transparent);
+  box-shadow: 0 0 9px rgba(66, 211, 211, .18);
+  z-index: 0;
+  pointer-events: none;
+}
+.crow-method-grid li {
+  z-index: 1;
+  background:
+    repeating-linear-gradient(0deg, rgba(214, 250, 247, .03) 0 1px, transparent 1px 5px),
+    linear-gradient(155deg, rgba(136, 229, 224, .055), transparent 48%),
+    radial-gradient(ellipse at 95% 0%, rgba(52, 219, 219, .14), transparent 56%),
+    linear-gradient(165deg, #1a3740, #101f27);
+  border-color: rgba(103, 200, 202, .76);
+  box-shadow:
+    inset 1px 1px 0 rgba(236, 255, 255, .16),
+    inset -1px -1px 0 rgba(0, 0, 0, .28),
+    0 10px 26px rgba(0, 0, 0, .28);
+}
+
+/* Tooling console: brushed outer shell, fine scanlines, engraved header. */
+.crow-system-console {
+  outline: 4px solid rgba(22, 45, 54, .78);
+  outline-offset: -6px;
+  box-shadow:
+    inset 0 0 0 2px #072b36,
+    inset 0 1px 0 rgba(191, 250, 245, .21),
+    0 0 23px rgba(27, 215, 228, .2),
+    0 25px 53px #0009;
+}
+.crow-console-heading {
+  background:
+    repeating-linear-gradient(0deg, rgba(235, 255, 251, .056) 0 1px, transparent 1px 4px),
+    linear-gradient(100deg, #24474e, #10232d);
+  text-shadow: 0 1px 0 #000;
+  box-shadow: inset 0 1px 0 rgba(188, 255, 246, .25), inset 0 -2px 0 #020e15;
+}
+.crow-console-body {
+  background:
+    repeating-linear-gradient(0deg, rgba(80, 184, 190, .041) 0 1px, transparent 1px 6px),
+    radial-gradient(ellipse at 70% 25%, rgba(10, 138, 149, .16), transparent 48%),
+    #071820;
+}
+.crow-tech-tags span {
+  background:
+    repeating-linear-gradient(0deg, rgba(225, 255, 255, .04) 0 1px, transparent 1px 4px),
+    linear-gradient(150deg, #1d3c45, #0e2732);
+  border-color: rgba(110, 195, 204, .7);
+  box-shadow: inset 0 1px 0 rgba(227, 255, 255, .11);
+}
+
+/* The contact panel becomes a final machined steel plate, not a plain band. */
+.crow-contact-inner {
+  position: relative;
+  padding: clamp(28px, 5vw, 58px);
+  border: 1px solid rgba(113, 194, 193, .53);
+  border-top: 2px solid rgba(244, 174, 95, .78);
+  border-radius: 9px 22px 22px 9px;
+  background:
+    repeating-linear-gradient(0deg, rgba(220, 246, 244, .021) 0 1px, transparent 1px 5px),
+    radial-gradient(ellipse at 88% 20%, rgba(212, 140, 62, .1), transparent 52%),
+    linear-gradient(125deg, rgba(26, 54, 60, .92), rgba(9, 29, 40, .96) 68%);
+  box-shadow:
+    inset 0 1px 0 rgba(230, 255, 251, .15),
+    inset 1px 0 0 rgba(211, 248, 243, .06),
+    0 22px 44px rgba(0, 0, 0, .26);
+}
+.crow-contact-inner::before,
+.crow-contact-inner::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #af8453;
+  border-radius: 50%;
+  background: radial-gradient(circle at 33% 26%, #edd0a2, #6e5943 69%, #1f2225 75%);
+  box-shadow: 0 0 0 2px #0c1f29;
+  pointer-events: none;
+}
+.crow-contact-inner::before { top: 14px; left: 14px; }
+.crow-contact-inner::after { bottom: 14px; right: 14px; }
+.crow-contact-section {
+  border-bottom: 1px solid rgba(89, 200, 203, .32);
+}
+
+@media (max-width: 930px) {
+  .crow-method-grid::before { display: none; }
+}
+@media (max-width: 650px) {
+  .crow-intro-copy {
+    padding: 23px 22px 20px;
+    border-radius: 4px 12px 12px 4px;
+  }
+  .crow-contact-inner {
+    padding: 31px 20px 27px;
+    border-radius: 9px 14px 14px 9px;
+  }
+  .crow-heading-row { padding-bottom: 19px; }
+  .crow-feature-project::before { inset: 5px; }
+}
+
+
+
+/* Crow's Studio — real terminal and concept-art transformation.
+   Source artwork: assets/crow-workbench-showcase-reference.png.
+   Interactive controls and all important text remain genuine HTML. */
+
+/* Industrial plating underneath the preserved hero. */
+.crow-command-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(65px, 7.5vw, 110px) 0;
+  background:
+    radial-gradient(ellipse at 78% 16%, rgba(13, 155, 159, .21), transparent 38%),
+    radial-gradient(ellipse at 12% 84%, rgba(223, 111, 30, .17), transparent 42%),
+    repeating-linear-gradient(0deg, rgba(215, 241, 239, .024) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(90deg, rgba(68, 202, 204, .045) 0 1px, transparent 1px 85px),
+    linear-gradient(125deg, #0c252c, #06141b 61%, #0e2a30);
+  border-block: 2px solid #287880;
+  box-shadow: inset 0 1px 0 rgba(156, 244, 233, .29), inset 0 -2px 0 rgba(249, 172, 75, .35);
+}
+.crow-command-section::before,
+.crow-command-section::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 19px;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(115deg, #253d40 0 15px, #0a2028 15px 29px, #122e36 29px 34px),
+    linear-gradient(90deg, #32d7db, #f5a952);
+  border-block: 1px solid #f3ad5475;
+  box-shadow: 0 0 16px #21eeee27, 0 3px 13px #000a;
+}
+.crow-command-section::before { top: 0; }
+.crow-command-section::after { bottom: 0; }
+.crow-command-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .87fr) minmax(0, 1.13fr);
+  gap: clamp(28px, 4.5vw, 75px);
+  align-items: center;
+}
+.crow-command-story { min-width: 0; }
+.crow-command-story h2 {
+  font-size: clamp(2.8rem, 4.5vw, 4.7rem);
+  max-width: 510px;
+  line-height: 1.06;
+  letter-spacing: -.057em;
+  text-shadow: 0 2px 0 #0009, 0 0 18px #e2f5f21c;
+}
+.crow-command-story h2 em {
+  display: inline;
+  font-style: normal;
+  color: #f2b46a;
+  text-shadow: 0 0 17px rgba(243, 159, 70, .42);
+}
+.crow-command-story p:not(.crow-eyebrow) {
+  color: #bfd4d7;
+  font-size: .98rem;
+  line-height: 1.75;
+  margin-top: 21px;
+  max-width: 490px;
+}
+.crow-command-story .crow-command-lead {
+  color: #eef7f8 !important;
+  font-size: 1.05rem !important;
+}
+.crow-console-shortcut {
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  min-height: 47px;
+  margin-top: 29px;
+  padding: 10px 16px;
+  background: linear-gradient(110deg, #08232b, #0f3440);
+  border: 1px solid #f8ae5e;
+  border-radius: 4px 10px 4px 10px;
+  color: #f5e2bf;
+  font: 800 .79rem/1.45 ui-monospace, Consolas, Monaco, monospace;
+  letter-spacing: .065em;
+  box-shadow: inset 0 0 0 1px #7eece522, 0 0 16px #e89c3d33;
+}
+.crow-console-shortcut span:first-child { color: #4ef0ee; font-size: 1.15rem; }
+.crow-console-shortcut:hover { background: #1b4248; color: #fff8e3; border-color: #ffe2b2; }
+.crow-command-story .crow-command-caption {
+  color: #a3dfe4 !important;
+  font: 700 .72rem/1.7 ui-monospace, Consolas, Monaco, monospace !important;
+  letter-spacing: .075em;
+  margin-top: 30px !important;
+}
+.crow-terminal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 450px;
+  padding: 7px;
+  border: 2px solid transparent;
+  border-radius: 17px;
+  background:
+    linear-gradient(145deg, #152c30, #07151a) padding-box,
+    linear-gradient(125deg, #eaa858, #3fddde 20%, #8ce7e3 73%, #f3b261) border-box;
+  box-shadow:
+    0 0 0 4px #071820,
+    0 0 0 6px #395b61,
+    0 0 26px #02d1d72e,
+    0 18px 45px #000a,
+    inset 0 1px 0 #fbe5b36b;
+  overflow: hidden;
+}
+.crow-terminal::before,
+.crow-terminal::after {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 27px;
+  height: 27px;
+  border-style: solid;
+  pointer-events: none;
+}
+.crow-terminal::before {
+  left: 4px;
+  top: 4px;
+  border-width: 3px 0 0 3px;
+  border-color: #f0b36c;
+  border-radius: 9px 0 0;
+}
+.crow-terminal::after {
+  right: 4px;
+  bottom: 4px;
+  border-width: 0 3px 3px 0;
+  border-color: #45e4e3;
+  border-radius: 0 0 9px;
+}
+.crow-terminal-head {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  padding: 12px 17px;
+  border-bottom: 1px solid #3a9297;
+  background:
+    repeating-linear-gradient(90deg, #ffffff0c 0 1px, transparent 1px 6px),
+    linear-gradient(180deg, #213e41, #0b222b);
+  box-shadow: inset 0 1px 0 #e6fbec25;
+}
+.crow-terminal-lights { display: flex; gap: 6px; flex: none; }
+.crow-terminal-lights i {
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  background: #eeae5c;
+  box-shadow: 0 0 8px #ec9f547a;
+}
+.crow-terminal-lights i:nth-child(2) { background: #63daae; }
+.crow-terminal-lights i:nth-child(3) { background: #54c6e3; }
+.crow-terminal-title {
+  color: #ffbe73;
+  font: 700 .75rem/1.4 ui-monospace, Consolas, Monaco, monospace;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.crow-terminal-indicator {
+  flex: none;
+  color: #aae4dc;
+  font: 700 .59rem/1.5 ui-monospace, Consolas, Monaco, monospace;
+  letter-spacing: .07em;
+}
+.crow-terminal-screen {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 260px;
+  max-height: 375px;
+  padding: 24px 23px;
+  background:
+    repeating-linear-gradient(0deg, #54dde309 0 1px, transparent 1px 6px),
+    radial-gradient(ellipse at 60% 5%, #075b5a2e, transparent 60%),
+    #06151b;
+  scrollbar-color: #397b81 #091a21;
+  scrollbar-width: thin;
+}
+.crow-cli-line {
+  margin: 0 0 7px !important;
+  color: #c3e8df !important;
+  font: 500 .80rem/1.6 ui-monospace, "Cascadia Code", Consolas, Monaco, monospace !important;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.crow-cli-command { color: #e5b979 !important; margin-top: 15px !important; }
+.crow-cli-dim { color: #89a9b7 !important; }
+.crow-cli-prompt { color: #f0af5f; }
+.crow-cli-success { color: #9af1c5 !important; }
+.crow-cli-warning { color: #ffc37d !important; }
+.crow-cli-info { color: #d8edf3 !important; }
+.crow-cli-jump {
+  display: inline-block;
+  margin: 5px 0 10px;
+  color: #8ef1ee !important;
+  text-decoration: underline !important;
+  font: 750 .81rem/1.6 ui-monospace, Consolas, monospace;
+  text-underline-offset: 3px;
+}
+.crow-cli-jump:hover { color: #ffc77a !important; }
+.crow-terminal-form {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 15px;
+  background: #071b21;
+  border-top: 1px solid #376d72;
+}
+.crow-terminal-form label {
+  flex: none;
+  font: 700 .77rem/1.4 ui-monospace, Consolas, Monaco, monospace;
+}
+.crow-terminal-form input {
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #d8f6f1;
+  padding: 9px 2px;
+  font: 500 .84rem/1.45 ui-monospace, Consolas, Monaco, monospace;
+  caret-color: #84fce4;
+}
+.crow-terminal-form input::placeholder { color: #6f969b; opacity: 1; }
+.crow-terminal-form:focus-within { box-shadow: inset 0 0 0 2px #86eadc; }
+.crow-terminal-form button {
+  cursor: pointer;
+  flex: none;
+  padding: 9px 13px;
+  min-height: 37px;
+  background: #194049;
+  color: #d8f9ed;
+  border: 1px solid #58bebc;
+  border-radius: 6px;
+  font: 750 .71rem/1.2 ui-monospace, Consolas, monospace;
+}
+.crow-terminal-form button:hover { background: #245b63; border-color: #f6c186; }
+.crow-terminal-form button:focus-visible { outline: 3px solid #ffd180; outline-offset: 2px; }
+.crow-terminal-foot {
+  margin: 0 !important;
+  padding: 10px 15px 8px;
+  background: #132b30;
+  color: #9dc6cc !important;
+  font: 700 .63rem/1.5 ui-monospace, Consolas, Monaco, monospace !important;
+  letter-spacing: .02em;
+  border-top: 1px solid #224f57;
+}
+
+/* Concept-art project cards: still ordinary accessible links and copy. */
+.crow-project-card {
+  padding: 0;
+  min-height: 460px;
+  border-radius: 8px 17px 8px 17px;
+  overflow: hidden;
+}
+.crow-project-visual {
+  display: block;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: clamp(148px, 14vw, 180px);
+  flex: none;
+  overflow: hidden;
+  border-bottom: 2px solid #43d7df;
+  background: #10242e;
+}
+.crow-project-card-fed .crow-project-visual { border-bottom-color: #51b8e2; }
+.crow-project-card-roots .crow-project-visual { border-bottom-color: #dfaa6b; }
+.crow-project-visual img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+  transition: transform .32s ease;
+}
+.crow-project-card:hover .crow-project-visual img { transform: scale(1.045); }
+.crow-project-card::after { top: 10px; right: 10px; z-index: 1; }
+.crow-project-card .crow-card-top,
+.crow-project-card h3,
+.crow-project-card p,
+.crow-project-card .crow-card-link {
+  margin-left: 23px;
+  margin-right: 23px;
+}
+.crow-project-card .crow-card-top { margin-top: 20px; }
+.crow-project-card h3 { min-height: 2.2em; margin-top: 0; }
+.crow-project-card p { margin-top: 0; }
+.crow-project-card .crow-card-link { margin-top: 18px; margin-bottom: 23px; }
+
+/* Selected Work's feature panel keeps its genuine screenshot. */
+.crow-feature-project {
+  border-radius: 9px 22px 9px 22px;
+  border-width: 2px;
+}
+.crow-heading-row .crow-eyebrow { color: #70ecf1; }
+
+/* More industrial treatment without new resource-heavy animation. */
+.crow-method-section {
+  background:
+    repeating-linear-gradient(0deg, #b4ebea08 0 1px, transparent 1px 5px),
+    radial-gradient(ellipse at 76% 22%, #125f6b42, transparent 50%),
+    linear-gradient(125deg, #101c22, #09222d);
+}
+.crow-method-grid li { padding-top: 29px; }
+.crow-method-symbol {
+  position: absolute;
+  right: 24px;
+  top: 19px;
+  color: #96ece5;
+  font-size: 1.5rem;
+  font-family: ui-monospace, Consolas, monospace;
+  font-weight: 700;
+  text-shadow: 0 0 10px #1ee7d577;
+}
+.crow-method-grid li::after { right: 12px; top: 12px; }
+.crow-systems-section {
+  background:
+    radial-gradient(ellipse at 84% 50%, #137f8140, transparent 52%),
+    repeating-linear-gradient(90deg, #6df5ee08 0 1px, transparent 1px 78px),
+    linear-gradient(150deg, #06151b, #0b252e 68%, #1a2221);
+}
+.crow-tools-art {
+  margin: 0;
+  position: relative;
+  border: 2px solid #58d5d4;
+  border-radius: 10px 21px 10px 21px;
+  overflow: hidden;
+  background: #0c2029;
+  box-shadow: 0 0 0 5px #0b252c, 0 0 22px #28d7d72b, 0 19px 35px #000a;
+}
+.crow-tools-art::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid #ebaf626b;
+  border-radius: 7px 15px 7px 15px;
+  pointer-events: none;
+  z-index: 1;
+}
+.crow-tools-art img {
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center center;
+}
+.crow-tools-art figcaption {
+  padding: 11px 19px;
+  border-top: 1px solid #4dbab3;
+  background: linear-gradient(90deg, #102d34, #161f24);
+  color: #f0c18a;
+  font: 700 .70rem/1.5 ui-monospace, Consolas, monospace;
+  letter-spacing: .07em;
+}
+.crow-contact-section {
+  background:
+    repeating-linear-gradient(0deg, #e9d7b408 0 1px, transparent 1px 5px),
+    radial-gradient(ellipse at 80% 30%, #bb782b38, transparent 55%),
+    linear-gradient(115deg, #0a242b, #11232c);
+}
+@media (max-width: 950px) {
+  .crow-command-grid { grid-template-columns: 1fr; }
+  .crow-command-story { max-width: 680px; }
+  .crow-command-story h2 { max-width: 750px; }
+  .crow-terminal { min-height: 410px; }
+  .crow-project-visual { height: 180px; }
+}
+@media (max-width: 650px) {
+  .crow-command-section { padding: 55px 0 65px; }
+  .crow-command-story h2 { font-size: clamp(2.5rem, 10vw, 3.7rem); }
+  .crow-terminal { min-height: 410px; }
+  .crow-terminal-head { gap: 5px; padding: 12px 11px; }
+  .crow-terminal-title { font-size: .65rem; }
+  .crow-terminal-indicator { display: none; }
+  .crow-terminal-screen { min-height: 260px; padding: 17px 13px; }
+  .crow-cli-line { font-size: .71rem !important; }
+  .crow-terminal-form { padding: 9px 10px; gap: 6px; }
+  .crow-terminal-form label { font-size: .65rem; }
+  .crow-terminal-form input { font-size: .72rem; }
+  .crow-terminal-form button { padding: 9px; }
+  .crow-project-card { min-height: auto; }
+  .crow-project-visual { height: clamp(160px, 52vw, 245px); }
+  .crow-project-card .crow-card-top,
+  .crow-project-card h3,
+  .crow-project-card p,
+  .crow-project-card .crow-card-link {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .crow-tools-art img { min-height: 235px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .crow-project-visual img { transition: none; }
+  .crow-project-card:hover .crow-project-visual img { transform: none; }
+}
