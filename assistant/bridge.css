@@ -1,0 +1,38 @@
+
+/* Scoped launcher only: cannot restyle existing StoneVeld website elements. */
+#sv-assistant-launcher, #sv-assistant-shell { box-sizing: border-box; }
+#sv-assistant-launcher {
+  position: fixed; z-index: 99998; right: 1.25rem; bottom: 1.25rem;
+  min-height: 52px; padding: .62rem 1.1rem;
+  display: inline-flex; align-items: center; gap: .65rem;
+  border: 1px solid #f4d08b; border-radius: 1rem;
+  background: linear-gradient(110deg, #102c31, #215c52);
+  color: #f8e5b2; font: 750 .92rem/1.4 system-ui, sans-serif;
+  letter-spacing: .01em; cursor: pointer;
+  box-shadow: 0 8px 28px #061a23bb, 0 0 0 1px #70cdb755;
+  transition: transform .16s ease, background-color .16s ease;
+}
+#sv-assistant-launcher:hover { background: #266254; color: white; transform: translateY(-2px); }
+#sv-assistant-launcher .sv-as-mark { font-size: 1.35rem; line-height: 1; color: #86e8cf; }
+#sv-assistant-launcher:focus-visible { outline: 3px solid #f5c47d; outline-offset: 4px; }
+#sv-assistant-launcher[hidden], #sv-assistant-shell[hidden] { display: none !important; }
+#sv-assistant-shell {
+  position: fixed; z-index: 99999; bottom: .7rem; right: .7rem;
+  width: min(600px, calc(100vw - 1.4rem));
+  height: min(850px, calc(100vh - 1.4rem));
+  height: min(850px, calc(100dvh - 1.4rem));
+  background: #102528; border: 1px solid #6ca892; border-radius: 1.3rem;
+  overflow: hidden; box-shadow: 0 24px 80px #061318d9;
+}
+#sv-assistant-shell iframe { display: block; width: 100%; height: 100%; border: 0; background: #102528; }
+@media (max-width: 600px) {
+  #sv-assistant-launcher { right: 1rem; bottom: 1rem; }
+  #sv-assistant-shell {
+    inset: 0; width: 100vw; height: 100vh; height: 100dvh;
+    border: none; border-radius: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #sv-assistant-launcher { transition: none; }
+  #sv-assistant-launcher:hover { transform: none; }
+}
