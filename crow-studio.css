@@ -708,3 +708,410 @@ body:has(.crow-studio) .navigation a[aria-current="page"] {
   .crow-heading-row { padding-bottom: 19px; }
   .crow-feature-project::before { inset: 5px; }
 }
+
+
+
+/* Crow's Studio — real terminal and concept-art transformation.
+   Source artwork: assets/crow-workbench-showcase-reference.png.
+   Interactive controls and all important text remain genuine HTML. */
+
+/* Industrial plating underneath the preserved hero. */
+.crow-command-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(65px, 7.5vw, 110px) 0;
+  background:
+    radial-gradient(ellipse at 78% 16%, rgba(13, 155, 159, .21), transparent 38%),
+    radial-gradient(ellipse at 12% 84%, rgba(223, 111, 30, .17), transparent 42%),
+    repeating-linear-gradient(0deg, rgba(215, 241, 239, .024) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(90deg, rgba(68, 202, 204, .045) 0 1px, transparent 1px 85px),
+    linear-gradient(125deg, #0c252c, #06141b 61%, #0e2a30);
+  border-block: 2px solid #287880;
+  box-shadow: inset 0 1px 0 rgba(156, 244, 233, .29), inset 0 -2px 0 rgba(249, 172, 75, .35);
+}
+.crow-command-section::before,
+.crow-command-section::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 19px;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(115deg, #253d40 0 15px, #0a2028 15px 29px, #122e36 29px 34px),
+    linear-gradient(90deg, #32d7db, #f5a952);
+  border-block: 1px solid #f3ad5475;
+  box-shadow: 0 0 16px #21eeee27, 0 3px 13px #000a;
+}
+.crow-command-section::before { top: 0; }
+.crow-command-section::after { bottom: 0; }
+.crow-command-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .87fr) minmax(0, 1.13fr);
+  gap: clamp(28px, 4.5vw, 75px);
+  align-items: center;
+}
+.crow-command-story { min-width: 0; }
+.crow-command-story h2 {
+  font-size: clamp(2.8rem, 4.5vw, 4.7rem);
+  max-width: 510px;
+  line-height: 1.06;
+  letter-spacing: -.057em;
+  text-shadow: 0 2px 0 #0009, 0 0 18px #e2f5f21c;
+}
+.crow-command-story h2 em {
+  display: inline;
+  font-style: normal;
+  color: #f2b46a;
+  text-shadow: 0 0 17px rgba(243, 159, 70, .42);
+}
+.crow-command-story p:not(.crow-eyebrow) {
+  color: #bfd4d7;
+  font-size: .98rem;
+  line-height: 1.75;
+  margin-top: 21px;
+  max-width: 490px;
+}
+.crow-command-story .crow-command-lead {
+  color: #eef7f8 !important;
+  font-size: 1.05rem !important;
+}
+.crow-console-shortcut {
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  min-height: 47px;
+  margin-top: 29px;
+  padding: 10px 16px;
+  background: linear-gradient(110deg, #08232b, #0f3440);
+  border: 1px solid #f8ae5e;
+  border-radius: 4px 10px 4px 10px;
+  color: #f5e2bf;
+  font: 800 .79rem/1.45 ui-monospace, Consolas, Monaco, monospace;
+  letter-spacing: .065em;
+  box-shadow: inset 0 0 0 1px #7eece522, 0 0 16px #e89c3d33;
+}
+.crow-console-shortcut span:first-child { color: #4ef0ee; font-size: 1.15rem; }
+.crow-console-shortcut:hover { background: #1b4248; color: #fff8e3; border-color: #ffe2b2; }
+.crow-command-story .crow-command-caption {
+  color: #a3dfe4 !important;
+  font: 700 .72rem/1.7 ui-monospace, Consolas, Monaco, monospace !important;
+  letter-spacing: .075em;
+  margin-top: 30px !important;
+}
+.crow-terminal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 450px;
+  padding: 7px;
+  border: 2px solid transparent;
+  border-radius: 17px;
+  background:
+    linear-gradient(145deg, #152c30, #07151a) padding-box,
+    linear-gradient(125deg, #eaa858, #3fddde 20%, #8ce7e3 73%, #f3b261) border-box;
+  box-shadow:
+    0 0 0 4px #071820,
+    0 0 0 6px #395b61,
+    0 0 26px #02d1d72e,
+    0 18px 45px #000a,
+    inset 0 1px 0 #fbe5b36b;
+  overflow: hidden;
+}
+.crow-terminal::before,
+.crow-terminal::after {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 27px;
+  height: 27px;
+  border-style: solid;
+  pointer-events: none;
+}
+.crow-terminal::before {
+  left: 4px;
+  top: 4px;
+  border-width: 3px 0 0 3px;
+  border-color: #f0b36c;
+  border-radius: 9px 0 0;
+}
+.crow-terminal::after {
+  right: 4px;
+  bottom: 4px;
+  border-width: 0 3px 3px 0;
+  border-color: #45e4e3;
+  border-radius: 0 0 9px;
+}
+.crow-terminal-head {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  padding: 12px 17px;
+  border-bottom: 1px solid #3a9297;
+  background:
+    repeating-linear-gradient(90deg, #ffffff0c 0 1px, transparent 1px 6px),
+    linear-gradient(180deg, #213e41, #0b222b);
+  box-shadow: inset 0 1px 0 #e6fbec25;
+}
+.crow-terminal-lights { display: flex; gap: 6px; flex: none; }
+.crow-terminal-lights i {
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  background: #eeae5c;
+  box-shadow: 0 0 8px #ec9f547a;
+}
+.crow-terminal-lights i:nth-child(2) { background: #63daae; }
+.crow-terminal-lights i:nth-child(3) { background: #54c6e3; }
+.crow-terminal-title {
+  color: #ffbe73;
+  font: 700 .75rem/1.4 ui-monospace, Consolas, Monaco, monospace;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.crow-terminal-indicator {
+  flex: none;
+  color: #aae4dc;
+  font: 700 .59rem/1.5 ui-monospace, Consolas, Monaco, monospace;
+  letter-spacing: .07em;
+}
+.crow-terminal-screen {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 260px;
+  max-height: 375px;
+  padding: 24px 23px;
+  background:
+    repeating-linear-gradient(0deg, #54dde309 0 1px, transparent 1px 6px),
+    radial-gradient(ellipse at 60% 5%, #075b5a2e, transparent 60%),
+    #06151b;
+  scrollbar-color: #397b81 #091a21;
+  scrollbar-width: thin;
+}
+.crow-cli-line {
+  margin: 0 0 7px !important;
+  color: #c3e8df !important;
+  font: 500 .80rem/1.6 ui-monospace, "Cascadia Code", Consolas, Monaco, monospace !important;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.crow-cli-command { color: #e5b979 !important; margin-top: 15px !important; }
+.crow-cli-dim { color: #89a9b7 !important; }
+.crow-cli-prompt { color: #f0af5f; }
+.crow-cli-success { color: #9af1c5 !important; }
+.crow-cli-warning { color: #ffc37d !important; }
+.crow-cli-info { color: #d8edf3 !important; }
+.crow-cli-jump {
+  display: inline-block;
+  margin: 5px 0 10px;
+  color: #8ef1ee !important;
+  text-decoration: underline !important;
+  font: 750 .81rem/1.6 ui-monospace, Consolas, monospace;
+  text-underline-offset: 3px;
+}
+.crow-cli-jump:hover { color: #ffc77a !important; }
+.crow-terminal-form {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 15px;
+  background: #071b21;
+  border-top: 1px solid #376d72;
+}
+.crow-terminal-form label {
+  flex: none;
+  font: 700 .77rem/1.4 ui-monospace, Consolas, Monaco, monospace;
+}
+.crow-terminal-form input {
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #d8f6f1;
+  padding: 9px 2px;
+  font: 500 .84rem/1.45 ui-monospace, Consolas, Monaco, monospace;
+  caret-color: #84fce4;
+}
+.crow-terminal-form input::placeholder { color: #6f969b; opacity: 1; }
+.crow-terminal-form:focus-within { box-shadow: inset 0 0 0 2px #86eadc; }
+.crow-terminal-form button {
+  cursor: pointer;
+  flex: none;
+  padding: 9px 13px;
+  min-height: 37px;
+  background: #194049;
+  color: #d8f9ed;
+  border: 1px solid #58bebc;
+  border-radius: 6px;
+  font: 750 .71rem/1.2 ui-monospace, Consolas, monospace;
+}
+.crow-terminal-form button:hover { background: #245b63; border-color: #f6c186; }
+.crow-terminal-form button:focus-visible { outline: 3px solid #ffd180; outline-offset: 2px; }
+.crow-terminal-foot {
+  margin: 0 !important;
+  padding: 10px 15px 8px;
+  background: #132b30;
+  color: #9dc6cc !important;
+  font: 700 .63rem/1.5 ui-monospace, Consolas, Monaco, monospace !important;
+  letter-spacing: .02em;
+  border-top: 1px solid #224f57;
+}
+
+/* Concept-art project cards: still ordinary accessible links and copy. */
+.crow-project-card {
+  padding: 0;
+  min-height: 460px;
+  border-radius: 8px 17px 8px 17px;
+  overflow: hidden;
+}
+.crow-project-visual {
+  display: block;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: clamp(148px, 14vw, 180px);
+  flex: none;
+  overflow: hidden;
+  border-bottom: 2px solid #43d7df;
+  background: #10242e;
+}
+.crow-project-card-fed .crow-project-visual { border-bottom-color: #51b8e2; }
+.crow-project-card-roots .crow-project-visual { border-bottom-color: #dfaa6b; }
+.crow-project-visual img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+  transition: transform .32s ease;
+}
+.crow-project-card:hover .crow-project-visual img { transform: scale(1.045); }
+.crow-project-card::after { top: 10px; right: 10px; z-index: 1; }
+.crow-project-card .crow-card-top,
+.crow-project-card h3,
+.crow-project-card p,
+.crow-project-card .crow-card-link {
+  margin-left: 23px;
+  margin-right: 23px;
+}
+.crow-project-card .crow-card-top { margin-top: 20px; }
+.crow-project-card h3 { min-height: 2.2em; margin-top: 0; }
+.crow-project-card p { margin-top: 0; }
+.crow-project-card .crow-card-link { margin-top: 18px; margin-bottom: 23px; }
+
+/* Selected Work's feature panel keeps its genuine screenshot. */
+.crow-feature-project {
+  border-radius: 9px 22px 9px 22px;
+  border-width: 2px;
+}
+.crow-heading-row .crow-eyebrow { color: #70ecf1; }
+
+/* More industrial treatment without new resource-heavy animation. */
+.crow-method-section {
+  background:
+    repeating-linear-gradient(0deg, #b4ebea08 0 1px, transparent 1px 5px),
+    radial-gradient(ellipse at 76% 22%, #125f6b42, transparent 50%),
+    linear-gradient(125deg, #101c22, #09222d);
+}
+.crow-method-grid li { padding-top: 29px; }
+.crow-method-symbol {
+  position: absolute;
+  right: 24px;
+  top: 19px;
+  color: #96ece5;
+  font-size: 1.5rem;
+  font-family: ui-monospace, Consolas, monospace;
+  font-weight: 700;
+  text-shadow: 0 0 10px #1ee7d577;
+}
+.crow-method-grid li::after { right: 12px; top: 12px; }
+.crow-systems-section {
+  background:
+    radial-gradient(ellipse at 84% 50%, #137f8140, transparent 52%),
+    repeating-linear-gradient(90deg, #6df5ee08 0 1px, transparent 1px 78px),
+    linear-gradient(150deg, #06151b, #0b252e 68%, #1a2221);
+}
+.crow-tools-art {
+  margin: 0;
+  position: relative;
+  border: 2px solid #58d5d4;
+  border-radius: 10px 21px 10px 21px;
+  overflow: hidden;
+  background: #0c2029;
+  box-shadow: 0 0 0 5px #0b252c, 0 0 22px #28d7d72b, 0 19px 35px #000a;
+}
+.crow-tools-art::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid #ebaf626b;
+  border-radius: 7px 15px 7px 15px;
+  pointer-events: none;
+  z-index: 1;
+}
+.crow-tools-art img {
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center center;
+}
+.crow-tools-art figcaption {
+  padding: 11px 19px;
+  border-top: 1px solid #4dbab3;
+  background: linear-gradient(90deg, #102d34, #161f24);
+  color: #f0c18a;
+  font: 700 .70rem/1.5 ui-monospace, Consolas, monospace;
+  letter-spacing: .07em;
+}
+.crow-contact-section {
+  background:
+    repeating-linear-gradient(0deg, #e9d7b408 0 1px, transparent 1px 5px),
+    radial-gradient(ellipse at 80% 30%, #bb782b38, transparent 55%),
+    linear-gradient(115deg, #0a242b, #11232c);
+}
+@media (max-width: 950px) {
+  .crow-command-grid { grid-template-columns: 1fr; }
+  .crow-command-story { max-width: 680px; }
+  .crow-command-story h2 { max-width: 750px; }
+  .crow-terminal { min-height: 410px; }
+  .crow-project-visual { height: 180px; }
+}
+@media (max-width: 650px) {
+  .crow-command-section { padding: 55px 0 65px; }
+  .crow-command-story h2 { font-size: clamp(2.5rem, 10vw, 3.7rem); }
+  .crow-terminal { min-height: 410px; }
+  .crow-terminal-head { gap: 5px; padding: 12px 11px; }
+  .crow-terminal-title { font-size: .65rem; }
+  .crow-terminal-indicator { display: none; }
+  .crow-terminal-screen { min-height: 260px; padding: 17px 13px; }
+  .crow-cli-line { font-size: .71rem !important; }
+  .crow-terminal-form { padding: 9px 10px; gap: 6px; }
+  .crow-terminal-form label { font-size: .65rem; }
+  .crow-terminal-form input { font-size: .72rem; }
+  .crow-terminal-form button { padding: 9px; }
+  .crow-project-card { min-height: auto; }
+  .crow-project-visual { height: clamp(160px, 52vw, 245px); }
+  .crow-project-card .crow-card-top,
+  .crow-project-card h3,
+  .crow-project-card p,
+  .crow-project-card .crow-card-link {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .crow-tools-art img { min-height: 235px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .crow-project-visual img { transition: none; }
+  .crow-project-card:hover .crow-project-visual img { transform: none; }
+}
