@@ -76,6 +76,9 @@ export class Receptionist {
       const retained = supporting.includes(id) && !intent.project && (service === previous?.service) ? previous?.requirements || [] : [];
       this.context={id:fact.id,topic:fact.topic,service,member,requirements:retained}; this.pending=[]; this.pendingReview=null; this.pendingContacts=[];
       let text = id === 'prices' && service ? `For ${services[service].label}, ${fact.answer}` : fact.answer;
+      if (id === 'crow' && /\b(?:owner|founder|who owns stoneveld|who founded stoneveld|person in charge)\b/.test(q)) {
+        text = 'Leon (Crow) is the owner of StoneVeld Studios. ' + fact.answer;
+      }
       let link = fact.link;
       let linkLabel = fact.linkLabel || fact.title;
       if (id === 'direct-email') {
@@ -83,6 +86,9 @@ export class Receptionist {
         const privateRequest = /\b(private|personal)\b/.test(q);
         const displayName = member === 'crow' ? 'Leon (Crow)' : contact.name;
         text = `${privateRequest ? 'Private contact details are not available. ' : ''}${member ? privateRequest ? `You can use ${displayName}’s work email: ${contact.email}.` : `You can email ${displayName} at ${contact.email}.` : `You can reach the StoneVeld team at ${contact.email}.`}`;
+        if (member === 'crow' && /\b(?:owner|founder|person in charge)\b/.test(q) && !privateRequest) {
+          text = 'To reach the StoneVeld Studios owner, Leon (Crow), you can email ' + contact.email + '. The link opens your email application; I cannot send messages for you.';
+        }
         link = contactLink(member || 'general');
         linkLabel = member ? `Email ${displayName} at StoneVeld` : 'Email the StoneVeld team';
       }
@@ -120,6 +126,7 @@ export class Receptionist {
       return response;
     }
     if (this.pendingContacts.length && intent.members.length === 1) return reply('direct-email', intent.members[0]);
+    if (intent.members.length === 1 && intent.members[0] === 'crow' && /\b(?:owner|founder|person in charge|who owns stoneveld|who founded stoneveld)\b/.test(q) && !intent.contact && !intent.requirements.length && !intent.explicitServices.length) return reply('crow');
     if (privateEmail || (intent.contact && (intent.members.length || /\b(him|her|them|their|his)\b/.test(q)))) return reply('direct-email');
     if (intent.contact && /\b(team|company|general|studio)\b/.test(q) && !intent.requirements.length && !intent.explicitServices.length) return reply('contact');
     const exact=this.facts.find(f=>f.questions.some(s=>normalize(s)===q));
