@@ -2,7 +2,7 @@
 export const INTENT_THRESHOLD = 3;
 export const people = {
   bianca: {name: 'Bianca', pattern: /\b(bianca|bia)\b/},
-  crow: {name: 'Crow', pattern: /\b(crow|leon)\b/},
+  crow: {name: 'Crow', pattern: /\b(crow|leon|(?:stoneveld|studio|business|company) (?:owner|founder)|(?:owner|founder) (?:of )?(?:stoneveld|the (?:studio|business|company))|person in charge|who (?:owns|founded) stoneveld)\b/},
   hannes: {name: 'Hannes', pattern: /\b(hannes|wolfbyte)\b/}
 };
 const requirements = [
