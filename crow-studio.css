@@ -442,3 +442,269 @@ body:has(.crow-studio) .navigation a[aria-current="page"] {
  .crow-section-nav::before {left:9px;}
  .crow-section-nav::after {right:9px;}
 }
+
+
+/* Crow Studio / material texture pass — 2026-11-06.
+   Pure CSS etched steel, brushed grain, bevels and circuit traces.
+   Decorative layers only: no extra images, effects, or layout rebuild. */
+
+.crow-intro-section,
+.crow-projects-section,
+.crow-method-section,
+.crow-systems-section,
+.crow-contact-section {
+  border-top: 1px solid rgba(106, 210, 212, .24);
+  box-shadow: inset 0 1px 0 rgba(215, 255, 250, .055);
+}
+
+/* Etched metal workstation plate around the personal introduction. */
+.crow-intro-grid {
+  position: relative;
+}
+.crow-intro-copy {
+  position: relative;
+  padding: 30px 35px 27px;
+  background:
+    repeating-linear-gradient(0deg,
+      rgba(190, 245, 245, .022) 0 1px,
+      transparent 1px 4px),
+    linear-gradient(133deg,
+      rgba(82, 163, 165, .14),
+      rgba(6, 23, 32, .54) 43%,
+      rgba(173, 104, 51, .10) 100%);
+  border: 1px solid rgba(99, 183, 188, .44);
+  border-left: 3px solid rgba(244, 172, 91, .82);
+  border-radius: 4px 17px 17px 4px;
+  box-shadow:
+    inset 1px 1px 0 rgba(226, 255, 255, .095),
+    inset -1px -1px 0 rgba(0, 0, 0, .34),
+    0 17px 35px rgba(0, 0, 0, .24);
+}
+.crow-intro-copy::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 34% 28%, #ffd8a5, #ab7444 57%, #3d3229 72%);
+  border: 1px solid rgba(253, 194, 128, .5);
+  box-shadow: 0 0 0 2px #061b22, 0 0 9px #ffaf5345;
+  pointer-events: none;
+}
+.crow-intro-copy .crow-philosophy {
+  border-top-color: rgba(208, 160, 98, .42);
+}
+
+/* A machined divider and small etched registration mark. */
+.crow-heading-row {
+  position: relative;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(83, 187, 190, .37);
+}
+.crow-heading-row::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: clamp(70px, 16%, 180px);
+  height: 3px;
+  background: linear-gradient(90deg, #f2b36a, #82ede1 65%, transparent);
+  box-shadow: 0 0 11px rgba(53, 226, 226, .24);
+  pointer-events: none;
+}
+
+/* Brushed metal inside project panels, rather than flat tinted rectangles. */
+.crow-feature-project {
+  position: relative;
+  background:
+    repeating-linear-gradient(0deg, rgba(200, 249, 247, .022) 0 1px, transparent 1px 5px),
+    linear-gradient(145deg, #132c36, #0e1e28 68%);
+}
+.crow-feature-project::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1px solid rgba(127, 210, 208, .14);
+  border-radius: 16px;
+  pointer-events: none;
+  z-index: 2;
+}
+.crow-feature-copy {
+  background:
+    repeating-linear-gradient(0deg, rgba(217, 250, 251, .019) 0 1px, transparent 1px 4px),
+    radial-gradient(ellipse at 100% 0%, rgba(214, 123, 49, .15), transparent 60%),
+    linear-gradient(132deg, #122e35, #0c1c26);
+}
+.crow-feature-windowbar {
+  background:
+    repeating-linear-gradient(90deg, rgba(235, 255, 251, .035) 0 1px, transparent 1px 4px),
+    linear-gradient(180deg, #23434b, #112530);
+  box-shadow: inset 0 1px 0 rgba(214, 253, 251, .14);
+}
+
+/* Every card has a subtle grain, etched corner, and physical rim. */
+.crow-project-card {
+  background:
+    repeating-linear-gradient(0deg, rgba(204, 248, 244, .026) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(129deg, transparent 0 30px, rgba(203, 251, 245, .024) 30px 31px, transparent 31px 61px),
+    radial-gradient(ellipse at 85% 15%, rgba(53, 244, 192, .15), transparent 46%),
+    linear-gradient(140deg, #163b39, #0b242e);
+  box-shadow:
+    inset 0 1px 0 rgba(213, 255, 244, .24),
+    inset 1px 0 0 rgba(147, 231, 226, .09),
+    inset 0 -2px 0 rgba(0, 0, 0, .27),
+    0 0 0 3px #062129,
+    0 16px 29px rgba(0, 0, 0, .48);
+}
+.crow-project-card-fed {
+  background:
+    repeating-linear-gradient(0deg, rgba(204, 248, 244, .025) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(129deg, transparent 0 30px, rgba(203, 251, 245, .025) 30px 31px, transparent 31px 61px),
+    radial-gradient(ellipse at 80% 5%, rgba(58, 188, 230, .22), transparent 49%),
+    linear-gradient(145deg, #173544, #10202d);
+}
+.crow-project-card-roots {
+  background:
+    repeating-linear-gradient(0deg, rgba(246, 225, 197, .029) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(129deg, transparent 0 30px, rgba(239, 203, 165, .024) 30px 31px, transparent 31px 61px),
+    radial-gradient(ellipse at 80% 5%, rgba(237, 167, 76, .18), transparent 49%),
+    linear-gradient(145deg, #413025, #19252a);
+}
+.crow-project-card::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 19px;
+  height: 19px;
+  border-top: 2px solid rgba(250, 196, 119, .73);
+  border-right: 2px solid rgba(250, 196, 119, .73);
+  border-radius: 0 4px 0 0;
+  pointer-events: none;
+}
+.crow-project-card:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(213, 255, 244, .3),
+    inset 0 -2px 0 rgba(0, 0, 0, .23),
+    0 0 0 3px #0a242c,
+    0 0 25px rgba(21, 216, 226, .23),
+    0 18px 29px #0009;
+}
+
+/* An understated circuit track connecting the four engineering steps. */
+.crow-method-grid {
+  position: relative;
+}
+.crow-method-grid::before {
+  content: "";
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 69px;
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(243, 170, 79, .78) 10%,
+    rgba(94, 230, 222, .79) 52%,
+    rgba(243, 170, 79, .65) 90%,
+    transparent);
+  box-shadow: 0 0 9px rgba(66, 211, 211, .18);
+  z-index: 0;
+  pointer-events: none;
+}
+.crow-method-grid li {
+  z-index: 1;
+  background:
+    repeating-linear-gradient(0deg, rgba(214, 250, 247, .03) 0 1px, transparent 1px 5px),
+    linear-gradient(155deg, rgba(136, 229, 224, .055), transparent 48%),
+    radial-gradient(ellipse at 95% 0%, rgba(52, 219, 219, .14), transparent 56%),
+    linear-gradient(165deg, #1a3740, #101f27);
+  border-color: rgba(103, 200, 202, .76);
+  box-shadow:
+    inset 1px 1px 0 rgba(236, 255, 255, .16),
+    inset -1px -1px 0 rgba(0, 0, 0, .28),
+    0 10px 26px rgba(0, 0, 0, .28);
+}
+
+/* Tooling console: brushed outer shell, fine scanlines, engraved header. */
+.crow-system-console {
+  outline: 4px solid rgba(22, 45, 54, .78);
+  outline-offset: -6px;
+  box-shadow:
+    inset 0 0 0 2px #072b36,
+    inset 0 1px 0 rgba(191, 250, 245, .21),
+    0 0 23px rgba(27, 215, 228, .2),
+    0 25px 53px #0009;
+}
+.crow-console-heading {
+  background:
+    repeating-linear-gradient(0deg, rgba(235, 255, 251, .056) 0 1px, transparent 1px 4px),
+    linear-gradient(100deg, #24474e, #10232d);
+  text-shadow: 0 1px 0 #000;
+  box-shadow: inset 0 1px 0 rgba(188, 255, 246, .25), inset 0 -2px 0 #020e15;
+}
+.crow-console-body {
+  background:
+    repeating-linear-gradient(0deg, rgba(80, 184, 190, .041) 0 1px, transparent 1px 6px),
+    radial-gradient(ellipse at 70% 25%, rgba(10, 138, 149, .16), transparent 48%),
+    #071820;
+}
+.crow-tech-tags span {
+  background:
+    repeating-linear-gradient(0deg, rgba(225, 255, 255, .04) 0 1px, transparent 1px 4px),
+    linear-gradient(150deg, #1d3c45, #0e2732);
+  border-color: rgba(110, 195, 204, .7);
+  box-shadow: inset 0 1px 0 rgba(227, 255, 255, .11);
+}
+
+/* The contact panel becomes a final machined steel plate, not a plain band. */
+.crow-contact-inner {
+  position: relative;
+  padding: clamp(28px, 5vw, 58px);
+  border: 1px solid rgba(113, 194, 193, .53);
+  border-top: 2px solid rgba(244, 174, 95, .78);
+  border-radius: 9px 22px 22px 9px;
+  background:
+    repeating-linear-gradient(0deg, rgba(220, 246, 244, .021) 0 1px, transparent 1px 5px),
+    radial-gradient(ellipse at 88% 20%, rgba(212, 140, 62, .1), transparent 52%),
+    linear-gradient(125deg, rgba(26, 54, 60, .92), rgba(9, 29, 40, .96) 68%);
+  box-shadow:
+    inset 0 1px 0 rgba(230, 255, 251, .15),
+    inset 1px 0 0 rgba(211, 248, 243, .06),
+    0 22px 44px rgba(0, 0, 0, .26);
+}
+.crow-contact-inner::before,
+.crow-contact-inner::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #af8453;
+  border-radius: 50%;
+  background: radial-gradient(circle at 33% 26%, #edd0a2, #6e5943 69%, #1f2225 75%);
+  box-shadow: 0 0 0 2px #0c1f29;
+  pointer-events: none;
+}
+.crow-contact-inner::before { top: 14px; left: 14px; }
+.crow-contact-inner::after { bottom: 14px; right: 14px; }
+.crow-contact-section {
+  border-bottom: 1px solid rgba(89, 200, 203, .32);
+}
+
+@media (max-width: 930px) {
+  .crow-method-grid::before { display: none; }
+}
+@media (max-width: 650px) {
+  .crow-intro-copy {
+    padding: 23px 22px 20px;
+    border-radius: 4px 12px 12px 4px;
+  }
+  .crow-contact-inner {
+    padding: 31px 20px 27px;
+    border-radius: 9px 14px 14px 9px;
+  }
+  .crow-heading-row { padding-bottom: 19px; }
+  .crow-feature-project::before { inset: 5px; }
+}
