@@ -1,0 +1,500 @@
+{
+  "version": "0.1.0-public",
+  "approvedForPublicDeployment": true,
+  "reviewed": "2026-11-06",
+  "notes": "Owner-approved StoneVeld business information. Informational answers only, no promises of availability.",
+  "facts": [
+    {
+      "id": "studio",
+      "topic": "about",
+      "title": "About StoneVeld Studios",
+      "questions": [
+        "What is StoneVeld Studios?",
+        "Tell me about StoneVeld",
+        "What does your company do?",
+        "Who are you?"
+      ],
+      "keywords": [
+        "studio",
+        "business",
+        "company",
+        "about",
+        "overview"
+      ],
+      "answer": "Welcome to StoneVeld Studios. The studio works on website design and development, creative design and visual storytelling, and practical technology solutions. You can also explore its projects and developer tools.",
+      "link": "/#services",
+      "source": "https://stoneveldstudios.co.za/",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Explore StoneVeld services"
+    },
+    {
+      "id": "websites",
+      "topic": "websites",
+      "title": "Website design and development",
+      "questions": [
+        "Can you build me a website?",
+        "Do you design websites?",
+        "Can you improve an existing website?",
+        "I need a website for my business"
+      ],
+      "keywords": [
+        "website",
+        "websites",
+        "web development",
+        "design",
+        "web page",
+        "site",
+        "online presence"
+      ],
+      "answer": "Looking to build your first website or improve an existing one? StoneVeld Studios offers website design and development. Share what you have in mind with the team to discuss the scope.",
+      "link": "/start-here#website",
+      "source": "https://stoneveldstudios.co.za/",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Explore website services"
+    },
+    {
+      "id": "creative",
+      "topic": "creative",
+      "title": "Creative design and visual storytelling",
+      "questions": [
+        "Do you offer graphic design?",
+        "Can you do illustrations?",
+        "Tell me about creative services",
+        "Can you help with visual storytelling?"
+      ],
+      "keywords": [
+        "design",
+        "graphic",
+        "illustration",
+        "visuals",
+        "creative",
+        "storytelling",
+        "branding"
+      ],
+      "answer": "StoneVeld Studios explores creative concepts, visual design and storytelling. Tell the team about your idea to discuss the project scope and available services.",
+      "link": "/start-here#creative",
+      "source": "https://stoneveldstudios.co.za/",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Explore creative work"
+    },
+    {
+      "id": "technical",
+      "topic": "technical",
+      "title": "Technical solutions",
+      "questions": [
+        "Can you help with computer problems?",
+        "Do you provide technical support?",
+        "Can someone help with Linux or software?",
+        "I need technical troubleshooting"
+      ],
+      "keywords": [
+        "computer",
+        "technical",
+        "it",
+        "software",
+        "linux",
+        "email",
+        "troubleshooting",
+        "systems",
+        "automation"
+      ],
+      "answer": "StoneVeld Studios offers practical help with software, systems and everyday technology problems. Describe the issue to the team so you can discuss suitable assistance.",
+      "link": "/start-here#technical",
+      "source": "https://stoneveldstudios.co.za/",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Explore technical help"
+    },
+    {
+      "id": "workflow",
+      "topic": "process",
+      "title": "How projects begin",
+      "questions": [
+        "How do we start a project?",
+        "What happens after I contact StoneVeld?",
+        "How does your process work?",
+        "How do I get started?"
+      ],
+      "keywords": [
+        "start",
+        "begin",
+        "process",
+        "steps",
+        "requirements",
+        "quote",
+        "scope"
+      ],
+      "answer": "Start by sharing your idea or problem with the team. The next steps are to review the requirements, agree on a direction and scope, then build, review and test the result.",
+      "link": "/start-here",
+      "source": "https://stoneveldstudios.co.za/",
+      "reviewed": "2026-11-06",
+      "linkLabel": "See how to start a project"
+    },
+    {
+      "id": "contact",
+      "topic": "contact",
+      "title": "Contact StoneVeld Studios",
+      "questions": [
+        "How can I contact the team?",
+        "What's your email address?",
+        "I want to speak to someone",
+        "How do I send an enquiry?"
+      ],
+      "keywords": [
+        "contact",
+        "email",
+        "message",
+        "reach",
+        "talk",
+        "enquiry",
+        "inquiry",
+        "help"
+      ],
+      "answer": "You can reach the team at info@stoneveldstudios.co.za. The email link opens your email application so you can write your enquiry. I cannot send messages for you.",
+      "link": "mailto:info@stoneveldstudios.co.za?subject=StoneVeld%20enquiry",
+      "source": "https://stoneveldstudios.co.za/",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Email the StoneVeld team"
+    },
+    {
+      "id": "prices",
+      "topic": "pricing",
+      "title": "Quotes and pricing",
+      "questions": [
+        "How much does a website cost?",
+        "Do you have fixed prices?",
+        "Can I get a quotation?",
+        "What are your rates?",
+        "Are quotations free?",
+        "Is the initial project discussion free?",
+        "Do you charge for a quote?",
+        "Is the first consultation free?"
+      ],
+      "keywords": [
+        "price",
+        "pricing",
+        "cost",
+        "quote",
+        "quotation",
+        "fee",
+        "rates",
+        "budget",
+        "free quotation",
+        "free consultation"
+      ],
+      "answer": "Initial project discussions and quotations are free. I don’t have confirmed prices to share for project work; costs depend on the requirements and agreed scope. Tell the team what you have in mind to discuss a quotation.",
+      "link": "/start-here",
+      "source": "No approved fixed price list; owner policy. Free initial project discussions and quotations owner-approved 2026-11-06.",
+      "reviewed": "2026-11-06",
+      "linkLabel": "See how to discuss your project"
+    },
+    {
+      "id": "hours",
+      "topic": "availability",
+      "title": "Operating hours and availability",
+      "questions": [
+        "Are you open now?",
+        "What are your business hours?",
+        "Can someone help immediately?",
+        "Do you offer emergency support?",
+        "When can I contact StoneVeld?",
+        "Are you open on Saturdays?",
+        "Are you open on Sundays?",
+        "Can I email you outside business hours?"
+      ],
+      "keywords": [
+        "hours",
+        "opening",
+        "available",
+        "today",
+        "urgent",
+        "emergency",
+        "now",
+        "business hours",
+        "enquiry hours",
+        "contact hours",
+        "saturday",
+        "sunday",
+        "weekend"
+      ],
+      "answer": "StoneVeld Studios' enquiry hours (South African Standard Time, UTC+2) are Monday–Friday 08:00–17:00 and Saturday 09:00–13:00. Sunday is closed. You can send an email outside these hours, but replies depend on team availability. Enquiry hours do not guarantee immediate assistance, confirmed appointments or emergency support.",
+      "link": "mailto:info@stoneveldstudios.co.za?subject=Availability%20enquiry",
+      "source": "Owner-approved StoneVeld Studios enquiry hours, 2026-11-06; same hours listed on StoneVeld Studios Facebook Page. No live availability feed.",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Email the team about availability"
+    },
+    {
+      "id": "team",
+      "topic": "team",
+      "title": "The StoneVeld team",
+      "questions": [
+        "Who works at StoneVeld?",
+        "Meet the team",
+        "Tell me about your team",
+        "Who are Crow Bianca and Hannes?"
+      ],
+      "keywords": [
+        "team",
+        "people",
+        "staff",
+        "members",
+        "crow",
+        "bianca",
+        "hannes"
+      ],
+      "answer": "StoneVeld Studios works across technical development, visual design and creative direction. Crow, Bianca and Hannes contribute their different skills to the studio.",
+      "link": "/#projects",
+      "source": "Owner-approved team description and public studio pages",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Explore the studio’s projects"
+    },
+    {
+      "id": "crow",
+      "topic": "team",
+      "title": "Crow's Studio",
+      "questions": [
+        "Who is Crow?",
+        "What does Crow do?",
+        "Tell me about the developer",
+        "What is Crow's Studio?"
+      ],
+      "keywords": [
+        "crow",
+        "leon",
+        "developer",
+        "technical",
+        "integrations",
+        "software"
+      ],
+      "answer": "Crow focuses on technical development, integration, software and practical problem-solving at StoneVeld Studios. The public site has a dedicated Crow's Studio page.",
+      "link": "/leon-studio",
+      "source": "Owner-approved role and public studio page",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Visit Crow’s Studio"
+    },
+    {
+      "id": "bianca",
+      "topic": "team",
+      "title": "Bia's Studio",
+      "questions": [
+        "Who is Bianca?",
+        "What does Bianca do?",
+        "Tell me about Bia's Studio",
+        "Is Bianca a designer?"
+      ],
+      "keywords": [
+        "bianca",
+        "bia",
+        "graphics",
+        "visual identity",
+        "presentation",
+        "studio"
+      ],
+      "answer": "Bianca contributes visual identity, design and content presentation. Her public studio page is Bia's Studio.",
+      "link": "/bianca-studio",
+      "source": "Owner-approved role and public studio page",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Visit Bia’s Studio"
+    },
+    {
+      "id": "hannes",
+      "topic": "team",
+      "title": "Wolfbyte Studio",
+      "questions": [
+        "Who is Hannes?",
+        "What does Hannes do?",
+        "Tell me about Wolfbyte Studio",
+        "Who handles creative direction?"
+      ],
+      "keywords": [
+        "hannes",
+        "wolfbyte",
+        "creative",
+        "artwork",
+        "storytelling",
+        "design"
+      ],
+      "answer": "Hannes contributes creative direction, visual concepts and storytelling. The public StoneVeld website includes Wolfbyte Studio.",
+      "link": "/wolfbyte-studio",
+      "source": "Owner-approved role and public studio page",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Visit Wolfbyte Studio"
+    },
+    {
+      "id": "direct-email",
+      "topic": "team",
+      "title": "Contact an individual team member",
+      "questions": [
+        "What is Bianca's email address?",
+        "How can I email Hannes directly?",
+        "Give me Crow's personal email",
+        "What is Leon's direct address?"
+      ],
+      "keywords": [
+        "direct",
+        "personal",
+        "individual",
+        "email",
+        "bianca",
+        "hannes",
+        "crow"
+      ],
+      "answer": "You can use the team’s public business email addresses to reach a named person. For general enquiries, email info@stoneveldstudios.co.za.",
+      "link": "mailto:info@stoneveldstudios.co.za?subject=Team%20enquiry",
+      "source": "Owner-approved public business contacts 2026-11-06",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Email the team about a person or project"
+    },
+    {
+      "id": "contingency",
+      "topic": "projects",
+      "title": "Contingency Federation",
+      "questions": [
+        "What is Contingency?",
+        "Tell me about the Federation",
+        "Do you develop collaboration software?",
+        "What is the Contingency project?"
+      ],
+      "keywords": [
+        "contingency",
+        "federation",
+        "teams",
+        "collaboration",
+        "software",
+        "developers"
+      ],
+      "answer": "Contingency Federation is a StoneVeld project exploring a collaborative workspace for teams, software development and shared work. Visit its project page for the published details.",
+      "link": "/contingency",
+      "source": "https://stoneveldstudios.co.za/contingency",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Explore Contingency Federation"
+    },
+    {
+      "id": "open-tools",
+      "topic": "projects",
+      "title": "Open tools and experiments",
+      "questions": [
+        "Do you have open source tools?",
+        "Where can I find developer tools?",
+        "Do you share software experiments?",
+        "Tell me about open tools"
+      ],
+      "keywords": [
+        "open source",
+        "tools",
+        "experiments",
+        "developer",
+        "github",
+        "software"
+      ],
+      "answer": "StoneVeld Studios has an Open Tools and Experiments section for developer tools and technical projects.",
+      "link": "/open-tools",
+      "source": "https://stoneveldstudios.co.za/open-tools",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Browse Open Tools and Experiments"
+    },
+    {
+      "id": "nexus",
+      "topic": "projects",
+      "title": "StoneVeld Nexus",
+      "questions": [
+        "What is StoneVeld Nexus?",
+        "Where is the shop?",
+        "Do you sell digital products?",
+        "Can I download products?"
+      ],
+      "keywords": [
+        "nexus",
+        "shop",
+        "download",
+        "digital",
+        "products",
+        "store"
+      ],
+      "answer": "StoneVeld Nexus is the studio's digital product and release area. Check its current page for available items; the assistant cannot confirm a paid checkout service.",
+      "link": "/shop",
+      "source": "https://stoneveldstudios.co.za/shop",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Explore StoneVeld Nexus"
+    },
+    {
+      "id": "assistant",
+      "topic": "assistant",
+      "title": "About this digital assistant",
+      "questions": [
+        "Are you an AI?",
+        "Are you a real person?",
+        "What can you help me with?",
+        "What are you?"
+      ],
+      "keywords": [
+        "assistant",
+        "chatbot",
+        "receptionist",
+        "ai",
+        "robot",
+        "human"
+      ],
+      "answer": "Hello, I’m StoneVeld Assistant, your digital guide to the studio. I can help you explore services, projects and contact details. I’m not a human team member and can’t make commitments for the team.",
+      "link": "/start-here",
+      "source": "StoneVeld Assistant design brief",
+      "reviewed": "2026-11-06",
+      "linkLabel": "Explore ways to get started"
+    },
+    {
+      "id": "facebook",
+      "topic": "social",
+      "title": "StoneVeld Studios on Facebook",
+      "questions": [
+        "Do you have a Facebook page?",
+        "Where can I follow StoneVeld on Facebook?",
+        "What is your Facebook link?",
+        "Where can I see your social media?",
+        "Can I follow StoneVeld Studios?"
+      ],
+      "keywords": [
+        "facebook",
+        "facebook page",
+        "facebook link",
+        "social media",
+        "socials",
+        "follow stoneveld",
+        "studio updates"
+      ],
+      "answer": "Yes — StoneVeld Studios has an official Facebook Page. Follow the studio there for posts and updates. For project enquiries, you can also contact the team by email.",
+      "link": "https://www.facebook.com/p/StoneVeld-Studios-61596017890951/",
+      "linkLabel": "Visit StoneVeld Studios on Facebook",
+      "source": "Official StoneVeld Studios Facebook Page, confirmed by the page's public canonical address on 2026-11-06.",
+      "reviewed": "2026-11-06"
+    }
+  ],
+  "businessContacts": [
+    {
+      "id": "general",
+      "name": "StoneVeld team",
+      "email": "info@stoneveldstudios.co.za",
+      "source": "Owner-approved public business contacts 2026-11-06",
+      "reviewed": "2026-11-06"
+    },
+    {
+      "id": "crow",
+      "name": "Crow",
+      "email": "leon@stoneveldstudios.co.za",
+      "source": "Owner-approved public business contacts 2026-11-06",
+      "reviewed": "2026-11-06"
+    },
+    {
+      "id": "bianca",
+      "name": "Bianca",
+      "email": "bianca@stoneveldstudios.co.za",
+      "source": "Owner-approved public business contacts 2026-11-06",
+      "reviewed": "2026-11-06"
+    },
+    {
+      "id": "hannes",
+      "name": "Hannes",
+      "email": "hannes@stoneveldstudios.co.za",
+      "source": "Owner-approved public business contacts 2026-11-06",
+      "reviewed": "2026-11-06"
+    }
+  ]
+}

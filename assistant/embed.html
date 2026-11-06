@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>StoneVeld Assistant · Digital guide</title><link rel="stylesheet" href="src/style.css"><script type="module" src="src/app.js"></script>
+<link rel="stylesheet" href="embed.css">
+<script type="module" src="embed.js"></script>
+</head>
+<body class="sv-embedded">
+<main class="studio-main">
+  <nav class="site-nav" aria-label="StoneVeld Studios">
+    <a class="site-brand" href="https://stoneveldstudios.co.za/" target="_blank" rel="noopener noreferrer" aria-label="StoneVeld Studios website (opens in a new tab)">
+      <img src="assets/karoo-circuit.svg" alt="" aria-hidden="true" width="124" height="50">
+      <span class="brand-wordmark">STONEVELD <small>STUDIOS</small></span>
+    </a>
+    <div class="site-nav-links">
+      <a href="https://stoneveldstudios.co.za/#services" target="_blank" rel="noopener noreferrer">Services</a>
+      <a href="https://stoneveldstudios.co.za/#projects" target="_blank" rel="noopener noreferrer">Work</a>
+      <a href="https://stoneveldstudios.co.za/start-here" target="_blank" rel="noopener noreferrer">Start Here</a>
+    </div>
+  </nav>
+  <div class="hero-content">
+    <p class="eyebrow hero-eyebrow">STONEVELD STUDIOS / DIGITAL GUIDE</p>
+    <h1>A helpful place<br>to <span class="hero-accent">begin.</span></h1>
+    <p class="intro">Explore the studio’s services, people and projects with StoneVeld Assistant, your digital guide.</p>
+    <button id="start" type="button"><span class="start-symbol" aria-hidden="true">✦</span>Ask the assistant <span aria-hidden="true">↗</span></button>
+    <p class="notice">StoneVeld business information only. Messages stay in this tab and are not sent to our team.</p>
+    <div class="principles" aria-label="Assistant principles"><p>Curated knowledge</p><p>No AI service</p><p>No saved conversations</p></div>
+  </div>
+  <section class="studio-work" aria-labelledby="studio-work-heading">
+    <h2 id="studio-work-heading">Explore our work</h2>
+    <div class="studio-project-grid">
+      <a class="studio-project project-contingency" href="https://stoneveldstudios.co.za/contingency" target="_blank" rel="noopener noreferrer">
+        <span class="project-symbol" aria-hidden="true">◇</span>
+        <strong>Contingency Federation</strong>
+        <span>Collaboration platform in private development</span>
+        <span class="project-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="studio-project project-rag" href="https://stoneveldstudios.co.za/open-tools" target="_blank" rel="noopener noreferrer">
+        <span class="project-symbol" aria-hidden="true">⌘</span>
+        <strong>RAG Trigger Studio</strong>
+        <span>Local-first developer project and open tools</span>
+        <span class="project-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="studio-project project-nexus" href="https://stoneveldstudios.co.za/shop" target="_blank" rel="noopener noreferrer">
+        <span class="project-symbol" aria-hidden="true">◈</span>
+        <strong>StoneVeld Nexus</strong>
+        <span>Future studio catalogue · Preview only</span>
+        <span class="project-arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+</main>
+<button id="launcher" type="button" aria-controls="assistant" aria-expanded="false">Ask StoneVeld <span aria-hidden="true">✦</span></button>
+<section id="assistant" role="dialog" aria-modal="true" aria-labelledby="chat-title" aria-describedby="privacy" hidden>
+<header><div class="assistant-brand"><img class="assistant-mark" src="assets/karoo-circuit.svg" alt="" aria-hidden="true" width="160" height="64"><div><p class="eyebrow">STONEVELD / DIGITAL GUIDE</p><h2 id="chat-title">StoneVeld Assistant</h2></div></div><button id="close" type="button" aria-label="Close assistant">×</button></header>
+<p id="privacy">This tab only · clears after 10 minutes idle. Please avoid personal details.</p>
+<div id="messages" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions text" tabindex="0"></div>
+<div class="conversation-controls"><div class="topic-area"><button id="topics-toggle" type="button" aria-expanded="false" aria-controls="topics">Explore topics<span class="disclosure-mark" aria-hidden="true"></span></button><div id="topics" role="group" aria-label="Suggested topics" hidden></div></div>
+<form id="question-form"><label for="question" class="visually-hidden">Your question</label><div class="input-row"><input id="question" name="question" maxlength="1000" autocomplete="off" placeholder="What would you like to know?" disabled><button id="send" type="submit" disabled>Send</button></div></form>
+<footer><button id="clear" type="button">Clear Conversation</button><a href="mailto:info@stoneveldstudios.co.za?subject=StoneVeld%20enquiry">Email the team</a></footer></div>
+</section>
+<noscript>This local assistant needs JavaScript. Contact info@stoneveldstudios.co.za through your email application.</noscript>
+</body></html>
