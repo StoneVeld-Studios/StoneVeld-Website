@@ -1,8 +1,8 @@
 {
-  "version": "0.1.0-draft",
-  "approvedForPublicDeployment": false,
+  "version": "0.1.0-public",
+  "approvedForPublicDeployment": true,
   "reviewed": "2026-11-06",
-  "notes": "Draft factual knowledge for owner review. Not for live deployment until checked.",
+  "notes": "Owner-approved StoneVeld business information. Informational answers only, no promises of availability.",
   "facts": [
     {
       "id": "studio",
