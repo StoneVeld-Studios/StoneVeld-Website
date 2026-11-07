@@ -1,0 +1,24 @@
+/* Start Here: accessible no-email-app alternative; no data collection or submission. */
+.sv-start-page .sv-contact-fallback {
+  max-width: 760px;
+  margin-top: 33px;
+  padding: 23px clamp(18px, 3vw, 28px);
+  border: 1px solid rgba(197, 227, 228, .35);
+  border-radius: 16px;
+  background: rgba(11, 32, 41, .45);
+}
+.sv-start-page .sv-contact-fallback h3 { font-size: 1.23rem; margin: 0 0 10px; }
+.sv-start-page .sv-contact-fallback p { color: #e3eeed; margin: 0 0 15px; line-height: 1.6; }
+.sv-contact-copy-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.sv-contact-address { font: 700 clamp(.89rem, 2.3vw, 1.08rem)/1.5 Arial, sans-serif; color: #ffe0ae; overflow-wrap: anywhere; user-select: text; }
+.sv-contact-copy {
+  min-height: 44px; padding: 9px 16px; cursor: pointer;
+  border-radius: 8px; border: 1px solid #dbb87d;
+  background: #263f48; color: #fff6e7;
+  font: 700 .94rem/1.4 Arial, sans-serif;
+}
+.sv-contact-copy:hover { background: #345b63; }
+.sv-contact-copy:focus-visible { outline: 3px solid #ffdb9d; outline-offset: 3px; }
+.sv-contact-copy[hidden] { display: none; }
+.sv-start-page .sv-contact-fallback .sv-contact-copy-feedback { min-height: 1.5em; margin: 10px 0 0; color: #aee9df; }
+.sv-start-page .sv-contact-fallback .sv-contact-security-note { margin: 12px 0 0; font-size: .88rem; color: #ccdadb; }
