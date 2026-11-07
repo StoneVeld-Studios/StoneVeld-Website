@@ -1115,3 +1115,62 @@ body:has(.crow-studio) .navigation a[aria-current="page"] {
   .crow-project-visual img { transition: none; }
   .crow-project-card:hover .crow-project-visual img { transform: none; }
 }
+
+
+/* ThinkPad Crew: a dedicated cinematic gallery panel, without hiding faces behind copy. */
+.crow-crew-section {
+  padding: clamp(76px, 9vw, 122px) 0 clamp(66px, 7vw, 100px);
+  background:
+    radial-gradient(ellipse at 50% 25%, #265b6647, transparent 60%),
+    linear-gradient(180deg, #081923 0%, #0c1a25 52%, #09151c 100%);
+  border-top: 1px solid #4d97a54d;
+}
+.crow-crew-heading { text-align:center; max-width:840px; }
+.crow-crew-heading .crow-eyebrow { margin-bottom:17px; }
+.crow-crew-heading h2 { font-size:clamp(2.5rem, 5vw, 4.8rem); }
+.crow-crew-heading h2 span { color:var(--crow-copper); }
+.crow-crew-heading .crow-crew-line {
+  color:#d4f4f2;
+  font-size:clamp(1.08rem, 2.1vw, 1.42rem);
+  line-height:1.5;
+  margin:20px 0 10px;
+  font-weight:700;
+}
+.crow-crew-description {
+  color:#b4cbd2;
+  font-size:.95rem;
+  max-width:640px;
+  line-height:1.72;
+  margin:0 auto;
+}
+.crow-crew-art {
+  position:relative;
+  width:min(1400px,calc(100% - 44px));
+  margin:clamp(30px, 5vw, 62px) auto 0;
+  overflow:hidden;
+  border:1px solid #5d9aa69c;
+  border-radius:12px 25px 12px 25px;
+  background:#101e27;
+  box-shadow:0 24px 60px #0008, 0 0 0 5px #3d727018;
+}
+.crow-crew-art img {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:3 / 2;
+  object-fit:cover;
+}
+.crow-crew-art figcaption {
+  border-top:1px solid #5d9aa67a;
+  padding:14px clamp(15px, 3vw, 27px);
+  color:#dfc3a1;
+  background:#0c2029;
+  font:650 .70rem/1.6 ui-monospace,Consolas,monospace;
+  letter-spacing:.055em;
+}
+@media(max-width:650px) {
+  .crow-crew-section { padding:64px 0 70px; }
+  .crow-crew-art { width:calc(100% - 20px); border-radius:9px 17px 9px 17px; margin-top:31px; }
+  .crow-crew-art figcaption { font-size:.63rem; letter-spacing:0; }
+  .crow-crew-heading .crow-crew-line { margin-top:16px; }
+}
