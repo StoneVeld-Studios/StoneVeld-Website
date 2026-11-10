@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy practices for the private Contingency Recovery Google Drive connection operated by StoneVeld Studios.">
+<meta name="robots" content="index,follow"><link rel="canonical" href="https://stoneveldstudios.co.za/contingency-recovery-privacy">
+<title>Contingency Recovery Privacy Policy | StoneVeld Studios</title><style>:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#081721;color:#d6e7e5;font:16px/1.7 system-ui,-apple-system,Segoe UI,sans-serif}a{color:#7bf1dc}a:focus-visible{outline:3px solid #ff8c1a;outline-offset:4px}header,footer{border-color:#34515a;border-style:solid;border-width:0 0 1px;padding:20px max(24px,calc((100vw - 860px)/2))}footer{border-width:1px 0 0;margin-top:44px;font-size:.9rem}header a{text-decoration:none;font-weight:750;color:#7bf1dc}main{max-width:860px;padding:30px 24px 50px;margin:auto}.eyebrow{font-size:.8rem;letter-spacing:.14em;color:#ff8c1a;font-weight:800;text-transform:uppercase}h1,h2{line-height:1.2}h1{font-size:clamp(2rem,5vw,3rem)}h2{margin-top:2rem;color:#87e7d9}.lead{font-size:1.15rem}.panel{border:1px solid #34515a;background:#0e2732;border-radius:10px;padding:16px 22px;margin:24px 0}small{color:#9ab7b7}</style></head>
+<body><header><a href="/" aria-label="StoneVeld Studios home">StoneVeld Studios</a> · <a href="/contingency-recovery">Contingency Recovery</a></header>
+<main><p class="eyebrow">Contingency Recovery · data practices</p><h1>Privacy Policy</h1>
+<p class="lead">This policy explains the Google user data accessed by the private Contingency Recovery connection used by StoneVeld Studios (Pty) Ltd.</p>
+<p><small>Effective: 10 November 2026 · Scope: Contingency Recovery OAuth application only</small></p>
+<div class="panel"><strong>Current stage:</strong> The Google Drive connection is being configured. No Contingency production backup has been uploaded through this application as of the effective date. Actual deployment practices must be reflected in future policy updates.</div>
+<h2>Purpose and authorisation</h2>
+<p>This is an internal operator-controlled recovery utility, not a consumer-facing Google integration. The operator explicitly authorises their own Google account through Google's OAuth consent screen. The connection is intended to use rclone with the <code>drive.file</code> scope, limiting its permitted Drive file access to files created or opened through the application. The final permission shown by Google must be checked before authorisation.</p>
+<h2>Google user data accessed</h2>
+<p>When authorised, rclone can access file contents and metadata permitted by the granted Google Drive scope, including the names, identifiers, sizes and modification times of files it manages. It also holds OAuth credentials and tokens locally to maintain the authorised connection. This utility does not request Google contacts, Gmail messages or calendar data.</p>
+<h2>Use of data</h2>
+<p>Permitted Google Drive data is used only to upload encrypted Contingency backup archives, inspect the backup files the connection manages, verify transfers, and download backups for recovery tests or restoration. File metadata may be used for inventory and integrity checks. Google user data is not used for advertising, profiling or training artificial intelligence models.</p>
+<h2>Storage and protection</h2>
+<p>The proposed workflow encrypts backup archives on the operator's machine before transfer using rclone's crypt backend. Google Drive stores the resulting encrypted archives. OAuth configuration and tokens reside on the operator-controlled computer. Encryption and a complete off-machine restoration test must be verified before production uploads begin. Local backup and token access are restricted by operating-system permissions.</p>
+<p>We do not disclose Google user data to unrelated parties or sell it. Google processes data as the chosen storage provider; rclone is a locally operated open-source tool. No external AI service receives backup content or OAuth tokens as part of this utility.</p>
+<h2>Retention and deletion</h2>
+<p>Backup files are retained until the operator intentionally removes them according to the recovery plan; an automated retention policy has not yet been enabled. Removing the OAuth authorisation stops future access, but does not automatically delete files already uploaded. The operator may delete stored backup files separately from Drive, after confirming recovery requirements.</p>
+<h2>Revoking access</h2>
+<p>The account holder can revoke authorisation from <a href="https://myaccount.google.com/connections">Google Account connections</a>. They can also contact StoneVeld Studios about access or deletion of files controlled by the organisation.</p>
+<h2>Policy changes and contact</h2>
+<p>As the recovery workflow is implemented, this policy will be updated to reflect actual operations and any changed Google Drive permissions before further use. For questions or requests, contact <a href="mailto:info@stoneveldstudios.co.za?subject=Contingency%20Recovery%20Privacy">info@stoneveldstudios.co.za</a>.</p>
+<p><a href="/contingency-recovery">Return to the Contingency Recovery homepage</a>.</p>
+</main><footer>© 2026 StoneVeld Studios (Pty) Ltd · <a href="/">Home</a> · <a href="/contingency-recovery">Contingency Recovery</a></footer></body></html>
