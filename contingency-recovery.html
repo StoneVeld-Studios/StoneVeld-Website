@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Contingency Recovery is a private StoneVeld Studios backup connection using rclone, Google Drive and locally encrypted backup archives.">
+<meta name="robots" content="index,follow"><link rel="canonical" href="https://stoneveldstudios.co.za/contingency-recovery">
+<title>Contingency Recovery | StoneVeld Studios</title><style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#081721;color:#d6e7e5;font:16px/1.7 system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:#7bf1dc}a:focus-visible{outline:3px solid #ff8c1a;outline-offset:4px}
+header,footer{border-color:#34515a;border-style:solid;border-width:0 0 1px;padding:20px max(24px,calc((100vw - 860px)/2))}
+footer{border-width:1px 0 0;margin-top:44px;font-size:.9rem}
+header a{text-decoration:none;font-weight:750;color:#7bf1dc}main{max-width:860px;padding:30px 24px 50px;margin:auto}
+.eyebrow{font-size:.8rem;letter-spacing:.14em;color:#ff8c1a;font-weight:800;text-transform:uppercase}h1,h2{line-height:1.2}h1{font-size:clamp(2rem,5vw,3rem)}h2{margin-top:2rem;color:#87e7d9}
+.lead{font-size:1.18rem}.panel{border:1px solid #34515a;background:#0e2732;border-radius:10px;padding:16px 22px;margin:24px 0}
+small{color:#9ab7b7}
+</style></head>
+<body><header><a href="/" aria-label="StoneVeld Studios home">StoneVeld Studios</a> · <a href="/contingency">Contingency Federation</a></header>
+<main id="main"><p class="eyebrow">StoneVeld operations · private utility</p>
+<h1>Contingency Recovery</h1>
+<p class="lead">Contingency Recovery is StoneVeld Studios’ private, operator-managed Google Drive connection for storing recoverable copies of the Contingency Federation system.</p>
+<div class="panel"><strong>Status: setup in progress.</strong><p>This connection is intended for the StoneVeld operator's own Google account. It is not a public backup service, a public sign-in portal, or a feature offered to Contingency users.</p></div>
+<h2>What it does</h2>
+<p>We use the open-source <a href="https://rclone.org/drive/">rclone</a> utility to connect an authorised Google account to Google Drive. The planned backup workflow places encrypted backup archives in private Drive storage, then tests the ability to retrieve and recover them.</p>
+<p>Backup archives can contain Contingency's PostgreSQL database, private uploads and Git repository data. Google Drive is the storage destination. Backup encryption is configured locally before any production archive is uploaded. Setup and upload verification are not yet complete.</p>
+<h2>Who can use it?</h2><p>Only a Google account explicitly authorised by the StoneVeld operator. The utility does not invite users to register or grant general access to their Google Drive.</p>
+<h2>Google Drive access</h2>
+<p>The connection requests permission during Google's consent flow. Our intended configuration is the narrower <code>drive.file</code> permission, which allows rclone to manage files created or opened through its connection. The exact scope shown at authorization must be reviewed before use.</p>
+<p>You can revoke a Google account's permission at any time using <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation prevents future access using that authorisation, but does not necessarily delete files already stored in Drive.</p>
+<h2>Privacy and contact</h2><p>Read our <a href="/contingency-recovery-privacy">Contingency Recovery Privacy Policy</a> for details about what Google user data this utility accesses, how it is used and how to revoke access.</p>
+<p>Questions: <a href="mailto:info@stoneveldstudios.co.za?subject=Contingency%20Recovery">info@stoneveldstudios.co.za</a>.</p>
+</main><footer>© 2026 StoneVeld Studios (Pty) Ltd · <a href="/">Home</a> · <a href="/contingency-recovery-privacy">Privacy policy</a></footer></body></html>
